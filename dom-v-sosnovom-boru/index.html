@@ -53,9 +53,9 @@ h1,h2,h3{margin:0;font-weight:400}
 :focus-visible{outline:1px solid currentColor;outline-offset:4px}
 
 /* nav */
-.nav{position:fixed;inset:0 0 auto 0;z-index:40;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:26px var(--m);font:400 13px/1 var(--sans);color:var(--ink);transition:color .4s;pointer-events:none}
+.nav{position:fixed;inset:0 0 auto 0;z-index:40;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:22px var(--m) 30px;font:400 13px/1 var(--sans);color:var(--ink);transition:color .4s,background .4s;pointer-events:none;background:linear-gradient(180deg,rgba(255,255,255,.96) 55%,rgba(255,255,255,0))}
 .nav>*{pointer-events:auto}
-.nav.onphoto{color:var(--white)}
+.nav.onphoto{color:var(--white);background:linear-gradient(180deg,rgba(2,24,37,.7) 55%,rgba(2,24,37,0))}
 .nav .logo{display:flex;align-items:center;gap:10px;font:400 18px/1 var(--head);letter-spacing:.04em;text-transform:uppercase}
 .nav .logo svg{width:26px;height:26px;fill:currentColor}
 .nav .links{display:flex;gap:28px}
