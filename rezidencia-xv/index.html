@@ -176,23 +176,24 @@ h1,h2,h3{margin:0;font-weight:400}
 @media(max-width:900px){.plan .head,.plan .tog{grid-column:1/-1}.plan .tog{justify-content:flex-start}.zones{grid-template-columns:1fr}}
 
 /* gallery */
-.gallery{overflow:hidden}
 .gallery .head{padding:0 var(--m) clamp(32px,5vh,56px);display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px;align-items:end}
 .gallery .head .a{grid-column:1/8}
-.gallery .head .c{grid-column:10/13;text-align:right;font:400 40px/1 var(--head)}
-.gallery .head .c small{font-size:14px;font-weight:400;color:var(--taupe);margin-left:6px}
-.track{display:flex;gap:clamp(20px,3vw,48px);padding-inline:var(--m);width:max-content;align-items:flex-start}
-.slide{flex:0 0 auto;width:min(76vw,440px)}
-.slide.wide{width:min(90vw,860px)}
+.ggrid{display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(28px,4vh,56px) 24px;padding-inline:var(--m)}
+.slide{grid-column:span 4}
+.slide.wide{grid-column:1/10}
+.vrow{grid-column:1/-1;display:grid;grid-template-columns:repeat(5,1fr);gap:24px}
+.vrow .slide{grid-column:auto}
 .slide figure{margin:0;aspect-ratio:9/16;overflow:hidden}
 .slide.wide figure{aspect-ratio:16/9}
-.slide img{width:100%;height:100%;object-fit:cover}
+.slide img{width:100%;height:100%;object-fit:cover;display:block}
 .slide .capline{display:flex;justify-content:space-between;gap:12px;padding-top:14px;align-items:baseline}
 .slide .capline .h3{font-size:22px}
+.vrow .capline .h3{font-size:18px}
+.vrow .capline .cap{font-size:13px}
 .slide .capline .cap{max-width:34ch}
-.gbar{margin:36px var(--m) 0;height:1px;background:var(--line);position:relative}
-.gbar i{position:absolute;left:0;top:-1px;height:3px;width:8%;background:var(--navy)}
-@media(max-width:900px),(pointer:coarse){.gallery .head .a,.gallery .head .c{grid-column:1/-1}.gallery .head .c{text-align:left}.track{flex-direction:column;width:auto}.slide,.slide.wide{width:100%}.gbar{display:none}}
+@media(max-width:1300px){.vrow{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:900px){.gallery .head .a{grid-column:1/-1}.slide.wide{grid-column:1/-1}.vrow{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.vrow{grid-template-columns:1fr}}
 
 /* evening full-bleed */
 .evening{position:relative;height:min(100svh,960px);min-height:560px;overflow:hidden;background:var(--deep);color:var(--white)}
@@ -397,17 +398,17 @@ h1,h2,h3{margin:0;font-weight:400}
 <section class="sec gallery" id="interior">
   <div class="head">
     <div class="a"><h2 class="h2 rv">Минимализм <em>с теплом</em></h2><div class="rule rv"></div><p class="txt rv">Мебель стоит как на плане: остров с видом на террасу, стол у окна, диванная группа под двусветным витражом. Копчёный дуб, графитовый микроцемент, бронза.</p></div>
-    <div class="c rv"><span id="gc">01</span><small>/ 06</small></div>
   </div>
-  <div class="track" data-track>
-    <div class="slide wide"><figure><img data-lqip="g_wide" src="assets/g_wide.webp" srcset="assets/g_wide_s.webp 800w, assets/g_wide_m.webp 1400w, assets/g_wide.webp 2400w" sizes="(max-width:900px) 100vw, 860px" alt="Гостиная-столовая: стол у витража, диванная группа, второй свет" loading="lazy"></figure><div class="capline"><div><div class="h3">Гостиная под вторым светом</div><div class="cap">солнце идёт по тёмному дубу с утра до вечера</div></div><span class="arrow"><i>↗</i></span></div></div>
-    <div class="slide"><figure><img data-lqip="g_kitchen" src="assets/g_kitchen.webp" srcset="assets/g_kitchen_s.webp 800w, assets/g_kitchen_m.webp 1400w, assets/g_kitchen.webp 2400w" sizes="(max-width:900px) 100vw, 440px" alt="Кухня: остров из мрамора, стол и стулья у окна" loading="lazy"></figure><div class="capline"><div><div class="h3">Кухня с островом</div><div class="cap">остров смотрит на террасу, кладовая — за спиной</div></div></div></div>
-    <div class="slide"><figure><img data-lqip="g_living" src="assets/g_living.webp" srcset="assets/g_living_s.webp 800w, assets/g_living_m.webp 1400w, assets/g_living.webp 2400w" sizes="(max-width:900px) 100vw, 440px" alt="Диван у витража, торшер, сосны за стеклом" loading="lazy"></figure><div class="capline"><div><div class="h3">У витража</div><div class="cap">из гостиной видно только стволы</div></div></div></div>
-    <div class="slide"><figure><img data-lqip="g_bedroom" src="assets/g_bedroom.webp" srcset="assets/g_bedroom_s.webp 800w, assets/g_bedroom_m.webp 1400w, assets/g_bedroom.webp 2400w" sizes="(max-width:900px) 100vw, 440px" alt="Мастер-спальня с окном в сосны" loading="lazy"></figure><div class="capline"><div><div class="h3">Мастер-спальня</div><div class="cap">17 метров, гардеробная и свой санузел</div></div></div></div>
-    <div class="slide"><figure><img data-lqip="g_study" src="assets/g_study.webp" srcset="assets/g_study_s.webp 800w, assets/g_study_m.webp 1400w, assets/g_study.webp 2400w" sizes="(max-width:900px) 100vw, 440px" alt="Кабинет с окнами на две стороны" loading="lazy"></figure><div class="capline"><div><div class="h3">Кабинет</div><div class="cap">на первом этаже, у входа — при желании гостевая</div></div></div></div>
-    <div class="slide"><figure><img data-lqip="g_gallery" src="assets/g_gallery.webp" srcset="assets/g_gallery_s.webp 800w, assets/g_gallery_m.webp 1400w, assets/g_gallery.webp 2400w" sizes="(max-width:900px) 100vw, 440px" alt="Зона отдыха второго этажа у ограждения второго света" loading="lazy"></figure><div class="capline"><div><div class="h3">Зона отдыха наверху</div><div class="cap">второй свет держит два этажа одним домом</div></div></div></div>
+  <div class="ggrid">
+    <div class="slide wide rv"><figure><img data-lqip="g_wide" src="assets/g_wide.webp" srcset="assets/g_wide_s.webp 800w, assets/g_wide_m.webp 1400w, assets/g_wide.webp 2400w" sizes="(max-width:900px) 100vw, 860px" alt="Гостиная-столовая: стол у витража, диванная группа, второй свет" loading="lazy"></figure><div class="capline"><div><div class="h3">Гостиная под вторым светом</div><div class="cap">солнце идёт по тёмному дубу с утра до вечера</div></div><span class="arrow"><i>↗</i></span></div></div>
+    <div class="vrow" data-stagger>
+      <div class="slide"><figure><img data-lqip="g_kitchen" src="assets/g_kitchen.webp" srcset="assets/g_kitchen_s.webp 800w, assets/g_kitchen_m.webp 1400w, assets/g_kitchen.webp 2400w" sizes="(max-width:900px) 100vw, 440px" alt="Кухня: остров из мрамора, стол и стулья у окна" loading="lazy"></figure><div class="capline"><div><div class="h3">Кухня с островом</div><div class="cap">остров смотрит на террасу, кладовая — за спиной</div></div></div></div>
+      <div class="slide"><figure><img data-lqip="g_living" src="assets/g_living.webp" srcset="assets/g_living_s.webp 800w, assets/g_living_m.webp 1400w, assets/g_living.webp 2400w" sizes="(max-width:900px) 100vw, 440px" alt="Диван у витража, торшер, сосны за стеклом" loading="lazy"></figure><div class="capline"><div><div class="h3">У витража</div><div class="cap">из гостиной видно только стволы</div></div></div></div>
+      <div class="slide"><figure><img data-lqip="g_bedroom" src="assets/g_bedroom.webp" srcset="assets/g_bedroom_s.webp 800w, assets/g_bedroom_m.webp 1400w, assets/g_bedroom.webp 2400w" sizes="(max-width:900px) 100vw, 440px" alt="Мастер-спальня с окном в сосны" loading="lazy"></figure><div class="capline"><div><div class="h3">Мастер-спальня</div><div class="cap">17 метров, гардеробная и свой санузел</div></div></div></div>
+      <div class="slide"><figure><img data-lqip="g_study" src="assets/g_study.webp" srcset="assets/g_study_s.webp 800w, assets/g_study_m.webp 1400w, assets/g_study.webp 2400w" sizes="(max-width:900px) 100vw, 440px" alt="Кабинет с окнами на две стороны" loading="lazy"></figure><div class="capline"><div><div class="h3">Кабинет</div><div class="cap">на первом этаже, у входа — при желании гостевая</div></div></div></div>
+      <div class="slide"><figure><img data-lqip="g_gallery" src="assets/g_gallery.webp" srcset="assets/g_gallery_s.webp 800w, assets/g_gallery_m.webp 1400w, assets/g_gallery.webp 2400w" sizes="(max-width:900px) 100vw, 440px" alt="Зона отдыха второго этажа у ограждения второго света" loading="lazy"></figure><div class="capline"><div><div class="h3">Зона отдыха наверху</div><div class="cap">второй свет держит два этажа одним домом</div></div></div></div>
+    </div>
   </div>
-  <div class="gbar" aria-hidden="true"><i></i></div>
 </section>
 
 <section class="evening" id="evening">
@@ -562,9 +563,5 @@ h1,h2,h3{margin:0;font-weight:400}
       .to({}, { duration: 0.5 });
   }
 
-  const track = document.querySelector('[data-track]'), bar = document.querySelector('.gbar i'), gc = document.getElementById('gc');
-  if (track && innerWidth > 900 && matchMedia('(pointer:fine)').matches) { const move = () => track.scrollWidth - innerWidth; const cnt = track.children.length;
-    gsap.to(track, { x: () => -move(), ease: 'none', scrollTrigger: { trigger: '.gallery', pin: true, scrub: 0.9, start: 'top top', end: () => '+=' + move(), invalidateOnRefresh: true,
-      onUpdate: s => { bar.style.width = (8 + s.progress*92) + '%'; gc.textContent = String(1 + Math.min(cnt-1, Math.round(s.progress*(cnt-1)))).padStart(2,'0'); } } }); }
 })();
 </script>
