@@ -1,0 +1,443 @@
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Дом в сосновом бору</title>
+<meta name="description" content="Резиденция 277,7 м² в сосновом бору: дом, который смотрит в обе стороны участка. Архитектура, планировка, интерьеры — Концепт-бюро «Хрустальный».">
+<meta property="og:title" content="Дом в сосновом бору — Концепт-бюро «Хрустальный»">
+<meta property="og:description" content="Одноэтажная резиденция 277,7 м² в густом сосновом лесу. Гостиная 82 м² под скатом, кухня в нише, три крыла, терраса с очагом.">
+<meta property="og:image" content="assets/p02_threequarter.jpg">
+<meta property="og:type" content="article">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#FFFFFF;--stone:#F3F4F6;--ink:#1C1C1C;--navy:#072F50;--deep:#021825;--taupe:#8A8A8A;--white:#FFFFFF;--line:#D3D3D3;--wline:rgba(255,255,255,.2);--accent:#072F50;
+  --ink72:rgba(28,28,28,.72);--w70:rgba(255,255,255,.72);
+  --sans:'Inter','Inter Tight',Arial,sans-serif;--head:'Bebas Neue','Oswald',Impact,'Arial Narrow',sans-serif;
+  --m:clamp(24px,6vw,96px);--sec:clamp(120px,16vh,200px);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 16px/1.5 var(--sans);letter-spacing:-.01em;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:70;opacity:.03;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='160' height='160' filter='url(%23n)'/></svg>");mix-blend-mode:multiply}
+img,video{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+p{margin:0}
+h1,h2,h3{margin:0;font-weight:400}
+.h1{font:400 clamp(64px,10vw,168px)/.86 var(--head);letter-spacing:-.015em;text-transform:uppercase;text-wrap:balance}
+.h2{font:400 clamp(40px,5.5vw,88px)/.98 var(--head);letter-spacing:-.01em;text-transform:uppercase;text-wrap:balance}
+.h2 em,.h1 em{font-style:normal;background:var(--navy);color:var(--white);padding:0 .12em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.dark .h2 em{background:var(--white);color:var(--navy)}
+.word{font:400 clamp(28px,3.2vw,44px)/1 var(--head);text-transform:uppercase;letter-spacing:.01em}
+.h3{font:400 clamp(22px,1.8vw,28px)/1 var(--head);text-transform:uppercase;letter-spacing:.01em}
+.lbl{font:500 11px/1.2 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--taupe)}
+.cap{font:400 13px/1.4 var(--sans);color:var(--taupe)}
+.txt{font:400 clamp(15px,1.1vw,17px)/1.5 var(--sans);color:var(--ink72);max-width:50ch}
+.rule{width:40px;height:1px;background:currentColor;opacity:.4;margin:22px 0 18px}
+.wrap{padding-inline:var(--m)}
+.sec{padding-block:var(--sec)}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);column-gap:clamp(16px,2vw,32px);row-gap:24px}
+.dark{background:linear-gradient(180deg,var(--navy) 0%,var(--deep) 100%);color:var(--white)}
+.dark .txt{color:var(--w70)}.dark .cap,.dark .lbl{color:rgba(255,255,255,.55)}
+.stone{background:var(--stone)}
+.dark .lbl{color:rgba(255,255,255,.6)}
+.arrow{display:inline-flex;align-items:center;gap:10px;font:400 18px/1 var(--head);text-transform:uppercase;letter-spacing:.02em}
+.arrow i{font-style:normal;display:inline-block;transition:transform .3s}
+.arrow:hover i{transform:translateX(4px)}
+.pill{display:inline-flex;align-items:center;gap:8px;border:1px solid currentColor;border-radius:3px;padding:12px 18px 10px;font:400 18px/1 var(--head);text-transform:uppercase;letter-spacing:.02em;background:transparent;color:inherit;cursor:pointer;transition:background .3s,color .3s}
+.pill:hover{background:var(--navy);color:var(--white)}
+.dark .pill:hover{background:var(--white);color:var(--ink)}
+.pill[aria-pressed="true"]{background:var(--navy);color:var(--white);border-color:var(--navy)}
+.dark .pill[aria-pressed="true"]{background:var(--white);color:var(--ink);border-color:var(--white)}
+.btn{display:inline-flex;align-items:center;gap:12px;background:var(--navy);color:var(--white);padding:16px 26px 14px;border-radius:3px;font:400 20px/1 var(--head);text-transform:uppercase;letter-spacing:.02em;border:0;cursor:pointer;transition:opacity .3s}
+.btn:hover{opacity:.85}
+.dark .btn{background:var(--white);color:var(--navy)}
+:focus-visible{outline:1px solid currentColor;outline-offset:4px}
+
+/* nav */
+.nav{position:fixed;inset:0 0 auto 0;z-index:40;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:26px var(--m);font:400 13px/1 var(--sans);color:var(--ink);transition:color .4s;pointer-events:none}
+.nav>*{pointer-events:auto}
+.nav.onphoto{color:var(--white)}
+.nav .logo{display:flex;align-items:center;gap:10px;font:400 18px/1 var(--head);letter-spacing:.04em;text-transform:uppercase}
+.nav .logo svg{width:26px;height:26px;fill:currentColor}
+.nav .links{display:flex;gap:28px}
+.nav .links a.is{text-decoration:underline;text-underline-offset:6px}
+.nav .right{display:flex;justify-content:flex-end;gap:28px;align-items:center}
+.burger{width:22px;height:12px;display:grid;gap:4px}
+.burger i{height:1px;background:currentColor;display:block}
+@media(max-width:900px){.nav .links{display:none}.nav{grid-template-columns:1fr auto}}
+
+/* hero (baroque) */
+.hero{position:relative;padding:calc(26px + 11vh) var(--m) 0;min-height:100svh;overflow:visible}
+.hero .meta{display:flex;gap:clamp(24px,8vw,140px);align-items:baseline}
+.hero .title{margin-top:18px;max-width:11ch;position:relative;z-index:2}
+.hero .counter{position:absolute;right:var(--m);top:calc(26px + 11vh + 8px);text-align:right;z-index:2}
+.hero .counter .n{font:400 clamp(32px,3vw,44px)/1 var(--head)}
+.hero .counter .n small{font-size:14px;font-weight:400;color:var(--taupe);margin-left:6px}
+.hero .dots{display:grid;gap:12px;justify-items:end;margin-top:26px}
+.hero .dots i{width:5px;height:5px;border-radius:50%;background:var(--line);display:block}
+.hero .dots i.on{background:var(--navy)}
+.hero .see{margin-top:clamp(28px,5vh,56px);position:relative;z-index:2}
+.hero .social{position:absolute;left:var(--m);bottom:14vh;display:grid;gap:14px;z-index:2}
+.hero .social a{font:400 11px/1 var(--sans);letter-spacing:.18em;color:var(--taupe);writing-mode:vertical-rl}
+.hero .photo{position:relative;margin:clamp(-40px,-6vw,-96px) calc(var(--m) * -1) 0 clamp(120px,22vw,420px);height:min(78vh,880px);overflow:hidden}
+.hero .photo img{width:100%;height:112%;object-fit:cover;object-position:center 45%;transform:scale(1.08);animation:kb 14s cubic-bezier(.2,.6,.2,1) forwards;will-change:transform}
+@keyframes kb{to{transform:scale(1)}}
+.hero .photo .cap{position:absolute;left:24px;bottom:22px;color:var(--white);opacity:.85;text-shadow:0 1px 12px rgba(0,0,0,.35)}
+@media(max-width:900px){.hero{padding-top:calc(26px + 14vh)}.hero .counter{position:static;text-align:left;margin-top:16px}.hero .dots{justify-items:start;display:flex}.hero .social{display:none}.hero .photo{margin:24px calc(var(--m) * -1) 0;height:64vh}}
+
+/* thought */
+.thought .a{grid-column:2/9}
+.thought .b{grid-column:9/13;align-self:end}
+.metrics{grid-column:1/-1;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:clamp(56px,8vh,96px);border-top:1px solid var(--line);padding-top:28px}
+.metric .n{font:400 clamp(44px,5vw,80px)/1 var(--head);letter-spacing:0;font-variant-numeric:tabular-nums}
+.metric .n small{font-size:.4em;letter-spacing:0;margin-left:6px;color:var(--taupe)}
+.metric .cap{margin-top:10px}
+@media(max-width:900px){.thought .a,.thought .b{grid-column:1/-1}.metrics{grid-template-columns:1fr 1fr}}
+
+/* story */
+.story{position:relative;background:var(--deep);color:var(--white)}
+.stage{position:relative;height:100svh;min-height:600px;overflow:hidden}
+.simg{position:absolute;inset:0;opacity:0}
+.simg:first-child{opacity:1}
+.simg img{width:100%;height:100%;object-fit:cover;transform:scale(1.08)}
+.sgrad{position:absolute;inset:0;background:linear-gradient(180deg,rgba(2,24,37,0) 45%,rgba(2,24,37,.6) 100%)}
+.ch{position:absolute;left:var(--m);right:var(--m);bottom:clamp(40px,9vh,96px);opacity:0;transform:translateY(20px);display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px;align-items:end}
+.ch:first-of-type{opacity:1;transform:none}
+.ch .w{grid-column:1/8}
+.ch .w .word{display:block}
+.ch .w .txt{margin-top:14px;color:var(--w70)}
+.ch .c{grid-column:9/13;text-align:right;font:400 40px/1 var(--head)}
+.ch .c small{font-size:14px;font-weight:400;opacity:.6;margin-left:6px}
+.sdots{position:absolute;right:var(--m);top:50%;transform:translateY(-50%);display:grid;gap:12px}
+.sdots i{width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,.35);display:block}
+.sdots i.on{background:var(--white)}
+.sfall{display:none}
+@media(max-width:900px){.stage,.sdots{display:none}.sfall{display:block;padding-block:var(--sec)}.sfall figure{margin:0 0 40px}.sfall img{width:100%;height:60vh;object-fit:cover}.sfall figcaption{padding:16px 0 0}.ch .w,.ch .c{grid-column:1/-1}.ch .c{text-align:left}}
+
+/* details */
+.details .head{grid-column:1/7}
+.dgrid{grid-column:1/-1;display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,3vw,48px);margin-top:clamp(40px,6vh,72px)}
+.d figure{margin:0;aspect-ratio:4/5;overflow:hidden}
+.d img{width:100%;height:100%;object-fit:cover;transform:scale(1.05);transition:transform 1.4s cubic-bezier(.2,.6,.2,1)}
+.d:hover img{transform:scale(1)}
+.d .capline{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding-top:14px}
+.d .capline .h3{font-size:22px}
+.d:nth-child(2){margin-top:clamp(24px,5vw,72px)}
+@media(max-width:900px){.details .head{grid-column:1/-1}.dgrid{grid-template-columns:1fr 1fr}.d:nth-child(2){margin-top:0}}
+@media(max-width:560px){.dgrid{grid-template-columns:1fr}}
+
+/* film (dark, River House) */
+.film{position:relative;min-height:100svh;overflow:hidden}
+.film .bg{position:absolute;inset:-8% 0;will-change:transform}
+.film .bg img{width:100%;height:100%;object-fit:cover;object-position:center 40%;opacity:.55}
+.film .in{position:relative;padding:calc(var(--sec)*.7) var(--m);display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px;align-items:center;min-height:100svh}
+.film .l{grid-column:1/7}
+.film .l .word{color:var(--white)}
+.film .l .txt{margin-top:18px}
+.film .l .lbl{margin-top:28px;display:block}
+.film .r{grid-column:8/12;justify-self:center;width:min(100%,340px)}
+.film video{width:100%;aspect-ratio:9/16;object-fit:cover;background:#000;border:1px solid var(--wline)}
+.film .ctrls{display:flex;gap:10px;margin-top:16px;justify-content:flex-end}
+@media(max-width:900px){.film .l,.film .r{grid-column:1/-1}.film .r{justify-self:start}}
+
+/* plan (stone) */
+.plan .head{grid-column:1/7}
+.plan .tog{grid-column:8/13;align-self:end;display:flex;gap:10px;justify-content:flex-end;flex-wrap:wrap}
+.plan .doc{grid-column:1/-1;margin-top:clamp(32px,5vh,56px);position:relative}
+.plan .doc img{width:100%;height:auto;mix-blend-mode:multiply}
+.plan .doc img[hidden]{display:none}
+.plan .doc .cap{position:absolute;right:0;bottom:-24px}
+.zones{grid-column:1/-1;margin-top:clamp(56px,8vh,96px);display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(24px,4vw,64px)}
+.zone{border-top:1px solid var(--ink);padding-top:18px}
+.zone .h3{font-size:24px}
+.zone .txt{margin-top:10px;font-size:15px}
+.rooms{margin-top:16px;display:grid;gap:4px;font:400 13px/1.5 var(--sans)}
+.rooms span{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);padding:5px 0;color:var(--ink72)}
+.rooms b{font-weight:500;color:var(--ink);font-variant-numeric:tabular-nums;white-space:nowrap}
+.total{grid-column:1/-1;display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:12px;border-top:1px solid var(--ink);padding-top:22px;margin-top:8px}
+.total .n{font:400 clamp(44px,5vw,72px)/1 var(--head);font-variant-numeric:tabular-nums}
+@media(max-width:900px){.plan .head,.plan .tog{grid-column:1/-1}.plan .tog{justify-content:flex-start}.zones{grid-template-columns:1fr}}
+
+/* gallery */
+.gallery{overflow:hidden}
+.gallery .head{padding:0 var(--m) clamp(32px,5vh,56px);display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px;align-items:end}
+.gallery .head .a{grid-column:1/8}
+.gallery .head .c{grid-column:10/13;text-align:right;font:400 40px/1 var(--head)}
+.gallery .head .c small{font-size:14px;font-weight:400;color:var(--taupe);margin-left:6px}
+.track{display:flex;gap:clamp(20px,3vw,48px);padding-inline:var(--m);width:max-content;align-items:flex-start}
+.slide{flex:0 0 auto;width:min(76vw,440px)}
+.slide.wide{width:min(90vw,860px)}
+.slide figure{margin:0;aspect-ratio:9/16;overflow:hidden}
+.slide.wide figure{aspect-ratio:16/9}
+.slide img{width:100%;height:100%;object-fit:cover}
+.slide .capline{display:flex;justify-content:space-between;gap:12px;padding-top:14px;align-items:baseline}
+.slide .capline .h3{font-size:22px}
+.slide .capline .cap{max-width:34ch}
+.gbar{margin:36px var(--m) 0;height:1px;background:var(--line);position:relative}
+.gbar i{position:absolute;left:0;top:-1px;height:3px;width:8%;background:var(--navy)}
+@media(max-width:900px){.gallery .head .a,.gallery .head .c{grid-column:1/-1}.gallery .head .c{text-align:left}.track{flex-direction:column;width:auto}.slide,.slide.wide{width:100%}.gbar{display:none}}
+
+/* evening full-bleed */
+.evening{position:relative;height:min(100svh,960px);min-height:560px;overflow:hidden;background:var(--deep);color:var(--white)}
+.evening .bg{position:absolute;inset:-8% 0;will-change:transform}
+.evening img{width:100%;height:100%;object-fit:cover;object-position:center 45%}
+.evening .g{position:absolute;inset:0;background:linear-gradient(90deg,rgba(2,24,37,.6) 0%,rgba(2,24,37,0) 60%)}
+.evening .t{position:absolute;left:var(--m);right:var(--m);top:50%;transform:translateY(-50%)}
+.evening .h2{max-width:14ch}
+.evening .txt{margin-top:22px;color:var(--w70)}
+
+/* specs (paper) */
+.specs .head{grid-column:1/5}
+.specs .list{grid-column:6/13}
+.row{display:grid;grid-template-columns:200px 1fr;gap:20px;padding:14px 0;border-bottom:1px solid var(--line);font:300 15px/1.5 var(--sans)}
+.row span:first-child{color:var(--taupe)}
+@media(max-width:900px){.specs .head,.specs .list{grid-column:1/-1}.row{grid-template-columns:1fr}}
+
+/* cta (dark) */
+.cta .l{grid-column:1/7}
+.cta form{grid-column:8/13;align-self:end;display:grid;gap:26px}
+.f{display:grid;gap:8px}
+.f label{font:400 11px/1.2 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.55)}
+.f input{background:transparent;border:0;border-bottom:1px solid rgba(255,255,255,.3);color:var(--white);font:400 16px/1.4 var(--sans);padding:10px 0;border-radius:0;outline:0}
+.f input::placeholder{color:rgba(255,255,255,.35)}
+.f input:focus{border-color:var(--white)}
+.f.err input{border-color:#D98A6B}
+.f .msg{font-size:12px;color:#D98A6B;min-height:1em}
+.consent{font-size:12px;color:rgba(255,255,255,.45);max-width:44ch}
+.success .h2{font-size:48px}
+@media(max-width:900px){.cta .l,.cta form{grid-column:1/-1}}
+
+/* footer */
+.footer{padding:40px var(--m);display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:baseline;border-top:1px solid var(--line)}
+
+/* motion helpers */
+.rv{will-change:transform,opacity}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.hero .photo img{transform:none}}
+</style>
+
+<header class="nav" id="nav">
+  <a class="logo" href="#top"><svg viewBox="0 0 69 69" aria-hidden="true"><path d="M52.1687 68.9595L34.5 55.6875L16.8313 68.9595H0.121479L34.5 43.1347L68.8785 68.9595H52.1687Z"/><path d="M43.1347 34.5L68.9595 0.121479V16.8313L55.6875 34.5L68.9595 52.1687V68.8785L43.1347 34.5Z"/><path d="M16.8313 0.0404053L34.5 13.3124L52.1687 0.0404053H68.8785L34.5 25.8652L0.121479 0.0404053H16.8313Z"/><path d="M25.8652 34.5L0.0404053 68.8785V52.1687L13.3124 34.5L0.0404053 16.8313V0.121479L25.8652 34.5Z"/></svg>Хрустальный</a>
+  <nav class="links" aria-label="Разделы"><a class="is" href="#top">Проекты</a><a href="#thought">Идея</a><a href="#plan">Планировка</a><a href="#interior">Интерьер</a></nav>
+  <div class="right"><a href="#contact">Заявка</a><span class="burger" aria-hidden="true"><i></i><i></i><i></i></span></div>
+</header>
+
+<section class="hero" id="top">
+  <div class="meta"><span class="lbl" data-line>2026</span><span class="lbl" data-line>Архитектура · частный дом · сосновый бор</span></div>
+  <h1 class="h1 title" data-line>дом в сосновом бору</h1>
+  <div class="counter" data-line><div class="n">01<small>/ 05</small></div><div class="dots"><i class="on"></i><i></i><i></i><i></i><i></i></div></div>
+  <a class="arrow see" href="#thought" data-line>Смотреть проект <i>→</i></a>
+  <div class="social" aria-hidden="true"><a href="#">instagram</a><a href="#">telegram</a></div>
+  <div class="photo" data-hero-photo>
+    <img src="assets/p02_threequarter.jpg" alt="Дом с моноскатной кровлей среди сосен, низкое солнце в кронах" fetchpriority="high">
+    <span class="cap">концепция · визуализация</span>
+  </div>
+</section>
+
+<section class="sec thought" id="thought"><div class="wrap grid">
+  <div class="a">
+    <h2 class="h2 rv">Мы стёрли <em>границу</em> между участком и домом</h2>
+    <div class="rule rv"></div>
+    <p class="txt rv">Когда мы получили этот участок — большой, в густом сосновом лесу, с видами из каждого окна, — стало понятно: дом должен отражать место, а не спорить с ним. Рельеф, окружение, очень плотные деревья. Дом смотрит в обе стороны участка. Вышла органичная территория, где не сразу понятно, где кончается бор и начинается дом.</p>
+  </div>
+  <div class="b rv">
+    <p class="txt">Натуральные оттенки фасадов: кирпич ручной формовки и деревянные панели. Высокие потолки задают не просто объём, а архитектурный код всего пространства. Формой мы играли долго, пока дом не стал одновременно функциональным и со своим характером.</p>
+  </div>
+  <div class="metrics" data-stagger>
+    <div class="metric"><div class="n"><span data-count="277.7" data-dec="1">277,7</span><small>м²</small></div><div class="cap">общая площадь с гаражом</div></div>
+    <div class="metric"><div class="n"><span data-count="81.95" data-dec="2">81,95</span><small>м²</small></div><div class="cap">гостиная-столовая под скатом</div></div>
+    <div class="metric"><div class="n"><span data-count="29.02" data-dec="2">29,02</span><small>м</small></div><div class="cap">длина дома по осям</div></div>
+    <div class="metric"><div class="n">1<small>этаж</small></div><div class="cap">три крыла, без лестниц</div></div>
+  </div>
+</div></section>
+
+<section class="story" id="story">
+  <div class="stage" data-story>
+    <div class="simg"><img src="assets/p01_front.jpg" alt="Фронтальный подъезд: гараж, входная группа, витраж под моноскатом"></div>
+    <div class="simg"><img src="assets/p03_rear.jpg" alt="Задний фасад сквозь стволы: лента остекления, валуны, мох" loading="lazy"></div>
+    <div class="simg"><img src="assets/p05_terrace.jpg" alt="Терраса с очагом у кирпичной стены в золотой час" loading="lazy"></div>
+    <div class="sgrad"></div>
+    <div class="ch"><div class="w"><span class="word">Подъезд</span><p class="txt">Три объёма читаются с дороги сразу: гараж на два автомобиля, входная ниша в антрацитовом портале и главный витраж под острой кромкой ската.</p></div><div class="c">01<small>/ 03</small></div></div>
+    <div class="ch"><div class="w"><span class="word">Задний фасад</span><p class="txt">Лента остекления смотрит в лес, валуны и мох подходят к самому стеклу. Дом поставлен между существующих сосен, а не на расчищенной площадке.</p></div><div class="c">02<small>/ 03</small></div></div>
+    <div class="ch"><div class="w"><span class="word">Терраса</span><p class="txt">Очаг у кирпичной стены, дымоход над крышей, кресла с пледами. Сюда выходят часов в семь и сидят до темноты.</p></div><div class="c">03<small>/ 03</small></div></div>
+    <div class="sdots" aria-hidden="true"><i class="on"></i><i></i><i></i></div>
+  </div>
+  <div class="sfall wrap">
+    <figure><img src="assets/p01_front.jpg" alt="" loading="lazy"><figcaption><span class="word">Подъезд</span></figcaption></figure>
+    <figure><img src="assets/p03_rear.jpg" alt="" loading="lazy"><figcaption><span class="word">Задний фасад</span></figcaption></figure>
+    <figure><img src="assets/p05_terrace.jpg" alt="" loading="lazy"><figcaption><span class="word">Терраса</span></figcaption></figure>
+  </div>
+</section>
+
+<section class="sec details" id="details"><div class="wrap grid">
+  <div class="head">
+    <h2 class="h2 rv">Кирпич ручной формовки, <em>дерево</em>, антрацит</h2>
+    <div class="rule rv"></div>
+    <p class="txt rv">Фасад продолжается внутрь: тот же кирпич на камине, тёмный морёный дуб на полу, антрацитовые переплёты. Ни глянца, ни хрома — лён, шерсть и дерево.</p>
+  </div>
+  <div class="dgrid" data-stagger>
+    <div class="d"><figure><img src="assets/s04.jpg" alt="Кромка моноскатной кровли против неба" loading="lazy"></figure><div class="capline"><div><div class="h3">Кромка ската</div><div class="cap">графика дома сквозь стволы</div></div><span class="arrow"><i>↗</i></span></div></div>
+    <div class="d"><figure><img src="assets/s06.jpg" alt="Стык кирпича ручной формовки и деревянных панелей" loading="lazy"></figure><div class="capline"><div><div class="h3">Кирпич ручной формовки</div><div class="cap">через десять лет лучше, чем в первый год</div></div><span class="arrow"><i>↗</i></span></div></div>
+    <div class="d"><figure><img src="assets/s15.jpg" alt="Лента верхнего света под свесом, блик низкого солнца" loading="lazy"></figure><div class="capline"><div><div class="h3">Лента верхнего света</div><div class="cap">закатное солнце под самым свесом</div></div><span class="arrow"><i>↗</i></span></div></div>
+  </div>
+</div></section>
+
+<section class="film dark" id="film">
+  <div class="bg" data-parallax><img src="assets/s14.jpg" alt="" loading="lazy"></div>
+  <div class="in">
+    <div class="l">
+      <span class="word rv">Ролик</span>
+      <h2 class="h2 rv" style="margin-top:14px">День уходит в вечер. Светится только то место, <em>где собираются</em></h2>
+      <p class="txt rv" style="margin-top:20px">Семьдесят секунд: подъезд сквозь сосны, порог, гостиная, планировка, камин, терраса с очагом и дом-фонарь между стволов. Снято с того же плана и тех же фасадов, что на этой странице.</p>
+      <span class="lbl rv">концепция · визуализация</span>
+    </div>
+    <div class="r rv">
+      <video id="film" playsinline muted loop preload="metadata" poster="assets/film_poster.jpg" aria-label="Ролик о доме, 72 секунды"><source src="assets/film_9x16.mp4" type="video/mp4"></video>
+      <div class="ctrls"><button class="pill" type="button" id="playBtn" aria-pressed="false">Смотреть</button><button class="pill" type="button" id="soundBtn" aria-pressed="false">Звук</button></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec plan stone" id="plan"><div class="wrap grid">
+  <div class="head">
+    <h2 class="h2 rv">Минимум коридоров, <em>чёткие зоны</em></h2>
+    <div class="rule rv"></div>
+    <p class="txt rv">Сердце дома — гостиная-столовая больше 80 м² под скатом, столовая выходит в сторону участка. Кухня выделена в нишу с островом и своей кладовой с окном. Слева от входа — постирочная и кабинет, который легко становится гостевой. Справа — спальное крыло: мастер-блок и полноценный детский блок.</p>
+  </div>
+  <div class="tog rv" role="group" aria-label="Вид планировки">
+    <button class="pill" type="button" data-plan="3d" aria-pressed="true">Объёмный план</button>
+    <button class="pill" type="button" data-plan="dims" aria-pressed="false">Чертёж с размерами</button>
+  </div>
+  <div class="doc rv">
+    <img id="plan3d" src="assets/plan_3d.jpg" style="mix-blend-mode:normal" alt="Объёмный план первого этажа с мебелью и площадями помещений" loading="lazy">
+    <img id="planDims" src="assets/plan_dims.jpg" alt="Планировочное решение с осями и размерами, длина дома 29 020 мм" loading="lazy" hidden>
+    <span class="cap">стадия П · М 1:100</span>
+  </div>
+  <div class="zones" data-stagger>
+    <div class="zone"><div class="h3">Общественное ядро</div><p class="txt">Единый объём под скатом, витраж в торце, камин на правой стене — он и держит комнату. Кухня спрятана в карман: из-за стола её не видно.</p>
+      <div class="rooms"><span>Гостиная-столовая<b>81,95 м²</b></span><span>Кухня в нише<b>14,36 м²</b></span><span>Кладовая с окном<b>2,61 м²</b></span><span>Холл<b>10,46 м²</b></span><span>Гостевой с/у и гардероб<b>1,48 + 3,27</b></span></div></div>
+    <div class="zone"><div class="h3">Мастер-блок</div><p class="txt">Спальня с панорамным окном в бор, гардеробная и удобный заход в санузел. Ниша в фасаде сохраняет приватность и всё-таки даёт вид из окна санузла. Сауну решили сохранить — она за стеной камина.</p>
+      <div class="rooms"><span>Мастер-спальня<b>29,93 м²</b></span><span>Ванная мастер-блока<b>11,12 м²</b></span><span>Коридор спальной зоны<b>8,25 м²</b></span></div></div>
+    <div class="zone"><div class="h3">Детский блок и хозяйственное крыло</div><p class="txt">Две просторные комнаты, свой санузел и коридор с большим окном. У гаража — кабинет или гостевая и отдельная постирочная.</p>
+      <div class="rooms"><span>Спальни<b>15,49 · 16,95</b></span><span>Ванная<b>6,24 м²</b></span><span>Кабинет / гостевая<b>16,07 м²</b></span><span>Постирочная<b>7,68 м²</b></span><span>Гараж на два автомобиля<b>45,56 м²</b></span></div></div>
+    <div class="total"><span class="cap">Общая площадь по экспликации</span><span class="n">277,70 м²</span></div>
+  </div>
+</div></section>
+
+<section class="sec gallery" id="interior">
+  <div class="head">
+    <div class="a"><h2 class="h2 rv">Из гостиной не видно ни забора, ни соседей. <em>Только стволы</em></h2><div class="rule rv"></div><p class="txt rv">Мебель стоит так, как на плане: стол на восемь — вдоль витража, остров с пятью стульями — на границе ядра, камин — на правой стене.</p></div>
+    <div class="c rv"><span id="gc">01</span><small>/ 06</small></div>
+  </div>
+  <div class="track" data-track>
+    <div class="slide wide"><figure><img src="assets/p04_living.jpg" alt="Гостиная-столовая: витраж-трапеция, стол на восемь человек у стекла" loading="lazy"></figure><div class="capline"><div><div class="h3">Столовая у стекла</div><div class="cap">утром тени переплётов лежат через весь дубовый пол</div></div><span class="arrow"><i>↗</i></span></div></div>
+    <div class="slide"><figure><img src="assets/s08.jpg" alt="Фронтально на витраж под скатом" loading="lazy"></figure><div class="capline"><div><div class="h3">Двусветный витраж</div><div class="cap">единственный источник дневного света в торце</div></div></div></div>
+    <div class="slide"><figure><img src="assets/s09.jpg" alt="Камин на правой стене, угловой диван на ковре" loading="lazy"></figure><div class="capline"><div><div class="h3">Камин держит зал</div><div class="cap">восемьдесят два метра без камина разъезжаются</div></div></div></div>
+    <div class="slide"><figure><img src="assets/s10.jpg" alt="Кухонный остров и проём в кухонный карман" loading="lazy"></figure><div class="capline"><div><div class="h3">Кухня в кармане</div><div class="cap">остров на границе ядра, рабочий фронт за проёмом</div></div></div></div>
+    <div class="slide"><figure><img src="assets/s17.jpg" alt="Дубовый пол крупно, тени переплётов" loading="lazy"></figure><div class="capline"><div><div class="h3">Морёный дуб</div><div class="cap">тёмный пол — канон этого дома</div></div></div></div>
+    <div class="slide"><figure><img src="assets/s07.jpg" alt="Входная группа вечером" loading="lazy"></figure><div class="capline"><div><div class="h3">Порог</div><div class="cap">скамья, дрова, сапоги у двери</div></div></div></div>
+  </div>
+  <div class="gbar" aria-hidden="true"><i></i></div>
+</section>
+
+<section class="evening" id="evening">
+  <div class="bg" data-parallax><img src="assets/p05_terrace.jpg" alt="Терраса с очагом в золотой час" loading="lazy"></div>
+  <div class="g"></div>
+  <div class="t"><h2 class="h2 rv">В лесу дом не должен быть заметным. Заметным должно быть <em>окно</em></h2><p class="txt rv">Продолжением дома стала терраса: очаг у кирпичной стены, кресла с пледами, дымоход над крышей.</p></div>
+</section>
+
+<section class="sec specs" id="specs"><div class="wrap grid">
+  <div class="head"><span class="word rv">Дом в цифрах</span><div class="rule rv"></div><p class="cap rv">Данные по экспликации проекта, стадия П</p></div>
+  <div class="list rv">
+    <div class="row"><span>Общая площадь</span><span>277,70 м² с гаражом</span></div>
+    <div class="row"><span>Этажность</span><span>Один этаж, без лестниц и антресолей</span></div>
+    <div class="row"><span>Габарит по осям</span><span>29,02 м в длину</span></div>
+    <div class="row"><span>Кровля</span><span>Моноскат над общественным ядром, плоские свесы над крыльями</span></div>
+    <div class="row"><span>Фасады</span><span>Кирпич ручной формовки, деревянные панели тёмного тона, антрацитовые переплёты</span></div>
+    <div class="row"><span>Остекление</span><span>Двусветный витраж-трапеция в торце гостиной, лента верхнего света под свесом</span></div>
+    <div class="row"><span>Состав</span><span>Гостиная-столовая, кухня в нише с кладовой, мастер-блок с сауной, две детские с санузлом, кабинет или гостевая, постирочная, гараж на два автомобиля</span></div>
+    <div class="row"><span>Терраса</span><span>У кирпичной стены с очагом, выход из гостиной</span></div>
+    <div class="row"><span>Участок</span><span>Сосновый бор, посадка дома между существующих стволов</span></div>
+  </div>
+</div></section>
+
+<section class="sec cta dark" id="contact"><div class="wrap grid">
+  <div class="l">
+    <h2 class="h2 rv">Такой дом рождается <em>из участка</em>. Начнём с вашего</h2>
+    <div class="rule rv"></div>
+    <p class="txt rv">Пришлите кадастровый номер или просто фото места. За неделю разберём рельеф, стволы и виды и скажем, каким дом здесь может быть.</p>
+  </div>
+  <form id="leadForm" novalidate class="rv">
+    <div class="f"><label for="f-name">Имя</label><input id="f-name" name="name" type="text" autocomplete="name" placeholder="Как к вам обращаться"><span class="msg" aria-live="polite"></span></div>
+    <div class="f"><label for="f-phone">Телефон</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+7"><span class="msg" aria-live="polite"></span></div>
+    <div><button class="btn" type="submit">Обсудить участок <span aria-hidden="true">→</span></button></div>
+    <p class="consent">Нажимая кнопку, вы соглашаетесь с политикой обработки персональных данных.</p>
+  </form>
+</div></section>
+
+<footer class="footer">
+  <a class="logo" href="#top" style="display:flex;align-items:center;gap:10px;font:400 18px/1 var(--head);text-transform:uppercase;letter-spacing:.04em"><svg viewBox="0 0 69 69" style="width:22px;height:22px;fill:currentColor" aria-hidden="true"><path d="M52.1687 68.9595L34.5 55.6875L16.8313 68.9595H0.121479L34.5 43.1347L68.8785 68.9595H52.1687Z"/><path d="M43.1347 34.5L68.9595 0.121479V16.8313L55.6875 34.5L68.9595 52.1687V68.8785L43.1347 34.5Z"/><path d="M16.8313 0.0404053L34.5 13.3124L52.1687 0.0404053H68.8785L34.5 25.8652L0.121479 0.0404053H16.8313Z"/><path d="M25.8652 34.5L0.0404053 68.8785V52.1687L13.3124 34.5L0.0404053 16.8313V0.121479L25.8652 34.5Z"/></svg>Хрустальный</a>
+  <span class="cap">Все изображения на странице — концепция · визуализация</span>
+  <span class="cap">hrustalni.com</span>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+<script>
+(function(){
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const hasGsap = typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined';
+  const fmt = (v,d)=> v.toFixed(d).replace('.',',');
+
+  const p3 = document.getElementById('plan3d'), pd = document.getElementById('planDims');
+  document.querySelectorAll('[data-plan]').forEach(b=>b.addEventListener('click',()=>{ const dims = b.dataset.plan==='dims'; p3.hidden = dims; pd.hidden = !dims; document.querySelectorAll('[data-plan]').forEach(x=>x.setAttribute('aria-pressed', x===b)); if (hasGsap) ScrollTrigger.refresh(); }));
+
+  const v = document.getElementById('film'), playBtn = document.getElementById('playBtn'), soundBtn = document.getElementById('soundBtn');
+  const setPlay = on => { playBtn.textContent = on ? 'Пауза' : 'Смотреть'; playBtn.setAttribute('aria-pressed', String(on)); };
+  playBtn.addEventListener('click',()=>{ if (v.paused){ v.play(); setPlay(true); } else { v.pause(); setPlay(false); } });
+  soundBtn.addEventListener('click',()=>{ v.muted = !v.muted; soundBtn.setAttribute('aria-pressed', String(!v.muted)); if (v.paused){ v.play(); setPlay(true); } });
+  if (!reduced && 'IntersectionObserver' in window){ new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ v.play().then(()=>setPlay(true)).catch(()=>{}); } else { v.pause(); setPlay(false); } }),{threshold:.5}).observe(v); }
+
+  const form = document.getElementById('leadForm');
+  form.addEventListener('submit', e=>{ e.preventDefault(); let ok = true;
+    const set = (inp,msg)=>{ const f = inp.closest('.f'); f.classList.toggle('err', !!msg); f.querySelector('.msg').textContent = msg||''; if(msg) ok=false; };
+    set(form.name, form.name.value.trim().length<2 ? 'Напишите имя' : ''); set(form.phone, form.phone.value.replace(/\D/g,'').length<10 ? 'Нужен номер из 10–11 цифр' : '');
+    if(!ok) return; window.dataLayer = window.dataLayer || []; dataLayer.push({event:'form_submit', form_id:'final'});
+    /* TODO: GETCOURSE_FORM_ACTION — fetch(url,{method:'POST',body:new FormData(form)}) */
+    form.innerHTML = '<div class="success"><h2 class="h2">Спасибо. <em>Перезвоним</em> в течение рабочего дня</h2><div class="rule"></div><p class="txt">А пока пришлите фото участка на почту бюро — так разговор начнётся с конкретики.</p></div>'; });
+
+  /* nav colour on photo / dark */
+  const nav = document.getElementById('nav');
+  const darks = [...document.querySelectorAll('.dark,.story,.evening')];
+  const upd = ()=>{ const on = darks.some(b=>{ const r=b.getBoundingClientRect(); return r.top<=40 && r.bottom>40; }); nav.classList.toggle('onphoto', on); };
+  addEventListener('scroll', upd, {passive:true}); upd();
+
+  if (reduced || !hasGsap) return;
+  gsap.registerPlugin(ScrollTrigger);
+  addEventListener('scroll', ()=>ScrollTrigger.update(), {passive:true});
+  if (typeof Lenis !== 'undefined'){ const lenis = new Lenis({ lerp: 0.08, smoothWheel: true }); lenis.on('scroll', ScrollTrigger.update); gsap.ticker.add(t => lenis.raf(t * 1000)); gsap.ticker.lagSmoothing(0);
+    document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{ const t=document.querySelector(a.getAttribute('href')); if(t){ e.preventDefault(); lenis.scrollTo(t,{offset:-10}); } })); }
+
+  gsap.from('.hero [data-line]', { y: 30, opacity: 0, duration: 1.2, stagger: 0.1, ease: 'power3.out', delay: 0.2 });
+  gsap.from('[data-hero-photo]', { clipPath: 'inset(0 0 100% 0)', duration: 1.6, ease: 'power3.inOut', delay: 0.5, clearProps: 'clipPath' });
+  gsap.to('[data-hero-photo] img', { yPercent: 10, ease: 'none', scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: 0.6 } });
+
+  gsap.utils.toArray('.rv').forEach(el => gsap.from(el, { y: 22, opacity: 0, duration: 1.1, ease: 'power2.out', scrollTrigger: { trigger: el, start: 'top 90%', once: true } }));
+  gsap.utils.toArray('[data-stagger]').forEach(g => gsap.from(g.children, { y: 22, opacity: 0, duration: 1.0, stagger: 0.14, ease: 'power2.out', scrollTrigger: { trigger: g, start: 'top 85%', once: true } }));
+  gsap.utils.toArray('[data-parallax]').forEach(el => gsap.fromTo(el, { yPercent: -6 }, { yPercent: 6, ease: 'none', scrollTrigger: { trigger: el.parentElement, scrub: 0.6, start: 'top bottom', end: 'bottom top' } }));
+  gsap.utils.toArray('[data-count]').forEach(el => { const end = parseFloat(el.dataset.count), dec = +el.dataset.dec||0, o={v:0}; gsap.to(o, { v:end, duration:1.8, ease:'power1.out', onUpdate:()=>{ el.textContent = fmt(o.v,dec); }, scrollTrigger:{ trigger:el, start:'top 85%', once:true } }); });
+
+  const stage = document.querySelector('[data-story]');
+  if (stage && innerWidth > 900) {
+    const imgs = stage.querySelectorAll('.simg'), chs = stage.querySelectorAll('.ch'), dots = stage.querySelectorAll('.sdots i'); const n = imgs.length;
+    const tl = gsap.timeline({ scrollTrigger: { trigger: '.story', pin: stage, scrub: 0.9, start: 'top top', end: () => '+=' + innerHeight * (n + 0.5), onUpdate: s => { const i = Math.min(n-1, Math.floor(s.progress * n)); dots.forEach((d,k)=>d.classList.toggle('on', k===i)); } } });
+    imgs.forEach((im,i)=>{ tl.to(im.querySelector('img'), { scale: 1.0, duration: 1.4, ease: 'none' }, i*1.4);
+      if (i>0) { tl.to(imgs[i-1], { opacity: 0, duration: 0.45 }, i*1.4-0.2); tl.to(im, { opacity: 1, duration: 0.45 }, i*1.4-0.2); tl.to(chs[i-1], { opacity: 0, y: -16, duration: 0.3 }, i*1.4-0.3); tl.to(chs[i], { opacity: 1, y: 0, duration: 0.4 }, i*1.4-0.05); } });
+    tl.to({}, { duration: 0.5 });
+  }
+
+  const track = document.querySelector('[data-track]'), bar = document.querySelector('.gbar i'), gc = document.getElementById('gc');
+  if (track && innerWidth > 900) { const move = () => track.scrollWidth - innerWidth; const cnt = track.children.length;
+    gsap.to(track, { x: () => -move(), ease: 'none', scrollTrigger: { trigger: '.gallery', pin: true, scrub: 0.9, start: 'top top', end: () => '+=' + move(), invalidateOnRefresh: true,
+      onUpdate: s => { bar.style.width = (8 + s.progress*92) + '%'; gc.textContent = String(1 + Math.min(cnt-1, Math.round(s.progress*(cnt-1)))).padStart(2,'0'); } } }); }
+})();
+</script>
