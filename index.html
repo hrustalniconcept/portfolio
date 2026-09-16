@@ -75,6 +75,8 @@ h1{font:400 clamp(64px,10vw,168px)/.85 var(--head);letter-spacing:-.015em;text-t
 .cta .btn:hover{border-color:#fff}
 .footer{background:var(--deep);color:#fff;padding:24px var(--m) 32px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.2);font-size:12px}
 .footer .cap{margin:0;color:rgba(255,255,255,.55)}
+.footer .serv{display:flex;gap:6px 14px;flex-wrap:wrap;width:100%;margin-top:8px;color:rgba(255,255,255,.55)}
+.footer .serv a:hover{text-decoration:underline;text-underline-offset:4px}
 /* появление при скролле — только если есть JS */
 html.js .rv{opacity:0;transform:translateY(18px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.6,.2,1)}
 html.js .rv.in{opacity:1;transform:none}
@@ -118,12 +120,13 @@ html.js .rv.in{opacity:1;transform:none}
 </main>
 <section class="cta" id="contact"><div class="g">
   <h2 class="rv">Есть участок? Покажем, <em>что на нём строить и кому продавать</em></h2>
-  <div class="rv"><p>Пришлите границы участка или кадастровый номер — для первого разговора этого хватит. Мы сами девелоперы: 16 лет строим и продаём посёлки, поэтому считаем продукт так, как потом будем его продавать.</p><a class="btn" href="https://hrustalni.com">Обсудить участок <span aria-hidden="true">→</span></a></div>
+  <div class="rv"><p>Пришлите границы участка или кадастровый номер — для первого разговора этого хватит. Мы сами девелоперы: 16 лет строим и продаём посёлки, поэтому считаем продукт так, как потом будем его продавать.</p><a class="btn" href="https://hrustalni.com/audit">Обсудить участок <span aria-hidden="true">→</span></a></div>
 </div></section>
 <footer class="footer">
   <a class="logo" href="./"><svg viewBox="0 0 69 69" aria-hidden="true"><path d="M52.1687 68.9595L34.5 55.6875L16.8313 68.9595H0.121479L34.5 43.1347L68.8785 68.9595H52.1687Z"/><path d="M43.1347 34.5L68.9595 0.121479V16.8313L55.6875 34.5L68.9595 52.1687V68.8785L43.1347 34.5Z"/><path d="M16.8313 0.0404053L34.5 13.3124L52.1687 0.0404053H68.8785L34.5 25.8652L0.121479 0.0404053H16.8313Z"/><path d="M25.8652 34.5L0.0404053 68.8785V52.1687L13.3124 34.5L0.0404053 16.8313V0.121479L25.8652 34.5Z"/></svg>Хрустальный</a>
   <span class="cap">Концепт-бюро «Хрустальный» · концепция · визуализация</span>
   <a class="cap" href="https://hrustalni.com">hrustalni.com</a>
+  <div class="serv"><span>Услуги бюро:</span><a href="https://hrustalni.com/audit">Аудит участка</a> · <a href="https://hrustalni.com/audit-concept">Аудит концепции</a> · <a href="https://hrustalni.com/bestuse">Наилучшее использование</a> · <a href="https://hrustalni.com/proekt">Проектирование</a> · <a href="https://hrustalni.com/konsalting">Консалтинг</a> · <a href="https://hrustalni.com/services">Все услуги</a></div>
 </footer>
 <script>
 document.documentElement.classList.add('js');
@@ -144,4 +147,4 @@ document.documentElement.classList.add('js');
   addEventListener('scroll', upd, {passive:true}); upd();
 })();
 </script>
-<script src="nav.js?v=20260916b" defer></script>
+<script src="nav.js?v=20260917" defer></script>

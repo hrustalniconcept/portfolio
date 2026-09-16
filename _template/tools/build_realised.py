@@ -240,7 +240,7 @@ def render(p, lq, dims, all_projects):
 <footer class="footer">
   <a class="logo" href="#top" style="display:flex;align-items:center;gap:10px;font:400 18px/1 var(--head);text-transform:uppercase;letter-spacing:.04em"><svg viewBox="0 0 69 69" style="width:22px;height:22px;fill:currentColor" aria-hidden="true">{PATHS}</svg>Хрустальный</a>
   <span class="cap">{foot_cap}</span>
-  <span class="cap">hrustalni.com</span>
+  <a class="cap" href="https://hrustalni.com">hrustalni.com</a>
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
@@ -309,7 +309,7 @@ def render(p, lq, dims, all_projects):
   gsap.utils.toArray('[data-parallax]').forEach(el => gsap.fromTo(el, {{ yPercent: -6 }}, {{ yPercent: 6, ease: 'none', scrollTrigger: {{ trigger: el.parentElement, scrub: 0.6, start: 'top bottom', end: 'bottom top' }} }}));
 }})();
 </script>
-<script src="../nav.js?v=20260916b" data-slug="{p["slug"]}" defer></script>
+<script src="../nav.js?v=20260917" data-slug="{p["slug"]}" defer></script>
 '''
 
 for p in data["projects"]:

@@ -2,7 +2,34 @@
   "site": {
     "title": "Портфолио — Концепт-бюро «Хрустальный»",
     "home": "https://hrustalni.com",
-    "request": "#contact"
+    "request": "#contact",
+    "audit": "https://hrustalni.com/audit",
+    "services": [
+      {
+        "title": "Аудит участка",
+        "url": "https://hrustalni.com/audit"
+      },
+      {
+        "title": "Аудит концепции",
+        "url": "https://hrustalni.com/audit-concept"
+      },
+      {
+        "title": "Наилучшее использование",
+        "url": "https://hrustalni.com/bestuse"
+      },
+      {
+        "title": "Проектирование",
+        "url": "https://hrustalni.com/proekt"
+      },
+      {
+        "title": "Консалтинг",
+        "url": "https://hrustalni.com/konsalting"
+      },
+      {
+        "title": "Все услуги",
+        "url": "https://hrustalni.com/services"
+      }
+    ]
   },
   "categories": [
     {

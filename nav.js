@@ -27,6 +27,10 @@
 .pmenu .bottom a{color:inherit;text-decoration:none}
 .pmenu .bottom a:hover{text-decoration:underline;text-underline-offset:6px}
 body.menu-open{overflow:hidden}
+.pmenu .serv{display:flex;gap:6px 18px;flex-wrap:wrap;color:rgba(255,255,255,.75)}
+.pmenu .serv span{color:rgba(255,255,255,.45)}
+.footer .serv{display:flex;gap:6px 14px;flex-wrap:wrap;font:400 12px/1.5 Inter,Arial,sans-serif;color:#8A8A8A;width:100%;margin-top:8px}
+.footer .serv a:hover,.pmenu .serv a:hover{text-decoration:underline;text-underline-offset:4px}
 .more .lbl.rel{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#8A8A8A;margin:36px 0 0}
 `;
   const st = document.createElement('style'); st.textContent = css; document.head.appendChild(st);
@@ -45,7 +49,8 @@ body.menu-open{overflow:hidden}
       <div class="cols">${cats.map(c => { const list = byCat(c.id); return `<div><span class="lbl">${esc(c.title)}</span><div class="pl">${
         list.length ? list.map(p => `<a href="${href(p)}"${p.slug === slug ? ' class="cur" aria-current="page"' : ''}>${esc(p.title)}${p.year ? `<small>${p.year}</small>` : ''}</a>`).join('') : `<a class="all" href="${root}#${c.id}">скоро</a>`
       }${list.length ? `<a class="all" href="${root}#${c.id}">все ${esc(c.short.toLowerCase())} →</a>` : ''}</div></div>`; }).join('')}</div>
-      <div class="bottom"><a href="${root}">Всё портфолио</a><a href="${data.site.request}">Заявка</a><a href="${data.site.home}">hrustalni.com</a></div>`;
+      <div class="bottom"><a href="${root}">Всё портфолио</a><a href="${data.site.request}">Заявка</a><a href="${data.site.home}">hrustalni.com</a></div>
+      ${(data.site.services||[]).length ? `<div class="serv"><span>Услуги бюро:</span>${data.site.services.map(s => `<a href="${s.url}">${esc(s.title)}</a>`).join('')}</div>` : ''}`;
     document.body.appendChild(menu);
     const open = () => { menu.classList.add('open'); document.body.classList.add('menu-open'); };
     const close = () => { menu.classList.remove('open'); document.body.classList.remove('menu-open'); };
@@ -53,6 +58,13 @@ body.menu-open{overflow:hidden}
     menu.querySelectorAll('a').forEach(a => a.addEventListener('click', e => { if (a.getAttribute('href').startsWith('#')) close(); }));
     addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
     document.querySelectorAll('.burger').forEach(b => { b.removeAttribute('aria-hidden'); b.setAttribute('role', 'button'); b.setAttribute('tabindex', '0'); b.setAttribute('aria-label', 'Меню портфолио'); b.addEventListener('click', open); b.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); } }); });
+
+    /* ---- подвал: hrustalni.com ссылкой + услуги бюро ---- */
+    const foot = document.querySelector('.footer');
+    if (foot && (data.site.services||[]).length) {
+      foot.querySelectorAll('.cap').forEach(c => { if (c.textContent.trim() === 'hrustalni.com' && c.tagName !== 'A') { const a = document.createElement('a'); a.className = 'cap'; a.href = data.site.home; a.textContent = 'hrustalni.com'; c.replaceWith(a); } });
+      if (!foot.querySelector('.serv')) { const sv = document.createElement('div'); sv.className = 'serv'; sv.innerHTML = '<span>Услуги бюро:</span>' + data.site.services.map(s => `<a href="${s.url}">${esc(s.title)}</a>`).join(''); foot.appendChild(sv); }
+    }
 
     /* ---- «Другие проекты» на странице проекта ---- */
     const more = document.querySelector('[data-more]');
