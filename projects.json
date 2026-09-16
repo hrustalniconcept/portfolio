@@ -6,11 +6,6 @@
   },
   "categories": [
     {
-      "id": "built",
-      "title": "Реализованные проекты",
-      "short": "Реализовано"
-    },
-    {
       "id": "houses",
       "title": "Индивидуальные дома",
       "short": "Дома"
@@ -19,9 +14,76 @@
       "id": "settlements",
       "title": "Коттеджные посёлки",
       "short": "Посёлки"
+    },
+    {
+      "id": "built",
+      "title": "Реализованные проекты",
+      "short": "Реализовано"
     }
   ],
   "projects": [
+    {
+      "slug": "dom-v-sosnovom-boru",
+      "title": "Дом в сосновом бору",
+      "year": 2026,
+      "category": "houses",
+      "meta": "частный дом · 277,7 м²",
+      "cover": "dom-v-sosnovom-boru/assets/p02_threequarter",
+      "hover": "dom-v-sosnovom-boru/assets/p05_terrace",
+      "related": []
+    },
+    {
+      "slug": "rezidencia-xv",
+      "title": "Резиденция XV",
+      "year": 2020,
+      "category": "houses",
+      "meta": "индивидуальный дом для коттеджного посёлка · 270,5 м²",
+      "cover": "rezidencia-xv/assets/p02_threequarter",
+      "hover": "rezidencia-xv/assets/p05_terrace",
+      "related": [
+        "rezidencia-xv-poselok"
+      ]
+    },
+    {
+      "slug": "poselok-u-ozera",
+      "title": "Посёлок у озера",
+      "year": 2026,
+      "category": "settlements",
+      "meta": "концепция коттеджного посёлка · 18,3 га · 155 участков",
+      "cover": "poselok-u-ozera/assets/m_public",
+      "hover": "poselok-u-ozera/assets/m_bay",
+      "related": []
+    },
+    {
+      "slug": "lesnaya-rezidenciya",
+      "title": "Лесная резиденция",
+      "year": 2024,
+      "category": "settlements",
+      "meta": "концепция коттеджного посёлка · 7,06 га · 80 участков",
+      "cover": "lesnaya-rezidenciya/assets/m_public",
+      "hover": "lesnaya-rezidenciya/assets/m_evening",
+      "related": []
+    },
+    {
+      "slug": "poselok-v-sosnovom-lesu",
+      "title": "Посёлок в сосновом лесу",
+      "year": 2026,
+      "category": "settlements",
+      "meta": "концепция коттеджного посёлка · 15 га · 118 участков",
+      "cover": "poselok-v-sosnovom-lesu/assets/m_entrance",
+      "hover": "poselok-v-sosnovom-lesu/assets/m_park",
+      "related": []
+    },
+    {
+      "slug": "poselok-na-sklone",
+      "title": "Посёлок на склоне",
+      "year": 2024,
+      "category": "settlements",
+      "meta": "концепция коттеджного посёлка · 11 га · 146 участков",
+      "cover": "poselok-na-sklone/assets/m_park",
+      "hover": "poselok-na-sklone/assets/m_evening",
+      "related": []
+    },
     {
       "slug": "hrustalnyj",
       "title": "Хрустальный",
@@ -100,68 +162,6 @@
       "related": [
         "hrustalnyj"
       ]
-    },
-    {
-      "slug": "dom-v-sosnovom-boru",
-      "title": "Дом в сосновом бору",
-      "year": 2026,
-      "category": "houses",
-      "meta": "частный дом · 277,7 м²",
-      "cover": "dom-v-sosnovom-boru/assets/p02_threequarter",
-      "hover": "dom-v-sosnovom-boru/assets/p05_terrace",
-      "related": []
-    },
-    {
-      "slug": "rezidencia-xv",
-      "title": "Резиденция XV",
-      "year": 2020,
-      "category": "houses",
-      "meta": "индивидуальный дом для коттеджного посёлка · 270,5 м²",
-      "cover": "rezidencia-xv/assets/p02_threequarter",
-      "hover": "rezidencia-xv/assets/p05_terrace",
-      "related": [
-        "rezidencia-xv-poselok"
-      ]
-    },
-    {
-      "slug": "poselok-u-ozera",
-      "title": "Посёлок у озера",
-      "year": 2026,
-      "category": "settlements",
-      "meta": "концепция коттеджного посёлка · 18,3 га · 155 участков",
-      "cover": "poselok-u-ozera/assets/m_public",
-      "hover": "poselok-u-ozera/assets/m_bay",
-      "related": []
-    },
-    {
-      "slug": "lesnaya-rezidenciya",
-      "title": "Лесная резиденция",
-      "year": 2024,
-      "category": "settlements",
-      "meta": "концепция коттеджного посёлка · 7,06 га · 80 участков",
-      "cover": "lesnaya-rezidenciya/assets/m_public",
-      "hover": "lesnaya-rezidenciya/assets/m_evening",
-      "related": []
-    },
-    {
-      "slug": "poselok-v-sosnovom-lesu",
-      "title": "Посёлок в сосновом лесу",
-      "year": 2026,
-      "category": "settlements",
-      "meta": "концепция коттеджного посёлка · 15 га · 118 участков",
-      "cover": "poselok-v-sosnovom-lesu/assets/m_entrance",
-      "hover": "poselok-v-sosnovom-lesu/assets/m_park",
-      "related": []
-    },
-    {
-      "slug": "poselok-na-sklone",
-      "title": "Посёлок на склоне",
-      "year": 2024,
-      "category": "settlements",
-      "meta": "концепция коттеджного посёлка · 11 га · 146 участков",
-      "cover": "poselok-na-sklone/assets/m_park",
-      "hover": "poselok-na-sklone/assets/m_evening",
-      "related": []
     }
   ]
 }

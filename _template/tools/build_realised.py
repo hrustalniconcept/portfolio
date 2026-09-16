@@ -41,6 +41,7 @@ EXTRA_CSS = """
 .gal figure.w{grid-column:span 6}
 .gal figure img{width:100%;aspect-ratio:3/2;object-fit:cover;transform:scale(1.05);transition:transform 1.4s cubic-bezier(.2,.6,.2,1)}
 .gal figure.w img{aspect-ratio:21/10}
+.gal figure.v img{aspect-ratio:4/5}
 .gal figure:hover img{transform:scale(1)}
 .gal figcaption{padding:12px 0 0}
 @media(max-width:900px){.gallery .head{grid-column:1/-1}.gal figure,.gal figure.w{grid-column:span 6}.gal figure.w img{aspect-ratio:3/2}}
@@ -141,13 +142,17 @@ def render(p, lq, dims, all_projects):
   <div class="zones" data-stagger>{zones}</div>
 </div></section>'''
 
-    # gallery — все кадры, кроме полноэкранного
+    # gallery — кадры, которых нет в слайдере и на полноэкранной полосе
     figs = ""
     k = 0
+    shown = set(hero) | ({ev} if n > 1 else set())   # кадр показывается на странице один раз
+    total = n - len(shown)
     for i, (f, alt) in enumerate(photos, 1):
-        if i == ev and n > 1: continue
-        wide = (k % 5 == 0)
-        figs += f'<figure class="{"w" if wide else ""}">{img(f"p{i:02d}", alt, "(max-width:900px) 100vw, 46vw" if not wide else "92vw")}<figcaption class="cap">{e(alt)} · {e(capword)}</figcaption></figure>'
+        if i in shown: continue
+        wide = total == 1 or (total >= 3 and k % 5 == 0)
+        pw, ph = dims[f"p{i:02d}"]; portrait = ph > pw
+        if portrait or pw < 2000: wide = False
+        figs += f'<figure class="{"w" if wide else "v" if portrait else ""}">{img(f"p{i:02d}", alt, "(max-width:900px) 100vw, 46vw" if not wide else "92vw")}<figcaption class="cap">{e(alt)} · {e(capword)}</figcaption></figure>'
         k += 1
     gallery = f'''<section class="sec gallery stone" id="gallery"><div class="wrap grid">
   <div class="head"><span class="lbl rv">{"Фотографии" if is_photo else "Визуализации"}</span><h2 class="h2 rv" style="margin-top:14px">{"Как это <em>построено</em>" if is_photo else "Как это <em>задумано</em>"}</h2></div>
@@ -158,7 +163,7 @@ def render(p, lq, dims, all_projects):
     others = [q for q in all_projects if q["slug"] != p["slug"]][:2]
     more = "".join(f'<a class="mitem" href="../{q["slug"]}/"><span class="n">реализовано</span><span><span class="t">{e(q["title"])}</span><div class="cap">{e(q["index_meta"])}</div></span><span class="a">Смотреть →</span></a>' for q in others)
 
-    nav_links = f'<a href="../">Портфолио</a><a href="{first_link}">{"Генплан" if plans else "Факты"}</a><a href="#gallery">{"Фото" if is_photo else "Кадры"}</a><a href="#results">Результаты</a>'
+    nav_links = f'<a href="../">Портфолио</a><a href="{first_link}">{"Генплан" if plans else "Факты"}</a>' + (f'<a href="#gallery">{"Фото" if is_photo else "Кадры"}</a>' if k else '') + '<a href="#results">Результаты</a>'
     foot_cap = "Фотографии построенного посёлка · реализация" if is_photo else "Все изображения на странице — концепция · визуализация"
     desc = p["description"].split(". ")[0].rstrip(".") + "."
     caps_js = json.dumps(caps, ensure_ascii=False)
@@ -212,7 +217,7 @@ def render(p, lq, dims, all_projects):
 
 <section class="sec cta dark" id="contact"><div class="wrap grid">
   <div class="l">
-    <h2 class="h2 rv">Есть участок и межевание? Покажем, <em>что на нём продавать</em></h2>
+    <h2 class="h2 rv">Есть участок? Покажем, <em>что на нём строить и кому продавать</em></h2>
     <div class="rule rv"></div>
     <p class="txt rv">Пришлите кадастровую схему или просто границы участка. Мы сами девелоперы: считаем продукт так, как потом будем его продавать, а построенное обслуживает своя гарантийная служба.</p>
   </div>
