@@ -1,8 +1,20 @@
 {
-  "site": {"title": "Портфолио — Концепт-бюро «Хрустальный»", "home": "https://hrustalni.com", "request": "#contact"},
+  "site": {
+    "title": "Портфолио — Концепт-бюро «Хрустальный»",
+    "home": "https://hrustalni.com",
+    "request": "#contact"
+  },
   "categories": [
-    {"id": "houses", "title": "Индивидуальные дома", "short": "Дома"},
-    {"id": "settlements", "title": "Коттеджные посёлки", "short": "Посёлки"}
+    {
+      "id": "houses",
+      "title": "Индивидуальные дома",
+      "short": "Дома"
+    },
+    {
+      "id": "settlements",
+      "title": "Коттеджные посёлки",
+      "short": "Посёлки"
+    }
   ],
   "projects": [
     {
@@ -30,6 +42,15 @@
       "category": "settlements",
       "meta": "концепция коттеджного посёлка · 18,3 га · 155 участков",
       "cover": "poselok-u-ozera/assets/m_house_s.webp",
+      "related": []
+    },
+    {
+      "slug": "poselok-na-sklone",
+      "title": "Посёлок на склоне",
+      "year": 2024,
+      "category": "settlements",
+      "meta": "концепция коттеджного посёлка · 11 га · 146 участков",
+      "cover": "poselok-na-sklone/assets/s_house_s.webp",
       "related": []
     }
   ]
