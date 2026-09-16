@@ -1,0 +1,626 @@
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Посёлок в сосновом лесу</title>
+<meta name="description" content="Концепция коттеджного посёлка на 15 га в сосновом лесу у озера: из 43 участков — 118 лотов, пять типов домов, четыре ценовых пояса, прогулочная ось и туристический кластер у воды. Мастер-план, продукт и среда — Концепт-бюро «Хрустальный».">
+<meta property="og:title" content="Посёлок в сосновом лесу — Концепт-бюро «Хрустальный»">
+<meta property="og:description" content="Из 43 участков — 118 лотов. Земля переупакована в продукт: кому, какой дом, по какой цене и в каком порядке.">
+<meta property="og:image" content="assets/m_entrance.jpg">
+<meta property="og:type" content="article">
+<link rel="preload" as="image" href="assets/m_entrance.webp" imagesrcset="assets/m_entrance_s.webp 800w, assets/m_entrance_m.webp 1400w, assets/m_entrance.webp 2400w" imagesizes="(max-width:900px) 100vw, 92vw">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#FFFFFF;--stone:#F3F4F6;--ink:#1C1C1C;--navy:#072F50;--deep:#021825;--taupe:#8A8A8A;--white:#FFFFFF;--line:#D3D3D3;--wline:rgba(255,255,255,.2);--accent:#072F50;
+  --ink72:rgba(28,28,28,.72);--w70:rgba(255,255,255,.72);
+  --sans:'Inter','Inter Tight',Arial,sans-serif;--head:'Bebas Neue','Oswald',Impact,'Arial Narrow',sans-serif;
+  --m:clamp(24px,6vw,96px);--sec:clamp(120px,16vh,200px);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 16px/1.5 var(--sans);letter-spacing:-.01em;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:70;opacity:.025;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='160' height='160' filter='url(%23n)'/></svg>");mix-blend-mode:multiply}
+img,video{max-width:100%;display:block}
+img.ld{opacity:0;transition:opacity .9s ease}
+img.ld.in{opacity:1}
+a{color:inherit;text-decoration:none}
+p{margin:0}
+h1,h2,h3{margin:0;font-weight:400}
+.h1{font:400 clamp(64px,10vw,168px)/.86 var(--head);letter-spacing:-.015em;text-transform:uppercase;text-wrap:balance}
+.h2{font:400 clamp(40px,5.5vw,88px)/.98 var(--head);letter-spacing:-.01em;text-transform:uppercase;text-wrap:balance}
+.h2 em,.h1 em{font-style:normal;background:var(--navy);color:var(--white);padding:0 .12em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.dark .h2 em{background:var(--white);color:var(--navy)}
+.word{font:400 clamp(28px,3.2vw,44px)/1 var(--head);text-transform:uppercase;letter-spacing:.01em}
+.h3{font:400 clamp(22px,1.8vw,28px)/1 var(--head);text-transform:uppercase;letter-spacing:.01em}
+.lbl{font:500 11px/1.2 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--taupe)}
+.cap{font:400 13px/1.4 var(--sans);color:var(--taupe)}
+.txt{font:400 clamp(15px,1.1vw,17px)/1.5 var(--sans);color:var(--ink72);max-width:50ch}
+.rule{width:40px;height:1px;background:currentColor;opacity:.4;margin:22px 0 18px}
+.wrap{padding-inline:var(--m)}
+.sec{padding-block:var(--sec)}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);column-gap:clamp(16px,2vw,32px);row-gap:24px}
+.dark{background:linear-gradient(180deg,var(--navy) 0%,var(--deep) 100%);color:var(--white)}
+.dark .txt{color:var(--w70)}.dark .cap,.dark .lbl{color:rgba(255,255,255,.55)}
+.stone{background:var(--stone)}
+.dark .lbl{color:rgba(255,255,255,.6)}
+.arrow{display:inline-flex;align-items:center;gap:10px;font:400 18px/1 var(--head);text-transform:uppercase;letter-spacing:.02em}
+.arrow i{font-style:normal;display:inline-block;transition:transform .3s}
+.arrow:hover i{transform:translateX(4px)}
+.pill{display:inline-flex;align-items:center;gap:8px;border:1px solid currentColor;border-radius:3px;padding:12px 18px 10px;font:400 18px/1 var(--head);text-transform:uppercase;letter-spacing:.02em;background:transparent;color:inherit;cursor:pointer;transition:background .3s,color .3s}
+.pill:hover{background:var(--navy);color:var(--white)}
+.dark .pill:hover{background:var(--white);color:var(--ink)}
+.pill[aria-pressed="true"]{background:var(--navy);color:var(--white);border-color:var(--navy)}
+.dark .pill[aria-pressed="true"]{background:var(--white);color:var(--ink);border-color:var(--white)}
+.btn{display:inline-flex;align-items:center;gap:12px;background:var(--navy);color:var(--white);padding:16px 26px 14px;border-radius:3px;font:400 20px/1 var(--head);text-transform:uppercase;letter-spacing:.02em;border:0;cursor:pointer;transition:opacity .3s}
+.btn:hover{opacity:.85}
+.dark .btn{background:var(--white);color:var(--navy)}
+:focus-visible{outline:1px solid currentColor;outline-offset:4px}
+
+/* nav */
+.nav{position:fixed;inset:0 0 auto 0;z-index:40;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:22px var(--m) 30px;font:400 13px/1 var(--sans);color:var(--ink);transition:color .4s,background .4s;pointer-events:none;background:linear-gradient(180deg,rgba(255,255,255,.96) 55%,rgba(255,255,255,0))}
+.nav>*{pointer-events:auto}
+.nav.onphoto{color:var(--white);background:linear-gradient(180deg,rgba(2,24,37,.7) 55%,rgba(2,24,37,0))}
+.nav .logo{display:flex;align-items:center;gap:10px;font:400 18px/1 var(--head);letter-spacing:.04em;text-transform:uppercase}
+.nav .logo svg{width:26px;height:26px;fill:currentColor}
+.nav .links{display:flex;gap:28px}
+.nav .links a.is{text-decoration:underline;text-underline-offset:6px}
+.nav .right{display:flex;justify-content:flex-end;gap:28px;align-items:center}
+.burger{width:22px;height:12px;display:grid;gap:4px}
+.burger i{height:1px;background:currentColor;display:block}
+@media(max-width:900px){.nav .links{display:none}.nav{grid-template-columns:1fr auto}}
+
+/* hero */
+.hero{position:relative;padding:calc(26px + 11vh) var(--m) 0;min-height:100svh;overflow:visible}
+.hero .meta{display:flex;gap:clamp(24px,8vw,140px);align-items:baseline}
+.hero .title{margin-top:clamp(30px,3.2vw,48px);max-width:11ch;position:relative;z-index:2}
+.hero .meta{max-width:calc(100% - 180px)}
+.hero .counter{position:absolute;right:var(--m);top:calc(26px + 11vh + 8px);text-align:right;z-index:2}
+.hero .counter .n{font:400 clamp(32px,3vw,44px)/1 var(--head)}
+.hero .counter .n small{font-size:14px;font-weight:400;color:var(--taupe);margin-left:6px}
+.hero .dots{display:grid;gap:6px;justify-items:end;margin-top:20px}
+.hero .dots button{width:22px;height:22px;padding:0;border:0;background:transparent;cursor:pointer;display:grid;place-items:center}
+.hero .dots button::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--line);transition:transform .3s,background .3s}
+.hero .dots button.on::before{background:var(--navy);transform:scale(1.5)}
+.hero .dots button:hover::before{background:var(--navy)}
+.hero .see{margin-top:clamp(28px,5vh,56px);position:relative;z-index:2}
+.hero .social{position:absolute;left:var(--m);bottom:14vh;display:grid;gap:14px;z-index:2}
+.hero .social a{font:400 11px/1 var(--sans);letter-spacing:.18em;color:var(--taupe);writing-mode:vertical-rl}
+.hero .photo{position:relative;margin:clamp(-40px,-6vw,-96px) calc(var(--m) * -1) 0 clamp(120px,22vw,420px);height:min(78vh,880px);overflow:hidden}
+.hero .photo .sl{position:absolute;inset:0;opacity:0;transition:opacity 1.1s ease}
+.hero .photo .sl.on{opacity:1}
+.hero .photo img{width:100%;height:100%;object-fit:cover;object-position:center 45%;transform:scale(1.08)}
+.hero .photo .sl.on img{animation:kb 7s cubic-bezier(.2,.6,.2,1) forwards}
+@keyframes kb{to{transform:scale(1)}}
+.hero .photo{cursor:pointer}
+.slnav{position:absolute;top:50%;transform:translateY(-50%);width:48px;height:48px;border:1px solid rgba(255,255,255,.6);border-radius:3px;background:rgba(2,24,37,.35);color:#fff;font:400 22px/1 var(--head);cursor:pointer;opacity:0;transition:opacity .3s,background .3s;backdrop-filter:blur(4px)}
+.slnav.prev{left:20px}.slnav.next{right:20px}
+.hero .photo:hover .slnav,.slnav:focus-visible{opacity:1}
+.slnav:hover{background:rgba(2,24,37,.7)}
+.slbar{position:absolute;left:0;right:0;bottom:0;height:2px;background:rgba(255,255,255,.25)}
+.slbar i{display:block;height:100%;width:0;background:#fff}
+.slbar i.run{animation:slbar 6s linear forwards}
+@keyframes slbar{to{width:100%}}
+@media(pointer:coarse){.slnav{opacity:1;background:rgba(2,24,37,.5)}}
+.hero .photo .cap{position:absolute;left:24px;bottom:22px;color:var(--white);opacity:.85;text-shadow:0 1px 12px rgba(0,0,0,.35)}
+@media(max-width:900px){.hero .meta{max-width:none}.hero{padding-top:calc(26px + 14vh)}.hero .counter{position:static;text-align:left;margin-top:16px}.hero .dots{justify-items:start;display:flex}.hero .social{display:none}.hero .photo{margin:24px calc(var(--m) * -1) 0;height:64vh}}
+
+/* metrics */
+.metrics{grid-column:1/-1;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:clamp(64px,9vh,112px);border-top:1px solid var(--ink);padding-top:28px}
+.metric .n{font:400 clamp(44px,5vw,80px)/1 var(--head);letter-spacing:0;font-variant-numeric:tabular-nums}
+.metric .n small{font-size:.4em;letter-spacing:0;margin-left:6px;color:var(--taupe)}
+.metric .cap{margin-top:10px}
+@media(max-width:900px){.metrics{grid-template-columns:1fr 1fr}}
+
+/* story */
+.story{position:relative;background:var(--deep);color:var(--white)}
+.stage{position:relative;height:100svh;min-height:600px;overflow:hidden}
+.simg{position:absolute;inset:0;opacity:0}
+.simg:first-child{opacity:1}
+.simg img{width:100%;height:100%;object-fit:cover;transform:scale(1.08)}
+.sgrad{position:absolute;inset:0;background:linear-gradient(180deg,rgba(2,24,37,0) 45%,rgba(2,24,37,.6) 100%)}
+.ch{position:absolute;left:var(--m);right:var(--m);bottom:clamp(40px,9vh,96px);opacity:0;transform:translateY(20px);display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px;align-items:end}
+.ch:first-of-type{opacity:1;transform:none}
+.ch .w{grid-column:1/8}
+.ch .w .word{display:block}
+.ch .w .txt{margin-top:14px;color:var(--w70)}
+.ch .c{grid-column:9/13;text-align:right;font:400 40px/1 var(--head)}
+.ch .c small{font-size:14px;font-weight:400;opacity:.6;margin-left:6px}
+.sdots{position:absolute;right:var(--m);top:50%;transform:translateY(-50%);display:grid;gap:12px}
+.sdots i{width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,.35);display:block}
+.sdots i.on{background:var(--white)}
+.sfall{display:none}
+@media(max-width:900px),(pointer:coarse){.stage,.sdots{display:none}.sfall{display:block;padding-block:var(--sec)}.sfall figure{margin:0 0 40px}.sfall img{width:100%;height:60vh;object-fit:cover}.sfall figcaption{padding:16px 0 0}.ch .w,.ch .c{grid-column:1/-1}.ch .c{text-align:left}}
+
+/* plan (stone) — генплан со слоями */
+.plan .head{grid-column:1/8}
+.plan .state{grid-column:1/5;margin-top:clamp(40px,6vh,72px);align-self:end}
+.plan .state .txt{margin-top:12px;font-size:15px}
+.plan .tog{grid-column:5/13;display:flex;gap:8px;flex-wrap:wrap;margin-top:clamp(40px,6vh,72px);align-self:end;justify-content:flex-end}
+.plan .tog .pill{padding:10px 14px 8px;font-size:16px}
+.plan .tog .sep{width:1px;height:28px;background:var(--line);margin:0 6px;align-self:center}
+.plan .doc{grid-column:1/-1;position:relative;aspect-ratio:3/2;background:var(--white);border:1px solid var(--line);margin-top:8px}
+.plan .doc img{width:100%;height:100%;object-fit:contain;position:absolute;inset:0;opacity:0;transition:opacity .7s ease}
+.plan .doc img.on{opacity:1}
+.plan .doc .cap{position:absolute;right:0;bottom:-24px}
+.plan .lists{grid-column:1/-1;margin-top:32px}
+.plan .lists .rooms{display:grid;grid-template-columns:repeat(3,1fr);gap:0 clamp(24px,4vw,64px)}
+.plan .lists .rooms[hidden]{display:none}
+.zones{grid-column:1/-1;margin-top:clamp(48px,7vh,80px);display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(24px,4vw,64px)}
+.zone{border-top:1px solid var(--ink);padding-top:18px}
+.zone .h3{font-size:24px}
+.zone .txt{margin-top:10px;font-size:15px}
+.rooms{margin-top:16px;display:grid;gap:4px;font:400 13px/1.5 var(--sans)}
+.rooms span{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);padding:5px 0;color:var(--ink72)}
+.rooms b{font-weight:500;color:var(--ink);font-variant-numeric:tabular-nums;white-space:nowrap}
+.total{grid-column:1/-1;display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:12px;border-top:1px solid var(--ink);padding-top:22px;margin-top:8px}
+.total .n{font:400 clamp(44px,5vw,72px)/1 var(--head);font-variant-numeric:tabular-nums}
+.total .cap{max-width:56ch}
+@media(max-width:900px){.plan .head,.plan .state,.plan .tog{grid-column:1/-1}.plan .tog{justify-content:flex-start;margin-top:16px}.plan .lists .rooms{grid-template-columns:1fr}.zones{grid-template-columns:1fr}}
+
+/* phases — очереди */
+.phases .head{grid-column:1/7}
+.phases .side{grid-column:8/13;align-self:end}
+.bars{grid-column:1/-1;margin-top:clamp(40px,6vh,72px);display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(12px,2vw,32px);align-items:end;border-bottom:1px solid var(--ink);padding-bottom:0}
+.bar{display:grid;gap:14px;align-content:end}
+.bar .k{font:400 clamp(28px,3vw,44px)/1 var(--head);font-variant-numeric:tabular-nums}
+.bar .col{background:var(--navy);width:100%;transform-origin:bottom;height:calc(var(--h) * 1px)}
+.bar .cap{padding-bottom:0}
+.blegend{grid-column:1/-1;display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(12px,2vw,32px);padding-top:16px}
+.blegend div{font:400 13px/1.5 var(--sans);color:var(--ink72)}
+.blegend b{display:block;font:400 22px/1 var(--head);color:var(--ink);text-transform:uppercase;margin-bottom:6px}
+@media(max-width:900px){.phases .head,.phases .side{grid-column:1/-1}.bar .col{height:calc(var(--h) * .5px)}.blegend{grid-template-columns:1fr 1fr}}
+
+/* houses — сетка типов */
+.houses .head{grid-column:1/8}
+.hgrid{grid-column:1/-1;display:grid;grid-template-columns:repeat(6,1fr);gap:clamp(24px,3vw,48px) 24px;margin-top:clamp(40px,6vh,72px)}
+.hc{grid-column:span 2}
+.hc:nth-child(4),.hc:nth-child(5){grid-column:span 3}
+.hc figure{margin:0;aspect-ratio:16/9;overflow:hidden;position:relative;background:var(--white);cursor:pointer}
+.hc img{width:100%;height:100%;object-fit:cover;transform:scale(1.05);transition:transform 1.4s cubic-bezier(.2,.6,.2,1),opacity .6s ease}
+.hc:hover img.ren{transform:scale(1)}
+.hc img.pl{position:absolute;inset:0;object-fit:contain;transform:none;opacity:0;padding:4%}
+.hc.plan img.ren{opacity:0}
+.hc.plan img.pl{opacity:1}
+.hc .capline .arrow{background:none;border:0;padding:0;cursor:pointer;color:inherit;white-space:nowrap}
+.hc .capline{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding-top:14px}
+.hc .capline .h3{font-size:24px}
+.hc .capline .cap{margin-top:4px}
+.hc .lbl{white-space:nowrap}
+@media(max-width:900px){.houses .head{grid-column:1/-1}.hgrid{grid-template-columns:1fr 1fr}.hc,.hc:nth-child(4),.hc:nth-child(5){grid-column:span 1}.hc .capline{flex-wrap:wrap}}
+@media(max-width:560px){.hgrid{grid-template-columns:1fr}}
+
+/* evening full-bleed */
+.evening{position:relative;height:min(100svh,960px);min-height:560px;overflow:hidden;background:var(--deep);color:var(--white)}
+.evening .bg{position:absolute;inset:-8% 0;will-change:transform}
+.evening img{width:100%;height:100%;object-fit:cover;object-position:center 45%}
+.evening .g{position:absolute;inset:0;background:linear-gradient(90deg,rgba(2,24,37,.6) 0%,rgba(2,24,37,0) 60%)}
+.evening .t{position:absolute;left:var(--m);right:var(--m);top:50%;transform:translateY(-50%)}
+.evening .h2{max-width:14ch}
+.evening .txt{margin-top:22px;color:var(--w70)}
+
+/* details — среда */
+.details .head{grid-column:1/7}
+.dgrid{grid-column:1/-1;display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,3vw,48px);margin-top:clamp(40px,6vh,72px)}
+.d figure{margin:0;aspect-ratio:4/5;overflow:hidden}
+.d img{width:100%;height:100%;object-fit:cover;transform:scale(1.05);transition:transform 1.4s cubic-bezier(.2,.6,.2,1)}
+.d:hover img{transform:scale(1)}
+.d .capline{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding-top:14px}
+.d .capline .h3{font-size:22px}
+.d:nth-child(3n+2){margin-top:clamp(24px,5vw,72px)}
+@media(max-width:900px){.details .head{grid-column:1/-1}.dgrid{grid-template-columns:1fr 1fr}.d:nth-child(3n+2){margin-top:0}}
+@media(max-width:560px){.dgrid{grid-template-columns:1fr}}
+
+/* film (dark) */
+.film{position:relative;min-height:100svh;overflow:hidden}
+.film .bg{position:absolute;inset:-8% 0;will-change:transform}
+.film .bg img{width:100%;height:100%;object-fit:cover;object-position:center 40%;opacity:.38}
+.film>.in{position:relative;padding:calc(var(--sec)*.7) var(--m);display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px;align-items:center;min-height:100svh}
+.film .l{grid-column:1/8}
+.film .l .word{color:var(--white)}
+.film .l .txt{margin-top:18px}
+.film .l .lbl{margin-top:28px;display:block}
+.film .r{grid-column:9/12;justify-self:center;width:min(100%,340px)}
+.film video{width:100%;aspect-ratio:9/16;object-fit:cover;background:#000;border:1px solid var(--wline)}
+.film .ctrls{display:flex;gap:10px;margin-top:16px;justify-content:flex-end}
+.pairs{margin-top:28px;display:grid;gap:0;font:400 13px/1.5 var(--sans);max-width:60ch}
+.pairs span{display:grid;grid-template-columns:1fr auto;gap:16px;padding:8px 0;border-bottom:1px solid var(--wline);color:var(--w70)}
+.pairs span b{font-weight:400;color:var(--white);white-space:nowrap}
+@media(max-width:900px){.film .l,.film .r{grid-column:1/-1}.film .r{justify-self:start}.film .bg img{opacity:.16}
+.sgrid{grid-template-columns:repeat(3,1fr);align-items:start}.sgrid.four{grid-template-columns:repeat(4,1fr)}.sgrid.four .h3{font-size:18px}.sgrid.four .cap{font-size:12px}
+@media(max-width:900px){.sgrid,.sgrid.four{grid-template-columns:1fr 1fr}}.pairs span{grid-template-columns:1fr;gap:2px}}
+
+/* process */
+.process .head{grid-column:1/8}
+.pline{grid-column:1/-1;list-style:none;margin:clamp(40px,6vh,72px) 0 0;padding:32px 0 0;display:grid;grid-template-columns:repeat(7,1fr);gap:16px;border-top:1px solid var(--ink);position:relative}
+.pline li{position:relative;padding-top:18px}
+.pline li::before{content:"";position:absolute;left:0;top:-37px;width:9px;height:9px;border-radius:50%;background:var(--ink)}
+.pline li.next::before{background:var(--paper);border:1px solid var(--ink);width:7px;height:7px}
+.pline b{display:block;font:400 22px/1 var(--head);text-transform:uppercase;letter-spacing:.01em}
+.pline span{display:block;margin-top:8px;font:400 13px/1.4 var(--sans);color:var(--taupe)}
+@media(max-width:900px){.process .head{grid-column:1/-1}.pline{grid-template-columns:repeat(2,1fr)}.pline li::before{display:none}}
+
+/* specs (paper) */
+.specs .head{grid-column:1/8}
+.sgrid{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vh,56px) 24px;margin-top:clamp(40px,6vh,72px)}
+.sch{margin:0;background:var(--white);border:1px solid var(--line)}
+.sch.wide{grid-column:1/-1}
+.sch img{width:100%;height:auto;display:block}
+.sch figcaption{padding:14px 16px 16px;border-top:1px solid var(--line)}
+.sch .h3{font-size:22px}
+.sch .cap{margin-top:4px}
+@media(max-width:900px){.specs .head{grid-column:1/-1}.sgrid{grid-template-columns:1fr}}
+.row{display:grid;grid-template-columns:200px 1fr;gap:20px;padding:14px 0;border-bottom:1px solid var(--line);font:400 15px/1.5 var(--sans)}
+.row span:first-child{color:var(--taupe)}
+
+/* cta (dark) */
+.cta .l{grid-column:1/7}
+.cta form{grid-column:8/13;align-self:end;display:grid;gap:26px}
+.f{display:grid;gap:8px}
+.f label{font:400 11px/1.2 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.55)}
+.f input{background:transparent;border:0;border-bottom:1px solid rgba(255,255,255,.3);color:var(--white);font:400 16px/1.4 var(--sans);padding:10px 0;border-radius:0;outline:0}
+.f input::placeholder{color:rgba(255,255,255,.35)}
+.f input:focus{border-color:var(--white)}
+.f.err input{border-color:#D98A6B}
+.f .msg{font-size:12px;color:#D98A6B;min-height:1em}
+.consent{font-size:12px;color:rgba(255,255,255,.45);max-width:44ch}
+.success .h2{font-size:48px}
+@media(max-width:900px){.cta .l,.cta form{grid-column:1/-1}}
+
+/* footer */
+.footer{padding:40px var(--m);display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:baseline;border-top:1px solid var(--line)}
+
+/* motion helpers */
+.rv{will-change:transform,opacity}
+@media(max-width:900px),(pointer:coarse){body::after{display:none}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.hero .photo img{transform:none}}
+.more .mlist{border-top:1px solid var(--line);margin-top:24px}
+.mitem{display:grid;grid-template-columns:96px 1fr auto;gap:24px;align-items:baseline;padding:22px 0;border-bottom:1px solid var(--line);text-decoration:none;color:inherit}
+.mitem .n{font:400 12px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--taupe)}
+.mitem .t{font:400 clamp(24px,3vw,40px)/1 var(--head);text-transform:uppercase}
+.mitem .a{font:400 18px/1 var(--head);text-transform:uppercase;transition:transform .3s}
+.mitem:hover .a{transform:translateX(4px)}
+@media(max-width:560px){.mitem{grid-template-columns:1fr auto}.mitem .n{display:none}}
+
+/* type cards without render, vertical image in dark band */
+.hc .tcard{background:var(--stone);display:grid;place-items:center;border:1px solid var(--line)}
+.hc .tcard span{font:400 clamp(72px,8vw,128px)/1 var(--head);color:var(--navy);letter-spacing:-.02em}
+.film .bg img{opacity:.16}
+.sgrid{grid-template-columns:repeat(3,1fr);align-items:start}.sgrid.four{grid-template-columns:repeat(4,1fr)}.sgrid.four .h3{font-size:18px}.sgrid.four .cap{font-size:12px}
+@media(max-width:900px){.sgrid,.sgrid.four{grid-template-columns:1fr 1fr}}
+.film .r img.vert{width:100%;aspect-ratio:4/5;object-fit:cover;border:1px solid var(--wline)}
+.pgrid{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:clamp(32px,5vh,56px)}
+.pgrid figure{margin:0}.pgrid img{width:100%;aspect-ratio:3/2;object-fit:cover}.pgrid figcaption{padding-top:12px}
+@media(max-width:900px){.pgrid{grid-template-columns:1fr}}
+</style>
+
+<header class="nav" id="nav">
+  <a class="logo" href="../"><svg viewBox="0 0 69 69" aria-hidden="true"><path d="M52.1687 68.9595L34.5 55.6875L16.8313 68.9595H0.121479L34.5 43.1347L68.8785 68.9595H52.1687Z"/><path d="M43.1347 34.5L68.9595 0.121479V16.8313L55.6875 34.5L68.9595 52.1687V68.8785L43.1347 34.5Z"/><path d="M16.8313 0.0404053L34.5 13.3124L52.1687 0.0404053H68.8785L34.5 25.8652L0.121479 0.0404053H16.8313Z"/><path d="M25.8652 34.5L0.0404053 68.8785V52.1687L13.3124 34.5L0.0404053 16.8313V0.121479L25.8652 34.5Z"/></svg>Хрустальный</a>
+  <nav class="links" aria-label="Разделы"><a href="../">Портфолио</a><a href="#plan">Генплан</a><a href="#env">Среда</a><a href="#houses">Дома</a></nav>
+  <div class="right"><a href="#contact">Заявка</a><button class="burger" type="button" aria-label="Меню портфолио"><i></i><i></i><i></i></button></div>
+</header>
+
+<section class="hero" id="top">
+  <div class="meta"><span class="lbl" data-line>2026</span><span class="lbl" data-line>Коттеджный посёлок · 15 га в сосновом лесу у озера · 30 минут от города-миллионника</span></div>
+  <h1 class="h1 title" data-line>Посёлок в сосновом лесу</h1>
+  <div class="counter" data-line><div class="n"><span id="slnum">01</span><small>/ 04</small></div><div class="dots" role="tablist" aria-label="Кадры"><button class="on" type="button" aria-label="Кадр 1"></button><button type="button" aria-label="Кадр 2"></button><button type="button" aria-label="Кадр 3"></button><button type="button" aria-label="Кадр 4"></button></div></div>
+  <a class="arrow see" href="#plan" data-line>Смотреть проект <i>→</i></a>
+  <div class="social" aria-hidden="true"><a href="#">instagram</a><a href="#">telegram</a></div>
+  <div class="photo" data-hero-photo data-slider>
+    <div class="sl on"><img data-lqip="m_entrance" src="assets/m_entrance.webp" srcset="assets/m_entrance_s.webp 800w, assets/m_entrance_m.webp 1400w, assets/m_entrance.webp 2400w" sizes="(max-width:900px) 100vw, 92vw" alt="Въездная группа: КПП с кафе-ресепшн, шлагбаум, каменная стела, закат" fetchpriority="high"></div>
+    <div class="sl"><img data-lqip="m_park" data-src="assets/m_park.webp" data-srcset="assets/m_park_s.webp 800w, assets/m_park_m.webp 1400w, assets/m_park.webp 2400w" sizes="(max-width:900px) 100vw, 92vw" alt="Детская площадка в тени сосен между участками, вечер" loading="lazy"></div>
+    <div class="sl"><img data-lqip="m_stelas" data-src="assets/m_stelas.webp" data-srcset="assets/m_stelas_s.webp 800w, assets/m_stelas_m.webp 1400w, assets/m_stelas.webp 2400w" sizes="(max-width:900px) 100vw, 92vw" alt="Въездная группа со стороны стел: гостевая парковка, шлагбаум, консольная кровля" loading="lazy"></div>
+    <div class="sl"><img data-lqip="m_shore" data-src="assets/m_shore.webp" data-srcset="assets/m_shore_s.webp 800w, assets/m_shore_m.webp 1400w, assets/m_shore.webp 2400w" sizes="(max-width:900px) 100vw, 92vw" alt="Берег озера у стеклянного кафе, пара у воды на закате" loading="lazy"></div>
+    <span class="cap" id="slcap">Въездная группа · концепция · визуализация</span>
+    <button class="slnav prev" type="button" aria-label="Предыдущий кадр">←</button>
+    <button class="slnav next" type="button" aria-label="Следующий кадр">→</button>
+    <div class="slbar" aria-hidden="true"><i></i></div>
+  </div>
+</section>
+
+<section class="sec" id="place"><div class="wrap grid">
+  <div class="head" style="grid-column:1/8">
+    <span class="word rv">Место</span>
+    <h2 class="h2 rv" style="margin-top:14px">Сосновый лес <em>и озеро</em></h2>
+    <div class="rule rv"></div>
+    <p class="txt rv">Зрелый сосновый массив на всей территории, озеро на юге, тридцать минут от города-миллионника. Лес и вода — главное, что здесь есть, и главное, что рынок вокруг не умеет продавать.</p>
+  </div>
+  <div class="pgrid" data-stagger>
+    <figure><img data-lqip="l_meadow" src="assets/l_meadow.webp" srcset="assets/l_meadow_s.webp 800w, assets/l_meadow_m.webp 1400w, assets/l_meadow.webp 2400w" sizes="(max-width:900px) 100vw, 46vw" alt="Лесная поляна утром, дорога уходит в сосновый лес" loading="lazy"><figcaption class="cap">Опушка на подъезде к территории</figcaption></figure>
+    <figure><img data-lqip="l_lake" src="assets/l_lake.webp" srcset="assets/l_lake_s.webp 800w, assets/l_lake_m.webp 1400w, assets/l_lake.webp 2400w" sizes="(max-width:900px) 100vw, 46vw" alt="Озеро в тумане среди сосен" loading="lazy"><figcaption class="cap">Озеро на южной границе участка</figcaption></figure>
+  </div>
+</div></section>
+
+<section class="sec plan stone" id="plan"><div class="wrap grid">
+  <div class="head">
+    <h2 class="h2 rv">Из 43 участков — <em>118 лотов</em></h2>
+    <div class="rule rv"></div>
+    <p class="txt rv">К нам пришли с 15 гектарами соснового леса у озера: 43 участка от 10 до 77 соток, четверть территории под дорогами, грунтовый подъезд. Вопрос был один — что здесь продастся. Мы ответили, кому, какой дом, по какой цене и в каком порядке.</p>
+  </div>
+  <div class="state rv">
+    <span class="word" data-state-word>Было</span>
+    <p class="txt" data-state-txt>43 участка от 981 до 7 760 м² в существующих границах. Дороги — 43 162 м². Продукта, среды и очерёдности нет.</p>
+  </div>
+  <div class="tog rv" role="group" aria-label="Было и стало">
+    <button class="pill" type="button" data-layer="before" aria-pressed="true">Было</button>
+    <button class="pill" type="button" data-layer="masterplan" aria-pressed="false">Стало</button>
+    <span class="sep" aria-hidden="true"></span>
+    <button class="pill" type="button" data-layer="zoning" aria-pressed="false">Зонирование</button>
+    <button class="pill" type="button" data-layer="price" aria-pressed="false">Ценовые пояса</button>
+    <button class="pill" type="button" data-layer="sizes" aria-pressed="false">Размеры участков</button>
+    <button class="pill" type="button" data-layer="routes" aria-pressed="false">Маршруты</button>
+  </div>
+  <div class="doc rv">
+    <img data-layer-img="before" class="on" data-lqip="before" src="assets/before.webp" srcset="assets/before_s.webp 800w, assets/before_m.webp 1400w, assets/before.webp 2400w" sizes="(max-width:900px) 100vw, 92vw" alt="Исходное межевание: 43 крупных участка, широкие дороги, без среды" loading="lazy">
+    <img data-layer-img="masterplan" src="assets/masterplan.webp" srcset="assets/masterplan_s.webp 800w, assets/masterplan_m.webp 1400w, assets/masterplan.webp 2400w" sizes="(max-width:900px) 100vw, 92vw" alt="Генплан: 118 участков, прогулочная ось по лесу, лесной парк и кластер у озера">
+    <img data-layer-img="zoning" data-src="assets/zoning.webp" data-srcset="assets/zoning_s.webp 800w, assets/zoning_m.webp 1400w, assets/zoning.webp 2400w" sizes="(max-width:900px) 100vw, 92vw" alt="Функциональное зонирование: жильё, дороги, лесной парк, ось, кластер, въезд" loading="lazy">
+    <img data-layer-img="price" data-src="assets/price.webp" data-srcset="assets/price_s.webp 800w, assets/price_m.webp 1400w, assets/price.webp 2400w" sizes="(max-width:900px) 100vw, 92vw" alt="Четыре ценовых пояса: у воды и леса, у оси и парка, базовые, у въезда" loading="lazy">
+    <img data-layer-img="sizes" data-src="assets/sizes.webp" data-srcset="assets/sizes_s.webp 800w, assets/sizes_m.webp 1400w, assets/sizes.webp 2400w" sizes="(max-width:900px) 100vw, 92vw" alt="Размеры участков от 7 до 11 и более соток" loading="lazy">
+    <img data-layer-img="routes" data-src="assets/routes.webp" data-srcset="assets/routes_s.webp 800w, assets/routes_m.webp 1400w, assets/routes.webp 2400w" sizes="(max-width:900px) 100vw, 92vw" alt="Маршруты: улицы, пешеходная ось, лесной парк, озеро" loading="lazy">
+    <span class="cap" data-state-cap>исходное межевание</span>
+  </div>
+  <div class="lists rv">
+    <div class="rooms" data-list="before"><span>Территория<b>15 га, сосновый лес и озеро</b></span><span>Межевание<b>43 участка · 10–77 соток</b></span><span>Дороги<b>43 162 м² · 27 %</b></span><span>Подъезд<b>3,3 км грунта</b></span><span>Продукт<b>нет</b></span><span>Среда<b>нет</b></span></div>
+    <div class="rooms" data-list="after" hidden><span>Продукт<b>5 типов домов · XS–XL</b></span><span>Участки<b>118 · средний 8,3 сотки</b></span><span>Дороги<b>18 474 м² · вдвое меньше</b></span><span>Среда<b>лесной парк, ось 650 м, кластер у озера</b></span><span>Цена<b>4 пояса по месту</b></span><span>Очерёдность<b>определена, кластер открывает продажи</b></span></div>
+  </div>
+  <div class="metrics" data-stagger>
+    <div class="metric"><div class="n"><span data-count="15">15</span><small>га</small></div><div class="cap">зрелый сосновый лес, озеро на юге</div></div>
+    <div class="metric"><div class="n"><span data-count="118">118</span></div><div class="cap">участков, 105 доступны к освоению сразу</div></div>
+    <div class="metric"><div class="n"><span data-count="62">62</span><small>%</small></div><div class="cap">территории — жильё, остальное работает на среду</div></div>
+    <div class="metric"><div class="n"><span data-count="12">12</span><small>%</small></div><div class="cap">дороги — было 27 %</div></div>
+  </div>
+  <div class="zones" data-stagger>
+    <div class="zone"><div class="h3">Зонирование</div><p class="txt">Лес остаётся на участках и между ними. Рынок вокруг продаёт землю под самострой; готового дома в едином коде и среды с водой и лесом внутри здесь не было.</p>
+      <div class="rooms"><span>Жилая застройка<b>99 685 м²</b></span><span>Средний участок<b>835 м² · 8,3 сотки</b></span><span>Средний дом<b>около 115 м²</b></span></div></div>
+    <div class="zone"><div class="h3">Три места</div><p class="txt">Лесной парк со спортом, прогулочная ось по лесу между участками и туристический кластер на берегу: зеркальные дома, кафе, баня, пляж.</p>
+      <div class="rooms"><span>Лесной парк со спортом<b>15 930 м²</b></span><span>Прогулочная ось<b>9 964 м² · 650 м</b></span><span>Глэмпинг и кафе<b>9 243 м²</b></span></div></div>
+    <div class="zone"><div class="h3">Движение</div><p class="txt">Пять профилей улиц от 10 до 15 метров. От любого участка к озеру — по лесной оси, пешком или на велосипеде. Въезд с КПП и офисом управляющей компании.</p>
+      <div class="rooms"><span>Профилей улиц<b>5 · 10–15 м</b></span><span>Пешеходные дорожки в лесу<b>6 051 м²</b></span><span>Въезд, КПП, УК<b>1 251 м²</b></span></div></div>
+  </div>
+</div></section>
+
+<section class="sec phases" id="price"><div class="wrap grid">
+  <div class="head">
+    <h2 class="h2 rv">Цену задаёт <em>место</em></h2>
+    <div class="rule rv"></div>
+    <p class="txt rv">Не линейка домов, а вид, тишина и близость к воде и лесу. Одна и та же площадь продаётся дороже там, где сильнее эмоция.</p>
+  </div>
+  <div class="side rv"><p class="txt">У въезда — точка входа со скидкой, у оси и парка — небольшая премия, у воды и леса — до 20 % к базе. Участки не конкурируют друг с другом, а закрывают разные бюджеты.</p></div>
+  <div class="bars" data-stagger>
+    <div class="bar"><span class="k">×0,90</span><div class="col" style="--h:108"></div></div>
+    <div class="bar"><span class="k">×1,00</span><div class="col" style="--h:120"></div></div>
+    <div class="bar"><span class="k">×1,05–1,10</span><div class="col" style="--h:132"></div></div>
+    <div class="bar"><span class="k">×1,15–1,20</span><div class="col" style="--h:144"></div></div>
+  </div>
+  <div class="blegend rv">
+    <div><b>У въезда</b>точка входа в проект · первые продажи</div>
+    <div><b>Базовые</b>рядовые участки в центре кварталов</div>
+    <div><b>У оси и парка</b>выход к лесной оси и площадкам</div>
+    <div><b>У воды и леса</b>премиум · видовые лоты для типов L и XL</div>
+  </div>
+</div></section>
+
+<section class="evening" id="env">
+  <div class="bg" data-parallax><img data-lqip="v_cafe" src="assets/v_cafe.webp" srcset="assets/v_cafe_s.webp 800w, assets/v_cafe_m.webp 1400w, assets/v_cafe.webp 2400w" sizes="(max-width:900px) 100vw, 92vw" alt="Кластер сверху: зеркальные дома, стеклянное кафе и понтон среди сосен у воды" loading="lazy"></div>
+  <div class="g"></div>
+  <div class="t"><h2 class="h2 rv">Вода и лес <em>внутри посёлка</em></h2><p class="txt rv">Прогулочная ось в 650 метров идёт между участками по сосновому лесу и выводит к озеру: детская площадка в тени деревьев, спорт в лесном парке, кафе и баня на берегу.</p></div>
+</section>
+
+<section class="sec details" id="details"><div class="wrap grid">
+  <div class="head">
+    <h2 class="h2 rv">Кластер у воды — <em>точка притяжения</em></h2>
+    <div class="rule rv"></div>
+    <p class="txt rv">Зеркальные дома и стеклянное кафе — повод приехать из города, даже не живя здесь. Кластер генерирует собственный трафик: выходные и события, фото-локация, всесезонное кафе. Локация становится известной до того, как посёлок заселён.</p>
+  </div>
+  <div class="dgrid" data-stagger>
+    <div class="d"><figure><img data-lqip="e_cluster" src="assets/e_cluster.webp" srcset="assets/e_cluster_s.webp 800w, assets/e_cluster_m.webp 1400w, assets/e_cluster.webp 2400w" sizes="(max-width:560px) 100vw, (max-width:900px) 50vw, 30vw" alt="Стеклянное кафе изнутри: сосны и озеро за панорамным остеклением" loading="lazy"></figure><div class="capline"><div><div class="h3">Кафе у воды</div><div class="cap">стеклянный павильон, работает круглый год</div></div></div></div>
+    <div class="d"><figure><img data-lqip="e_mirror" src="assets/e_mirror.webp" srcset="assets/e_mirror_s.webp 800w, assets/e_mirror_m.webp 1400w, assets/e_mirror.webp 2400w" sizes="(max-width:560px) 100vw, (max-width:900px) 50vw, 30vw" alt="Семья идёт по настилу между зеркальными домами" loading="lazy"></figure><div class="capline"><div><div class="h3">Зеркальные дома</div><div class="cap">визуальный якорь кластера, фото-локация</div></div></div></div>
+    <div class="d"><figure><img data-lqip="e_mirror_lake" src="assets/e_mirror_lake.webp" srcset="assets/e_mirror_lake_s.webp 800w, assets/e_mirror_lake_m.webp 1400w, assets/e_mirror_lake.webp 2400w" sizes="(max-width:560px) 100vw, (max-width:900px) 50vw, 30vw" alt="Пара с собакой на дорожке у зеркальных домов на берегу" loading="lazy"></figure><div class="capline"><div><div class="h3">Дорожка к воде</div><div class="cap">гость на день — лид на участок</div></div></div></div>
+    <div class="d"><figure><img data-lqip="e_beach" src="assets/e_beach.webp" srcset="assets/e_beach_s.webp 800w, assets/e_beach_m.webp 1400w, assets/e_beach.webp 2400w" sizes="(max-width:560px) 100vw, (max-width:900px) 50vw, 30vw" alt="Пара с собакой на берегу у стеклянного кафе" loading="lazy"></figure><div class="capline"><div><div class="h3">Пляж</div><div class="cap">выход к воде, сапы и лодки</div></div></div></div>
+    <div class="d"><figure><img data-lqip="e_lake_evening" src="assets/e_lake_evening.webp" srcset="assets/e_lake_evening_s.webp 800w, assets/e_lake_evening_m.webp 1400w, assets/e_lake_evening.webp 2400w" sizes="(max-width:560px) 100vw, (max-width:900px) 50vw, 30vw" alt="Пара на понтоне у озера вечером" loading="lazy"></figure><div class="capline"><div><div class="h3">Вечер на понтоне</div><div class="cap">гастро-ужины, события, йога на берегу</div></div></div></div>
+    <div class="d"><figure><img data-lqip="e_playground" src="assets/e_playground.webp" srcset="assets/e_playground_s.webp 800w, assets/e_playground_m.webp 1400w, assets/e_playground.webp 2400w" sizes="(max-width:560px) 100vw, (max-width:900px) 50vw, 30vw" alt="Родители на скамье у детской площадки в лесу" loading="lazy"></figure><div class="capline"><div><div class="h3">Площадка в лесу</div><div class="cap">две зоны по возрастам в тени сосен</div></div></div></div>
+    <div class="d"><figure><img data-lqip="e_slide" src="assets/e_slide.webp" srcset="assets/e_slide_s.webp 800w, assets/e_slide_m.webp 1400w, assets/e_slide.webp 2400w" sizes="(max-width:560px) 100vw, (max-width:900px) 50vw, 30vw" alt="Дети на горке и скалодроме площадки в лесу, стела с номером дома на фоне" loading="lazy"></figure><div class="capline"><div><div class="h3">Площадка: горка и скалодром</div><div class="cap">рядом с домами, но в тени сосен</div></div></div></div>
+    <div class="d"><figure><img data-lqip="e_football" src="assets/e_football.webp" srcset="assets/e_football_s.webp 800w, assets/e_football_m.webp 1400w, assets/e_football.webp 2400w" sizes="(max-width:560px) 100vw, (max-width:900px) 50vw, 30vw" alt="Мальчики играют в футбол на поляне у озера на закате" loading="lazy"></figure><div class="capline"><div><div class="h3">Поле у воды</div><div class="cap">спорт в лесном парке с выходом к озеру</div></div></div></div>
+  </div>
+</div></section>
+
+<section class="story" id="houses">
+  <div class="stage" data-story>
+    <div class="simg"><img loading="lazy" data-lqip="s_street" src="assets/s_street.webp" srcset="assets/s_street_s.webp 800w, assets/s_street_m.webp 1400w, assets/s_street.webp 2400w" sizes="(max-width:900px) 100vw, 92vw" alt="Улица вечером: навесы для машин в створе единого графитового забора"></div>
+    <div class="simg"><img data-lqip="s_detail" src="assets/s_detail.webp" srcset="assets/s_detail_s.webp 800w, assets/s_detail_m.webp 1400w, assets/s_detail.webp 2400w" sizes="(max-width:900px) 100vw, 92vw" alt="Улица посёлка вечером: пара идёт вдоль забора с кирпичными стелами" loading="lazy"></div>
+    <div class="simg"><img data-lqip="s_eve" src="assets/s_eve.webp" srcset="assets/s_eve_s.webp 800w, assets/s_eve_m.webp 1400w, assets/s_eve.webp 2400w" sizes="(max-width:900px) 100vw, 92vw" alt="Дом за забором вечером: тёплые окна, кирпичная стела с номером" loading="lazy"></div>
+    <div class="sgrad"></div>
+    <div class="ch"><div class="w"><span class="word">Улица</span><p class="txt">Единый фронт: графитовые планки, кирпичные стелы, навес для машины в створе забора. Машина скрыта, улица читается как ансамбль, а не набор дворов.</p></div><div class="c">01<small>/ 03</small></div></div>
+    <div class="ch"><div class="w"><span class="word">Код</span><p class="txt">Тёмный кирпич, тёплое дерево, чёрный металл и стекло — один регламент для всех домов. Материалы стареют красиво: посёлок через десять лет выглядит лучше, чем на старте.</p></div><div class="c">02<small>/ 03</small></div></div>
+    <div class="ch"><div class="w"><span class="word">Вечер</span><p class="txt">Тёмная гамма прячет дома в лесу, а не спорит с ним. Тёплый свет 2700–3000 K на стелах и в окнах — единственный акцент улицы.</p></div><div class="c">03<small>/ 03</small></div></div>
+    <div class="sdots" aria-hidden="true"><i class="on"></i><i></i><i></i></div>
+  </div>
+  <div class="sfall wrap">
+    <figure><img data-lqip="s_street" src="assets/s_street.webp" srcset="assets/s_street_s.webp 800w, assets/s_street_m.webp 1400w, assets/s_street.webp 2400w" sizes="(max-width:900px) 100vw, 92vw" alt="" loading="lazy"><figcaption><span class="word">Улица</span></figcaption></figure>
+    <figure><img data-lqip="s_detail" src="assets/s_detail.webp" srcset="assets/s_detail_s.webp 800w, assets/s_detail_m.webp 1400w, assets/s_detail.webp 2400w" sizes="(max-width:900px) 100vw, 92vw" alt="" loading="lazy"><figcaption><span class="word">Код</span></figcaption></figure>
+    <figure><img data-lqip="s_eve" src="assets/s_eve.webp" srcset="assets/s_eve_s.webp 800w, assets/s_eve_m.webp 1400w, assets/s_eve.webp 2400w" sizes="(max-width:900px) 100vw, 92vw" alt="" loading="lazy"><figcaption><span class="word">Вечер</span></figcaption></figure>
+  </div>
+</section>
+
+<section class="sec houses" id="types"><div class="wrap grid">
+  <div class="head">
+    <h2 class="h2 rv">Пять типов — <em>пять сценариев</em></h2>
+    <div class="rule rv"></div>
+    <p class="txt rv">Матрица продукта: пять форматов по площади и аудитории, ядро продаж — S и XS, две трети посёлка. Большие типы — точечно, ближе к лесу и воде. Дома проектирует девелопер по регламенту кода; соседние участки объединяются под большую семью или второй дом.</p>
+  </div>
+  <div class="hgrid" data-stagger>
+    <div class="hc"><figure class="tcard"><span>XS</span></figure><div class="capline"><div><div class="h3">80–95 м² · Старт</div><div class="cap">37 домов · 31 % · удалёнщики, молодая семья без детей · участок 7 соток</div></div></div></div>
+    <div class="hc"><figure class="tcard"><span>S</span></figure><div class="capline"><div><div class="h3">100–115 м² · Семья</div><div class="cap">41 дом · 35 % · семья с одним-двумя детьми, ядро продаж · 8 соток</div></div></div></div>
+    <div class="hc"><figure class="tcard"><span>M</span></figure><div class="capline"><div><div class="h3">120–135 м² · Простор</div><div class="cap">18 домов · 15 % · большая семья, кабинет, гараж · 9 соток</div></div></div></div>
+    <div class="hc"><figure class="tcard"><span>L</span></figure><div class="capline"><div><div class="h3">140–160 м² · Кедр</div><div class="cap">13 домов · 11 % · два этажа, второй дом · 10 соток</div></div></div></div>
+    <div class="hc"><figure class="tcard"><span>XL</span></figure><div class="capline"><div><div class="h3">160–200 м² · Берег</div><div class="cap">9 домов · 8 % · точечно у леса и озера, гараж на две машины · 12 соток</div></div></div></div>
+  </div>
+  </div></section>
+
+<section class="film dark" id="cluster">
+  <div class="in">
+    <div class="l">
+      <span class="word rv">Туристический кластер</span>
+      <h2 class="h2 rv" style="margin-top:14px">Кластер у воды — <em>вторая экономика</em></h2>
+      <p class="txt rv" style="margin-top:20px">Зеркальные дома, стеклянное кафе, баня и пляж — не благоустройство для жителей, а самостоятельный продукт со своим трафиком. Гость приезжает на день и возвращается за участком: локация известна до того, как посёлок заселён.</p>
+      <div class="pairs rv">
+        <span>Свой доход<b>аренда, баня, кафе, прокат</b></span>
+        <span>Капитализация участков<b>соседние сотки дороже</b></span>
+        <span>Витрина и конверсия<b>гость на день → лид на участок</b></span>
+        <span>Премиум бренда<b>место силы у воды</b></span>
+        <span>Отдельная экономика<b>развивается фазами, не нагружая тариф</b></span>
+      </div>
+      <span class="lbl rv" style="margin-top:28px;display:block">концепция · визуализация</span>
+    </div>
+    <div class="r rv"><img data-lqip="f_vert" src="assets/f_vert.webp" srcset="assets/f_vert_s.webp 800w, assets/f_vert_m.webp 1400w, assets/f_vert.webp 2400w" sizes="(max-width:900px) 100vw, 340px" alt="Семья идёт по настилу глэмпинга среди сосен" loading="lazy" class="vert"></div>
+  </div>
+</section>
+
+<section class="sec process" id="process"><div class="wrap grid">
+  <div class="head">
+    <span class="word rv">Процесс</span>
+    <h2 class="h2 rv" style="margin-top:14px">От аудита земли до <em>регламента улицы</em></h2>
+    <div class="rule rv"></div>
+    <p class="txt rv">Продукт, генплан, дома и среда считаются одновременно, поэтому цена участка следует за местом, а не наоборот. Очерёдность освоения и запуск кластера определены вместе с концепцией.</p>
+  </div>
+  <ol class="pline" data-stagger>
+    <li><b>Аудит</b><span>участок, документы, инженерия, семь проектов окружения</span></li>
+    <li><b>Аудитория</b><span>пять сегментов: от удалёнщиков до второго дома</span></li>
+    <li><b>Продукт</b><span>пять типов XS–XL, четыре ценовых пояса</span></li>
+    <li><b>Генплан</b><span>118 лотов, зонирование, движение, ТЭП</span></li>
+    <li><b>Среда</b><span>ось, лесной парк, кластер у воды, семейство малых форм</span></li>
+    <li><b>Код</b><span>материалы, заборы, навесы, стелы — регламент для всех домов</span></li>
+    <li class="next"><b>Рабочая документация</b><span>следующий этап: задание проектировщикам и сетям</span></li>
+  </ol>
+</div></section>
+
+<section class="sec specs" id="specs"><div class="wrap grid">
+  <div class="head"><span class="word rv">Наполнение по зонам</span><h2 class="h2 rv" style="margin-top:14px">Каждой зоне — <em>свой сценарий</em></h2><div class="rule rv"></div><p class="txt rv">Семь проектов вокруг продают землю и обещают инфраструктуру потом. Здесь среда спроектирована до старта продаж и заложена в модель: у каждой зоны — свои люди, своё время дня и свой сезон.</p></div>
+  <div class="sgrid four" data-stagger>
+    <figure class="sch"><img data-lqip="z_axis_node" src="assets/z_axis_node.webp" srcset="assets/z_axis_node_s.webp 800w, assets/z_axis_node_m.webp 1400w, assets/z_axis_node.webp 2400w" sizes="(max-width:900px) 50vw, 22vw" alt="План узла на прогулочной оси: площадка между участками" loading="lazy"><figcaption><div class="h3">Узел на оси</div><div class="cap">площадка и навигация в точке, где ось пересекает улицу</div></figcaption></figure>
+    <figure class="sch"><img data-lqip="z_kids" src="assets/z_kids.webp" srcset="assets/z_kids_s.webp 800w, assets/z_kids_m.webp 1400w, assets/z_kids.webp 2400w" sizes="(max-width:900px) 50vw, 22vw" alt="План детской площадки: две зоны по возрастам" loading="lazy"><figcaption><div class="h3">Детская площадка</div><div class="cap">две зоны 2–5 и 6–12 лет, скамьи для родителей</div></figcaption></figure>
+    <figure class="sch"><img data-lqip="z_sport_plan" src="assets/z_sport_plan.webp" srcset="assets/z_sport_plan_s.webp 800w, assets/z_sport_plan_m.webp 1400w, assets/z_sport_plan.webp 2400w" sizes="(max-width:900px) 50vw, 22vw" alt="План лесного парка: спортивная площадка, воркаут, здание сервиса" loading="lazy"><figcaption><div class="h3">Лесной парк</div><div class="cap">поле, воркаут, теннис, йога, беговая тропа</div></figcaption></figure>
+    <figure class="sch"><img data-lqip="z_sections" src="assets/z_sections.webp" srcset="assets/z_sections_s.webp 800w, assets/z_sections_m.webp 1400w, assets/z_sections.webp 2400w" sizes="(max-width:900px) 50vw, 22vw" alt="Профили улиц от 10 до 15 метров" loading="lazy"><figcaption><div class="h3">Профили улиц</div><div class="cap">пять типов: от въездной с тротуарами до тихих проездов</div></figcaption></figure>
+  </div>
+  <div class="zones" data-stagger>
+    <div class="zone"><div class="h3">Ось · 650 м</div><p class="txt">Утром — пробежка по щепе, днём — дети на велосипедах без машин, вечером — прогулка к воде. Зимой по оси идёт лыжня.</p></div>
+    <div class="zone"><div class="h3">Площадка в лесу</div><p class="txt">Рядом с домами, но в тени сосен: малыши и школьники на разных зонах, родители на скамьях. Ребёнок уходит гулять сам.</p></div>
+    <div class="zone"><div class="h3">Лесной парк</div><p class="txt">Поле, воркаут, теннис и йога-настил среди стволов; беговая тропа 500 м. Зимой — каток и лыжня, спорт не останавливается.</p></div>
+    <div class="zone"><div class="h3">Кластер у воды</div><p class="txt">Кафе, баня, пляж и сапы для жителей и для гостей из города. Выходные и события приводят покупателей раньше, чем реклама.</p></div>
+    <div class="zone"><div class="h3">Въезд</div><p class="txt">КПП, офис управляющей компании и кафе-ресепшн под одной кровлей, гостевая парковка снаружи — машины гостей не заезжают в посёлок.</p></div>
+    <div class="zone"><div class="h3">Чем отличается</div><p class="txt">Вода и лес внутри посёлка, а не по соседству. Природа как аттракцион дешевле в содержании, чем зоопарки и аквапарки конкурентов, и не раздувает тариф. Кластер делает локацию известной до заселения.</p></div>
+  </div>
+</div></section>
+
+<section class="sec cta dark" id="contact"><div class="wrap grid">
+  <div class="l">
+    <h2 class="h2 rv">Есть земля с межеванием? Посчитаем, <em>что на ней продастся</em></h2>
+    <div class="rule rv"></div>
+    <p class="txt rv">Пришлите кадастровую схему или границы участка. Мы сами девелоперы: считаем продукт так, как потом будем его продавать, а построенное обслуживает своя гарантийная служба.</p>
+  </div>
+  <form id="leadForm" novalidate class="rv">
+    <div class="f"><label for="f-name">Имя</label><input id="f-name" name="name" type="text" autocomplete="name" placeholder="Как к вам обращаться"><span class="msg" aria-live="polite"></span></div>
+    <div class="f"><label for="f-phone">Телефон</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+7"><span class="msg" aria-live="polite"></span></div>
+    <div><button class="btn" type="submit">Обсудить участок <span aria-hidden="true">→</span></button></div>
+    <p class="consent">Нажимая кнопку, вы соглашаетесь с политикой обработки персональных данных.</p>
+  </form>
+</div></section>
+
+<section class="sec more" id="more"><div class="wrap">
+  <span class="word rv">Другие проекты</span>
+  <div class="mlist rv" data-more>
+    <a class="mitem" href="../poselok-u-ozera/"><span class="n">посёлки</span><span><span class="t">Посёлок у озера</span><div class="cap">2026 · концепция коттеджного посёлка · 18,3 га · 155 участков</div></span><span class="a">Смотреть →</span></a>
+    <a class="mitem" href="../rezidencia-xv/"><span class="n">дома</span><span><span class="t">Резиденция XV</span><div class="cap">2020 · индивидуальный дом для коттеджного посёлка · 270,5 м²</div></span><span class="a">Смотреть →</span></a>
+    <a class="mitem" href="../"><span class="n">→</span><span><span class="t">Всё портфолио</span><div class="cap">дома и посёлки бюро</div></span><span class="a"></span></a>
+  </div>
+</div></section>
+
+<footer class="footer">
+  <a class="logo" href="#top" style="display:flex;align-items:center;gap:10px;font:400 18px/1 var(--head);text-transform:uppercase;letter-spacing:.04em"><svg viewBox="0 0 69 69" style="width:22px;height:22px;fill:currentColor" aria-hidden="true"><path d="M52.1687 68.9595L34.5 55.6875L16.8313 68.9595H0.121479L34.5 43.1347L68.8785 68.9595H52.1687Z"/><path d="M43.1347 34.5L68.9595 0.121479V16.8313L55.6875 34.5L68.9595 52.1687V68.8785L43.1347 34.5Z"/><path d="M16.8313 0.0404053L34.5 13.3124L52.1687 0.0404053H68.8785L34.5 25.8652L0.121479 0.0404053H16.8313Z"/><path d="M25.8652 34.5L0.0404053 68.8785V52.1687L13.3124 34.5L0.0404053 16.8313V0.121479L25.8652 34.5Z"/></svg>Хрустальный</a>
+  <span class="cap">Все изображения на странице — концепция · визуализация</span>
+  <span class="cap">hrustalni.com</span>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+(function(){
+  const LQ={"_check_aligned": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAACQBACdASooAA8APu1gqU2ppaQiNVgIATAdiWUAAL+PyNA9BtnmLDNVBY3l6gAA/vcQ6ZMIiWwIrNGxRkx76DOumCrqwNNmMrat4G+r0M/Jp7FMWQYFAR/wVUjWgyrAowftyAoBgRI2ABqTiIyjhQXKFJ5yAAAA", "_check_before": "data:image/webp;base64,UklGRiIBAABXRUJQVlA4IBYBAACQCACdASooACcAPu1gqk6ppSOiKrVeqTAdiWMAx+cwsYzUutbruLd6a5S09ms5lfda8nd3sMlktDYdzPaxGyUwT8N9rFjk/1VLNvQkAAD+9wKmuuwFunNUYUZfLNYGZqcbhJH2xEbyEQhRIXLmuoDfkOx8KF8QckOTK1tlM9A4G4qQYpVA4Gq11czq7Y7+X5tBxR5qFvm0iacKF0H6+y2aZi0Fua+kghZbuNrpZhbWaKMOGCsIf8hFS0jLtg88TLmb7dH9iZh5kPhHX7yxKO+3VEC+rf6QOSjCJzDWKBkcjJ0CH7tGGNnitFAkZSVa7mbmAK/60LNYae3dvPkF0XDFTMPDORPmYIaDywo7ZC0RxEtaYAAAAA==", "_check_boost": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQBACdASooAA0APt1epU2opaOiNUgBEBuJZwAAeiGm0yWea+4bt2fQAAD+9NyCig9Z/T++6pVDnxjp8CDAgdH3S1CMI0pfTKBM41AktjWZz9kPK3GpbFl380FAAA==", "_check_hm": "data:image/webp;base64,UklGRr4AAABXRUJQVlA4ILIAAAAwBACdASooAAsAPt1cpE2opSOiNUgBEBuJZQC90C+gTecuWqcHHbK1c7gA/uIp2fP6cl0ANN4M1jjvftmePIdF5Qs+6+1fB8AzFnddz/HBbQ0ibB/IQe9PVQYUFlRillV9SzJIFL2EKE1D8v+s11Sx9JIJK+AIiiRl+MhHOcY/IAMVt23+nd/VMmq7ew39NvGjrPLNpk4K4Z+KV6bTWZilyABrL5iPI9GHRnOKoVgvAAAA", "_check_layers": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAAAQBACdASooAAoAPt1Yo02opSMiNUgBEBuJZwAAgfAbaXENBzuMJfqRwAD+8D+1IQwsahHFDjPzymp1OQIkSO0+m28qxMCAFi7OoIHWaY+qC+HUY6jBkk8YmXreoYWRsTE9qUz73kwT3gvkqmWvi1k9vPpYUAAA", "_check_node_kids": "data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAADwBQCdASooACgAPu1gqU2ppaQjMdZsATAdiWkAACksjO5NGlHaGomfcpragIRJ7npHWcH8FXvooAD+83HVAbkDbbSaKKuKFYrEy9o8r8Py41L4+pcWuWWIqmnmsGiPGkGqEj1W3EDUxixCtCTFIZbi1cWhNrjeYIwWlnsTJ5Y7KwoQnwc1H0TzcsCAAA==", "_check_node_sport": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADQBACdASooACgAPu12s1StJySjI4gBoB2JaQAAHKdNKzyu9SGryPrsysGuvSbxoAD+8Kq/9rEdbN4cVYXwhrETdo2qZHkfEO6rc0VJiad5tQTUZyDFNIAA", "_check_overlay": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAABwBQCdASooABYAPu1eqU4ppKOiMBVdUTAdiWkAAH6QCsDvqGVSNAvhu8V0TzQ1jSbjPVEAAP7357Y+jWIJL6bVQuDbqlcQ5HTnrKIC0eFULV/yoXJ9ELCEAAA=", "_check_playground": "data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAACQBACdASooAAkAPu1cqE2ppKOiNVgIATAdiUAVHoL7/ynTsLdiqnDyCqD0lxAA/qvSs878Nl74AxgEeRXBZNsPMnSaBzxu712jm8HKyydnE8vrgPXJzyL6Lnu7dZKErbFtYrE4365frrlwIi3Ngdg43H4SYT01sEToG4AZxMC77vaia3yYhlj4iH4XLZQsHPPP1+KAAAA=", "_check_schemes": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAABQAwCdASooAA4APu1kqk6ppaOiKqwBMB2JaQAAPaGNmOoYAAD+7bEx8Ue9jH4IJ3sM451yCGV98ZtNBRONMabQkbLLh9cCr0oSldkOAQAAAA==", "_check_sections": "data:image/webp;base64,UklGRq4AAABXRUJQVlA4IKIAAABwBgCdASooACUAPuFgp02opiOiNVgKqRAcCWkADCMzOyNOlmPTkxCvUvlXMfz8PB0WU2+/3/Uk6tq7XOgA/uev9RqQBiF5EUHC/nNepLHGb7mafkpzmefZDz8eH8orNXsZdH4qOsrYstHR8GZqDkJ2k7DQfnbugD9h37KJ1ea6WGb53vG+FVmzo67oAU3LgQH1UPISUwsw/roNEO9fEAAAAAA=", "_check_top": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAADQAwCdASooAAoAPt1ao02opSMiNUgBEBuJaQAAeiIcu3mn7Dwc9gAA/vTbzaAJgv7DW/tCy6gYNMET1aAAAA==", "_raw_before": "data:image/webp;base64,UklGRiABAABXRUJQVlA4IBQBAAAQCACdASooACcAPu1gq06ppSOiKrVeqTAdiWMAy+HeWuAA+06Mt0Xi6YVBGgYTlA03XwTgLoGi6pQ88pPaWNrDLuHFtJSsgl5AAP73Aqa67AW6c1RwYe050fMxPy0YnRJA54yphQSyBKdmpqfkGprgad6NOQOQ2cibBRWb2lSTMOhkMcwngS5uXKTRUuXkuhM0BSpzFaQeUBTBUBKw5TGyRmwKaFMXhjE3HJtLdI4eoYVIE5Li5e5IVihSXJ6VIe5I0gp5ep+6frW2LcEvbOBNFBnDvk0FcNwCJo1iTSUlS94C8h8a3k4ErTB45FqdezHco4Nuilo5MMm2IV9fmKi1qBc0uTdJygsffqcxtUFoAHrAAAA=", "_raw_masterplan": "data:image/webp;base64,UklGRtgAAABXRUJQVlA4IMwAAABQBgCdASogACgAPu1uqlEppqOiqrgKATAdiWUAAGCH2DlGa7mvpqw84QwCOCGDJSsLZ6DELVC2nEG1AAD+9NUCAkMSAoBFertcLuxskH8D8WEGpNIi4052eMA7igdUSrPdoQoU9d/8qidWnJdIfuVT8pllynC1QaVcx84Saodu7TQf0Kao6mY7lEzp4YBiR4ullG3GPg+ceU/trykOXaD2AzdRVFEg8czs3ktAhyCJQG3WpBYTf+jwNjzXyol7CDWweJZtoHyNWFIwAAA=", "_raw_price": "data:image/webp;base64,UklGRroAAABXRUJQVlA4IK4AAABQBgCdASogACgAPt1eo02opaMiOrM4ARAbiWMAygMsA2+brBVyvWSvwpCOOj+/YpBo48DpFpEV5ahsgAD+9+POq1LUo6fdvRZHzYhVaZg09R2etiRpbiNuUyj0NjnJEZzwkICxzT1G6IXJMSje4LKC5zFTNzkSf879jj81ZQW6TLKQmJ5fam+MMSWZmjzlhdsMe86fqPqFC21heC/3zOaSRE4/xRVBGE7J4uFAAAA=", "_raw_routes": "data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAABQBQCdASogACgAPu1wrVCppqQiqrgKATAdiWcAAGBHmrqf2STKkbXnJre7a3hTHc0ZWQAA/vTaV2wlgIj/Okbb+cEKys5YOnH+wltqZN7PwwlJcRfnRmTelPzrnCRaj13V5a67Wh53iZXTr9qQTbaTZ0t4AocC6uv7xa7lH8P6XkGtaD9JPRR506lmYhA9lZZPvBmdIzGJaaFhRaqgAAAA", "_raw_sizes": "data:image/webp;base64,UklGRgABAABXRUJQVlA4IPQAAACQBgCdASogACgAPuleq02pJSQiMBVdUSAdCUAY1zGHZgjmOxxnYyD9nZtU/A/v4wtlpFpuPdabF6xCZkAAAP736UrnSh9vHpTNCz1bVDtrYEZMoOWqtm50Qqj2ZD0KesOHNaS8vibWSlhZOjvU5ryL3HJ8Q9qzaaqJAbPho6KcubA7m/DaREyJTSAyvKjkhWZwOrYBFE1tlTzh5WwTwcvAWXDQXWK9UnLJwaZZhGwnh7mE7VUJoSfXQrwH40Uz1u6dGbHtnoVtm7u/rHtRgeqzs19FaC5u6bNtqM2b7+ojyBlkIqf9/E6PpFO1kwQOrEudAAAA", "_raw_zoning": "data:image/webp;base64,UklGRqYAAABXRUJQVlA4IJoAAADwBQCdASogACgAPtlSpE2oJKOiOrmYAQAbCWIAx1CpyEoBAQrUlQiaOYb8HGq0MweTPcyKoI4MAAD++hGo0ai5s7J3iWNNdPPuPNBMFQRd7L9kGr4q9p08EluyV3JhU1h4KhLWHv+I/tXYwOWdOvvW7aoMBRthj58t5xOFIBOIb5s5sNYYeeQiJ2ZougrK/rOWYz8EkD/J2GAA", "before": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAAAwBQCdASooABsAPuVip02pJaOiNVgIASAciWkA0YBFbWX233LYh+c4pIVNPMuzijzN6AD+9waFPfUhZtRdN12WrtXUNpcgw3dRaO4dMyNn1OjTfo1USqixOuS0SaJZi4Wm8AfM0RcAAA==", "e_beach": "data:image/webp;base64,UklGRnIBAABXRUJQVlA4IGYBAACQBwCdASogACgAPu1qqlAppiOiqqoBMB2JQBYj59DPjH8/L37OBGJ5rqN9uso5SO6T7RQoVhOsJMwV9n6ZCwjc0S/hcwAA+p54AZjsQFrHozCW62TmqnRNNarf6dag0Z39iCqJ/gqf7EaXztkAjRU2IabWls2gcZDaqeGaDrKkc/qeodRo4tQIG/s1KG9BBND8y7YMAi7CjcgrTjCKM040Fz+NJfeAUOaBahUpYfR4ViPx31oe82sEtmEARxDbVw7RMxKsMmE21HPgtVi72T5ZuZqqcjsOpkbgsd74UZJxgdSx//vUU6VtoHkOBXtGgFTfzxfDhoRYpcjHZ8wYqrveBh8Zp7JjaZP0NSJjQj4o2ZHUTsYTk6+6bJ2VxE78iEgTOOwfcUh7Kj+ObWUk6ZrXoPK/Vsote1GoxOu8Km3Lf1ToAEqQ8w0Djd8NihZb2Z9s8dSTlVlgvjlp09DRTlxwmMYFGAAA", "e_cluster": "data:image/webp;base64,UklGRlQBAABXRUJQVlA4IEgBAAAwCACdASogACgAPuFapE2opSOiNVv4ARAcCWMAvV2z8aKcug10Y4DCJmePBD8+XwqVG6m/f6fnTEmjcKb7gyu/7SjDA3ZcGpNGIAD+6Pvyqygoz6fenXGgaD/LtB3ZtI/aHRYJ6SI3Mblz8sRQf9X2RWTs4sZ+DtfRrGrcTVWBEAZNUinYqZ1gj+nIswLkzkjHcOKCUy2hhIOPRIALjFIFMb4cEFQGJ5KeXY9nG6QNagreFPljJfHixliTn2ngkVKK81/peZpXGuEtTsZsqun/no/eFxyWYcLlgqtog2Ctu/b9BkFgcMQhY4h5/be2RXT/dortYgyB/z6sY6/guxNl/oTQj72QzmunMZeBiaY9rI6U/vMl4Lhkb5ce+pDM9PmwROx3OT5PReaUXC49DOk0iJOD1gVn9eLx0SxCjxz5kKo+K4nwAAAA", "e_football": "data:image/webp;base64,UklGRhgBAABXRUJQVlA4IAwBAACQBwCdASogACgAPuFepE2opSOiNVv4ARAcCWMAvnvWTlCgv5Wbbq4G48/ozw1khJq+GqGm+nXBYanCGfYirUw1acitQQAA+hDLWUWUBSkuO4AMS5qYT1I1yxjVc9Iicdj2RSCZs3hMycESBQv4jQ10ud53LG1L2vX0fZhF3QZEP/blK0w7jcsbfHQKFbDvLw03VjDMnjhJ/bJvqY1I6Y0OGwH/5BYnm+43Ea7p6tSHxgHTRt4rrh/UHMzjjQs38pwlSfP18RjvKQOvSECeOpdyWi7owW6i4EVT9HdJHTtz82nW1jocF4IQvh+aQ+oJs2o7mnVgjIOKCrpZPK1A0CCiai8banCSgBQ8AAAA", "e_lake_evening": "data:image/webp;base64,UklGRmABAABXRUJQVlA4IFQBAACwBwCdASogACgAPu1krlEppKQiqrgKATAdiUATpnfY0+u2daBPTmJl0Gsc9gn49qqsBTD+FSkX8wmgcBEa9EricKV0cnoAAP7sBTiP04zDs3GJBrMw34Rd2AelI+Pk5sCSxKo4jQmg9QIn5xNkkIhOePR6P5MCcQDYwGE+WReqm+TKvEXKITrq9AJNo+hnS4vp8Lw+514sdEMvqfyQOzKAyhr7lJgncREk570RvRON0F2BzurP2HRVkzGlFGB4+9c4FFariZpYQoLz1TNl1j5jeX2GCPrb1XYE4eMUduBLm/d7d2JgFOmQHivwcExdXxIBjRL3dysZpj8MwcSIgXOiwdtjViu1ITe7No6lGAW1vQtdEd/Amaox8eHim6Iz4pGB66SHTJe8DTdvJwWPGUP+0lM0lyfiGiC/CscE2kdGRCZKRZGXHi1KViBgVCy+8o8P46AA", "e_mirror_lake": "data:image/webp;base64,UklGRooBAABXRUJQVlA4IH4BAACQCACdASogACgAPu1mpk2ppaOiNVQIATAdiUAXY2v6ZaMTTSnxAgOrDe+EXPibcFWVHF7esvjtnpb4CsVf2J3sLdwbP9zbSqs+AMxBAAD+qhQgNSM+cX9Mw1J9AGpCS5/Fbu9iif0vCQFjC4vjad03KxCeiOZ6IQ4RRlbi8NOju13nj6617hlNuwpiLPSDS665xiNYEZtCMcnEGfLw4n2uAB+MHSe7UVg76L+Lio4RVIe1J0J9sA7+fBDu13D4BLjzo0MOv0YaF9XVLL4l0XHTxQnoezAor8H1GjQlXT1okr6kKON+O3rVlFpt80740oeipN6lOlPQOF4Ufty0m+EYc50kVLCIeo0YKnPGQbYWLzgSQhMxpNbwxI5Dmjbl7EKSXH0CvL64fp0vdfU8WWZwH9aqF1/vNHEZq59OTobb8vO9MByylLrz2Ia6zbCOr5YfIVLozMZJokW2SNn03AFKhHs3wF/a1i2hK7pKl0XAQdjwYwhuHRk3ForHagAA", "e_mirror": "data:image/webp;base64,UklGRmYBAABXRUJQVlA4IFoBAABwCACdASogACgAPuVip02pJaOiNVgIASAciWMAt0d63eTVw9VrQUHgWc0SMbhUTy2KdByCtJINQ5tB6FRHqo65FDt+B4+skt5jq3IAAP7XjAqjF2rlM46X/7cLGPD1dOLF/ZHOx4Mp8xzxzAGMth0a0jY+3PTjyVpGOOaw0zmTUxJLhqnke5LvvHK64Ay4b9Syox19LBz+QAZvnQ8ZXFU8bjjC0sdWekDhc7yLCCjIWaIKzXm4IPM4b5o0it6GPlHaxjnD6kKdr/4Y9s39xtC5DbNGpPokF+jerInNnxSaq70Z6zsKrbD0wV4QLUfXdS79rEhooP7mkrUtZToy/C0YOPPiz8TTwGmYMEDKDf3aeG+byvB8Cc0baD3yOy+I7jUdzouQemzFNh0QOY8nT0ZQ8EBXAEAiBvp9J3xyj9EHfGUeAYEr1wIDxCzewUpDijJsG3uxWKYPOAAA", "e_playground": "data:image/webp;base64,UklGRjABAABXRUJQVlA4ICQBAADwBgCdASogACgAPuVkpk2pJiOiNVgIASAciWMAsPLzNZxCyTKUGQeLoQscktD3Ya0y5MMz4uFzjdrumY+NvaQAAP5rs8jvc9NaFKhLapMJuH+GLl0ndvHipFVkWEexcyYCgYlOmjOyBvcsL8TdS3ZiiMx5UT3ne7Vc4WU/4BpVjCUpA9JOQD7t027dr7claC659vy/0h+FQNc6H2iClzkPw758G2PP7D59PBtRpWDbIBlhGVNjGGj2gSDLgHtI52sewRxX0r+IXCB1cv+nQ/zveR0eL8G7NHCBWLGlaQuqPEqD68XyL7BkkaKT09EvSJoLaIo44ofz6JC7JTVzF0Egh2Hwq1kPERr9doDune8QVridUCFOnAWMDbcN0JkJHSZGTAAA", "e_slide": "data:image/webp;base64,UklGRnYBAABXRUJQVlA4IGoBAACQCACdASogACgAPulmpk2pJiOiNVQIASAdCWIAnTOKqTON2UrEhNNkjSYz8xtbUolTXXxkhe4Fi+E6S5lkxN90kF+c3UVcRVayTzEVXAD8NKONklZ42O6iuxGhVj0XHGYvg3KleeP5x9dHGKjeBbruu7IWQBvbTNIBwwfucSZZy14IBxeDqADz31tSnBsjLXfEjNm7upvVI0+Fbbn+ogx7j1OhU8WVOqKWEUhp6rsywJ6TFyTK1839E/1kWAaDwVCl6MRAWrQZxW2Eee1mkdyLLC6y/uNfsTLJzdpi1biQYV3La5YyoBJsWfaadtnM73JS6ejHMTEDZwN+kCrzA+RSIe4jp0U/eSXEriY/z9UYpjJK4aHmVP1nWPUeDHlWWSKFRHibx7I5RLikv4JC1kM8lGai0g2RuAvvXImqXoh1l5JbYoH/6hVegrQqHNvOMd7qucZDpzGbBgDtbeX1zcr0JxpeM3bj/4AAAA==", "f_vert": "data:image/webp;base64,UklGRlABAABXRUJQVlA4IEQBAABQBwCdASogACgAPuVeqk2pJSQiMAqpIByJQBUk8x8WB7KuAwfDUWE0YAk22zeaVU4snxWOJWPPID3ehEnMrzlWhbQAAP617YJfIo8y0YUVoKa8J37DGSo7DHKPMBXnRT20D6j6OmB00H/VMIuly6PFofmtPW+DF1VDQXSBNUNxv5W1/OYYz0QZA7ZIY1u40XwLwV9IodiL8OgxLjIw0rVZMdTdggJqJupRLjj+zL2PLfpPXgestW2kYJbOPOdZpa+J3Mlo1Ji5UGGmUtxKEKMVFslYh246GFLNF3IIu8JUUIHJSFWCKeWmMupL8WCSTBbkAnJUlR3+Y0vTWdDLjCYaH7kyGCXqpoJXnoB6z+1I8kw0WXnDcVgvYAFAJ5Lg30yxl6/1DFNORC5K6mDYYTZSFNMXwCd602XFp5jdjZ3ZFYQnYAA=", "l_lake": "data:image/webp;base64,UklGRnwBAABXRUJQVlA4IHABAABQCQCdASooACgAPu1eqE4ppKOiMdM9+TAdiWQAt+uNQ5bPAJ1iWNy6r8Tl28mQboG97ASZE6pVlTu67mHUDBrPlns/6PkXCzew+7mxv/jI6B7AAAD+q38BKhlfrfJFQfqAeDX6ajY8BAjCTrBzcGsYq0VPfGMA4AiUkzDnJaR4+2x+uE61W30SvoNqZgHtQ7D+PB2xVXNVkq6ZT3qq8jnaWxVyLc8KNwC+9DhYf12YfIllt82wfQqphWl08f5alfeRuxLUOS47OtzSpqaPayZTbr+Y7Yu4LxaM6YOG/mvuGOIp6tgywoMqoafxeaG3IiPsrEPLv7opj5Q4hyBtSP5I9LeoX6ec8EZ89KQW4WEZd+TtyVpLprjulq+ixf9ZbD7X1jQ7RU4CEFaGQBQ07Kfm7Ycjf/ErtqIRlbFSXvT7bEH2kAISlfIOteVRr+1zgj+S1BW8wBEHxPrOVXPFlfTHupfjuOYEFykUyI2Du3DAAA==", "l_meadow": "data:image/webp;base64,UklGRvoAAABXRUJQVlA4IO4AAADwBgCdASooABYAPu1orlKppSQiqrgIATAdiUAVJO2AUAMiT+u7GwK5qstDza9GW6JWmrW8le7CJ66Zk/8hDYooAPsBLe8QL772Ljrwxn+ad0eqxSvV20+LTG0W5b163XVHM8k407bCOqoB96Z/YkxXFDqt/pGdElpJovVwG7mGjTEuvxrgUaGfmFKJs+DrHHk9SzNWySGsIfnZqtDD9tVGr7QZGoxxu6hHwLnlAO2BnfYWLthw9JrgkTdlUus7YNcuT1EEiX7Blfk5QCngIFXYM4OIcs26bEYVv1fy5esVaLXHCZakSRd5WDKwpQAA", "m_entrance": "data:image/webp;base64,UklGRggBAABXRUJQVlA4IPwAAABQBwCdASooABcAPu1gqE6ppSOiMBVdUTAdiWgAsR78B5gJ2f1DT9pnGJis17gdwI7JoLASd9EFctfc2uhAABl50nBAAP5N+alE48RnKWVNuuMqWOyTGTspAxpRVhQf0WbjpzPaQJXkJbsXSqMH+OGuDWe7SfFa3xMVOgtH89HScUf4oF7NTt/vaGHkdZS6/LsNkkwl6qjoGFDfZ1OmfJLuhifAgWG56J7Wb5JJa9bhRkEk3znZDVUCvWZPZ4LKuz3WkDSA/SubfySbL9iM7+Nz00YilXfT95GS3X22O1Xbm/qEcNecGJQX+jO/84KQDCmbI64x5x0Z8C3IAAA=", "m_park": "data:image/webp;base64,UklGRgYBAABXRUJQVlA4IPoAAACwBQCdASooABcAPu1orVEppaQiqrgKATAdiWMAt7gDtzYpu3u4XoHxEFDrl5iHb5FKlJC6ZsAA/jRfNsq3O17X2GQGqbsTx4bIkP2O72Yb271xh2WY9AaBGgUdrc7X5UO8KxztrNGyBwKuIcrY9ZFixr0llD+LQ8WIGg7Wxsv1yEJPtWdXQPAcLx2D078fFMsoZOuTtp3uEZXlgjCg9CE2L3T0eGZlsRrGPtTqVVqUTydvExj0NH/tE4yNcfIVlno9C6qxqKHhatAB9kDWvaNfeGP8tEM4OwlsQH565pBj/oJCeR1OHtCVZr/dHwmhEPMHLY5KVVSNu8AA", "m_shore": "data:image/webp;base64,UklGRsQAAABXRUJQVlA4ILgAAADwBQCdASooABEAPu1kr1EppSQiqrgKATAdiWUnABKkA5iXTxdYBT7OifVLV/6cJndzxwm6TVMaoAD+8qmwN1FdOnLXGMJmJUWYNeSIl6Ln9h9z/pm9zvl8POM4J2ixoAvuin756c4506i6wC36pRxaKL7LyIpuvZnRcgkgC1ibjmnXHQmraEqlKRwgJQ3kHZWEFuvFO5hpV/yYA5cmTKrG95oT9OoD2KvsVfYq5e1hDwNlIABC+AAA", "m_stelas": "data:image/webp;base64,UklGRgYBAABXRUJQVlA4IPoAAAAwBwCdASooABYAPu1kqk6ppaOiKqwBMB2JQBhyKuiGUvlm5ksKb8VjLsz2V0LvK8Q5fqDXIRwO+SVW58EO3DfPXPgA/ujwX+diXLDZxw1poTLlCu0dZbGG4kF31mD7+Y7MsXmZ2uF8k4v+l40rfhJ9Gn5A80Q1Bu8bNFAQhBPZFqYEgWVtjtTnEOu4K87IqvfCD2XNG9+HYC9fTT7UWW5t4T60mms+ZmVudfwQFbf/ythEvEvO1Ntx2dzdjb4LtRsNCbeJvplHTTQKOsHZf8w7kbq/Qy+pKdJacW7UxuJg2ekvA+hOs2rCBGS4PzV6t5zIm5VK/Vk2cAAA", "masterplan": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAAAwBQCdASooABsAPu1gqk6ppSOiNVQIATAdiWcAAJ3rOfW/fz+UJW7SKLsptLZlyV7aAAD+9wbGzl/PjekTHOkrdocnVsBVsZ99yNhN6uFg1VNigKQU2qRyWW9IDhYg+m/9Sc24s1d7qLuZ7EZAi9HXlrfmhSWVM1WQcmRd4iHEefcoOk3SddAA", "price": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAADwBACdASooABsAPu1ir08ppSSiKrgMATAdiWUAzyhF7WX5wpsnTEbXsMpbKYG/8wAA/vfn597XNSov+80DsZI6ajbfmhTjE+b4dgNG41tT4Fq4BsYrfZ4aNydPUAtYuxN4RnxBdGvuzasBdZmjLnWTIQsqWpamsBLWAAAA", "routes": "data:image/webp;base64,UklGRrIAAABXRUJQVlA4IKYAAABwBQCdASooABsAPu1krU+ppSQiKrgMATAdiWcACBAufDlzuKjKxw8srRnw63OkzZAPPq5QAP74sZ21LFhU6cYG+sE9nI+6iCAtGFiRQtpGGwpkHOvXlKXDzM9QZ2YurA5ppvpf6oc8PjOjiwdJQ1wYQKETyuCpFr42634dqmMTPmzDHevNhuxzRptHpR4dpLRIo4h91OqXITge69JcvmjOMCj/gAAA", "s_detail": "data:image/webp;base64,UklGRiIBAABXRUJQVlA4IBYBAACQBgCdASogACgAPuVapU2pJSOiNVv4ASAciUAToN5GtYCdZBV0KhpVC/6wjWW67wy6XrIGrQOi8wlezF0AAP7GyfGD6JUZB6+krn4OtzLjau0xZOZF77TSH7qPAy+f010QFIrFHbirlH/5bMXJSqmAJK2I1QrDe78i1uYiYV9YkV4rv2DBC8EZAE1nVHqv0PMNmpVcpd3/ABT02YR3PzYzAY1VEoJgTm17u+Ae7KVL2sq7UGp4irRLnRx0k8mLzlDgISxfsCC1SI+AWg6QqAZ6fmBTRESOnkSs+p78f4HR4qC3u3PUSueJAx01Y62UjCuQQKMVDPkfEJNyVBrdXXm3ME8LjSJ4hQKBT7bTrpuC/QUg6hOgAA==", "s_eve": "data:image/webp;base64,UklGRjoBAABXRUJQVlA4IC4BAACQBwCdASooACgAPu1irE6ppSQjLjgLMTAdiWMAuzQKb1k0oCjfsQZNXExd/aTUY6+Xkg8zrzFOulnIMoXI/5xuvRYwEAAA/r+zj9hd3AIaxYOIoehd2D/rtjeJalWUgoWpgIOXXwQ6D0cXm4IbC8rJz7pxDNJHWpSM0YTKBPPl9AKKi2iOwFR73yv0O7AyczRWQBuckkNFqUtcA0MDEq7vL6pjNagRfqz1CQNtSD2KfWFfkmEJRrjaVufnT+dTKX7z4FLGxL+RNqUI8duMsN++0gYiJEO+mL6HfD6jW9SsfV0n4lmW/IRxv9+uM2ceyTr+APLZ3ydBPP4brmP3ap9a6r1FEapNzcw8oAUOauqTIoPAdkrHRYQpmCAeAgJP1W3lEY/uxG1//oiQEAAAAA==", "s_street": "data:image/webp;base64,UklGRtgAAABXRUJQVlA4IMwAAADQBQCdASooABcAPulgqU2pJaQiKq35IB0JYwC1G7AB1FOpBCTgTnhI9pO1HNw2gReyZH+o9+VwAP6Ik3qOiKTPvUOssix+444/ahPz/fzaeUoS3OHLiL4ljtPz53E5pz7ikyyHmSiPohibz8yjfnSII7smdME4ZyZK4vsPwuhAeg6/IodDawnqIVPAtnSzp58JU78W1YDVLxO/2YnkCrufobFNZTXdLlg43BNMB6N+CkCT5PoYCzYsWFxFM/7YAeO79DMx3hTrWlQAAAA=", "sizes": "data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAABwBQCdASooABsAPu1mrU8ppSSiKrgMATAdiWUAyNWLacxEmZWZMgsyl+v0mGTOuAfE1awAAP74sYomObqvEalSSwDBS01kc8qk/mnAScEv6IBQ1bEpzMDexWz/ne71KTKKcC63qk0/ARZ2M6ry+1GtW/4witehN4ZFo9Z+U//QUlALpAPXKQcA8c8C2v3GHo9FM9tcCblD+6u28AA=", "v_cafe": "data:image/webp;base64,UklGRrgAAABXRUJQVlA4IKwAAABQBQCdASooABEAPu1urVCppqQiqrgKATAdiWVh8Y2HtkG+HJ+GxpuGizSV3DYNs9JA16AA/u57IGqRSdTrZH7jXf9m8fASeKc548e8jgGyGnMEHnwa5OgGrOVE67fgtBqN56hy6HJOYeW+ZGyA3bH2ZmIiZpFBBkEf8FGFp7ACDoCKoQpSfs8LqBN1Ia8LTpRJcnb0qKAlrCEZxzRmO6SfgYVixLADuUuWQAAA", "z_axis_node": "data:image/webp;base64,UklGRrAAAABXRUJQVlA4IKQAAADQBgCdASooACgAPu1mrU8ppSSiLjQLMTAdiWcA0MwmbVq6fPt9wDHs64e1fO8BaCfb+ro9ayLgsHF5ZBMzfMAA/vYBdwJrsqGJiyKXj2P0OlpKfrmpXGegXB155r9Eq1+YJm0MYlR15VkQu9ZfHooyWpaGyPi6ejaVDtJET2HuhXS/4JSen37hGWvyDhzGp6KPcYA0PKhhkiIL1CZVoe40tHzgAA==", "z_kids": "data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAAAwBgCdASooACgAPu1oqk+ppiOjKrVdUTAdiWkAAFRIJzu01pK68giNXyUJKZo3q2ALWKfsySYYH6SQAP72B0yIx3beUiqmXC/z18GR2YYn87+RnpmTjtQvNlUn5HuIG1sKIMeWc3OokjcF3J0hfoQtAvgH2op7egO0q1Gbip9VyTKdz4WxEq7XfqAORcr0zoeDDX828IAAAA==", "z_sections": "data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAADQBgCdASooACgAPu1cq04ppKQiLjgMyTAdiWkADm1dICN+DA2OpQilSmZveOHazpv17T7+RXrPjOpUT2mPwgAA/vJYsrCGUoW7/AuuZQAIA1SmY/qw27HKRY6+GJxpC9/AGKHmVT06gwnB34AQEnjbkvaVf/i+rneeS+ABrOwcpMt52+QuaY76DKklX6cBgegAh4WgAAA=", "z_sport_plan": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAADQBQCdASooACgAPu1iqU2ppaQiNVVYATAdiWcA1BQ9iAW0eeSJueG7Is1wdg8MdOfxgvSE/ZgAAP73AQObYOHkaddPxa+D3v0wy+XQXeaCu8qoOIk+gGg8viVkFLioQUtcFAbeahqnD50xoQ7NTgkK8W9Jjc6BDd8SUAAA", "zoning": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAADQBACdASooABsAPuleqE2pJSQiNVgIASAdCUAZ9AitrNPYf2t6xiKYZi/bGtByAAD+9+foV8WhsHpWg7Eu7ycux9f2jg43/CDcVEj6Xdg6JpWsjwadKJpuPdU58zi1z9oifW2Z+81ZBQZWAPqCwAAA"};
+  document.querySelectorAll('img[data-lqip]').forEach(im=>{ const par=im.parentElement; par.style.backgroundImage=`url(${LQ[im.dataset.lqip]})`; par.style.backgroundSize='cover'; par.style.backgroundPosition='center'; im.classList.add('ld'); const done=()=>im.classList.add('in'); if(im.complete && im.naturalWidth) done(); else im.addEventListener('load',done,{once:true}); });
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const hasGsap = typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined';
+  const fmt = (v,d)=> v.toFixed(d).replace('.',',');
+
+  /* было / стало и слои генплана */
+  const layers = [...document.querySelectorAll('[data-layer-img]')], plan = document.querySelector('.plan');
+  const stateWord = document.querySelector('[data-state-word]'), stateTxt = document.querySelector('[data-state-txt]'), stateCap = document.querySelector('[data-state-cap]');
+  const capOf = {before:'исходное межевание', masterplan:'генплан · концепция', zoning:'функциональное зонирование', price:'ценовые пояса', sizes:'размеры участков', routes:'маршруты · улицы, ось, парк, озеро'};
+  document.querySelectorAll('[data-layer]').forEach(b=>b.addEventListener('click',()=>{ const k = b.dataset.layer, before = k==='before';
+    layers.forEach(im=>{ if (im.dataset.src){ im.src = im.dataset.src; im.srcset = im.dataset.srcset; im.removeAttribute('data-src'); } im.classList.toggle('on', im.dataset.layerImg===k); });
+    document.querySelectorAll('[data-layer]').forEach(x=>x.setAttribute('aria-pressed', x===b));
+    document.querySelectorAll('[data-list]').forEach(l=>{ l.hidden = (l.dataset.list==='before') !== before; });
+    stateWord.textContent = before ? 'Было' : 'Стало'; stateCap.textContent = capOf[k] || '';
+    stateTxt.textContent = before ? '43 участка от 981 до 7 760 м² в существующих границах. Дороги — 43 162 м². Продукта, среды и очерёдности нет.' : '118 лотов на том же землевладении, дорог вдвое меньше, лес и озеро внутри посёлка. Слои показывают, из чего собран расчёт.';
+    if (hasGsap) ScrollTrigger.refresh(); }));
+
+  /* hero slider */
+  const sld = document.querySelector('[data-slider]');
+  if (sld) {
+    const slides = [...sld.querySelectorAll('.sl')], dots = [...document.querySelectorAll('.hero .dots button')], num = document.getElementById('slnum'), cap = document.getElementById('slcap'), bar = sld.querySelector('.slbar i');
+    const caps = ['Въездная группа','Площадка в лесу','Въезд со стел','Берег и кафе'];
+    let i = 0, timer = null, paused = false;
+    const show = k => { i = (k + slides.length) % slides.length; slides.forEach((x,j)=>x.classList.toggle('on', j===i)); dots.forEach((d,j)=>d.classList.toggle('on', j===i)); num.textContent = String(i+1).padStart(2,'0'); cap.textContent = caps[i] + ' · концепция · визуализация'; bar.classList.remove('run'); void bar.offsetWidth; bar.classList.add('run'); };
+    const start = () => { clearInterval(timer); timer = setInterval(()=>{ if(!paused) show(i+1); }, 6000); };
+    dots.forEach((d,j)=>d.addEventListener('click',()=>{ show(j); start(); }));
+    sld.querySelector('.next').addEventListener('click',e=>{ e.stopPropagation(); show(i+1); start(); });
+    sld.querySelector('.prev').addEventListener('click',e=>{ e.stopPropagation(); show(i-1); start(); });
+    sld.addEventListener('click',()=>{ show(i+1); start(); });
+    sld.addEventListener('mouseenter',()=>paused=true); sld.addEventListener('mouseleave',()=>paused=false);
+    let tx=null; sld.addEventListener('touchstart',e=>tx=e.touches[0].clientX,{passive:true}); sld.addEventListener('touchend',e=>{ if(tx===null) return; const dx=e.changedTouches[0].clientX-tx; if(Math.abs(dx)>40){ show(dx<0?i+1:i-1); start(); } tx=null; });
+    addEventListener('keydown',e=>{ if(e.key==='ArrowRight'){show(i+1);start();} if(e.key==='ArrowLeft'){show(i-1);start();} });
+    const hydrate = () => sld.querySelectorAll('img[data-src]').forEach(im=>{ im.addEventListener('load',()=>im.classList.add('in'),{once:true}); im.src=im.dataset.src; im.srcset=im.dataset.srcset; im.removeAttribute('data-src'); });
+    setTimeout(hydrate, 1200);
+    if (!reduced) { bar.classList.add('run'); start(); }
+  }
+
+  const form = document.getElementById('leadForm');
+  form.addEventListener('submit', e=>{ e.preventDefault(); let ok = true;
+    const set = (inp,msg)=>{ const f = inp.closest('.f'); f.classList.toggle('err', !!msg); f.querySelector('.msg').textContent = msg||''; if(msg) ok=false; };
+    set(form.name, form.name.value.trim().length<2 ? 'Напишите имя' : ''); set(form.phone, form.phone.value.replace(/\D/g,'').length<10 ? 'Нужен номер из 10–11 цифр' : '');
+    if(!ok) return; window.dataLayer = window.dataLayer || []; dataLayer.push({event:'form_submit', form_id:'final'});
+    /* TODO: GETCOURSE_FORM_ACTION — fetch(url,{method:'POST',body:new FormData(form)}) */
+    form.innerHTML = '<div class="success"><h2 class="h2">Спасибо. <em>Перезвоним</em> в течение рабочего дня</h2><div class="rule"></div><p class="txt">А пока пришлите кадастровую схему участка на почту бюро — так разговор начнётся с конкретики.</p></div>'; });
+
+  /* nav colour on photo / dark */
+  const nav = document.getElementById('nav');
+  const darks = [...document.querySelectorAll('.dark,.story,.evening')];
+  const upd = ()=>{ const on = darks.some(b=>{ const r=b.getBoundingClientRect(); return r.top<=40 && r.bottom>40; }); nav.classList.toggle('onphoto', on); };
+  addEventListener('scroll', upd, {passive:true}); upd();
+
+  if (reduced || !hasGsap) return;
+  gsap.registerPlugin(ScrollTrigger);
+  ScrollTrigger.config({ ignoreMobileResize: true });
+  addEventListener('load', ()=>ScrollTrigger.refresh());
+  document.querySelectorAll('img').forEach(im=>im.addEventListener('load', ()=>ScrollTrigger.refresh(), {once:true}));
+  document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{ const t=document.querySelector(a.getAttribute('href')); if(t){ e.preventDefault(); window.scrollTo({top: t.getBoundingClientRect().top + scrollY - 10, behavior:'smooth'}); } }));
+
+  gsap.from('.hero [data-line]', { y: 30, opacity: 0, duration: 1.2, stagger: 0.1, ease: 'power3.out', delay: 0.2 });
+  gsap.from('[data-hero-photo]', { clipPath: 'inset(0 0 100% 0)', duration: 1.6, ease: 'power3.inOut', delay: 0.5, clearProps: 'clipPath' });
+  gsap.to('[data-hero-photo] .sl', { yPercent: 8, ease: 'none', scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: 0.6 } });
+
+  gsap.utils.toArray('.rv').forEach(el => gsap.from(el, { y: 22, opacity: 0, duration: 1.1, ease: 'power2.out', scrollTrigger: { trigger: el, start: 'top 90%', once: true } }));
+  gsap.utils.toArray('[data-stagger]').forEach(g => gsap.from(g.children, { y: 22, opacity: 0, duration: 1.0, stagger: 0.14, ease: 'power2.out', scrollTrigger: { trigger: g, start: 'top 85%', once: true } }));
+  gsap.utils.toArray('.bars .col').forEach(el => gsap.from(el, { scaleY: 0, duration: 1.2, ease: 'power2.out', scrollTrigger: { trigger: '.bars', start: 'top 85%', once: true } }));
+  gsap.utils.toArray('[data-parallax]').forEach(el => gsap.fromTo(el, { yPercent: -6 }, { yPercent: 6, ease: 'none', scrollTrigger: { trigger: el.parentElement, scrub: 0.6, start: 'top bottom', end: 'bottom top' } }));
+  gsap.utils.toArray('[data-count]').forEach(el => { const end = parseFloat(el.dataset.count), dec = +el.dataset.dec||0, o={v:0}; gsap.to(o, { v:end, duration:1.8, ease:'power1.out', onUpdate:()=>{ el.textContent = fmt(o.v,dec); }, scrollTrigger:{ trigger:el, start:'top 85%', once:true } }); });
+
+  const stage = document.querySelector('[data-story]');
+  if (stage && innerWidth > 900 && matchMedia('(pointer:fine)').matches) {
+    const imgs = stage.querySelectorAll('.simg'), chs = stage.querySelectorAll('.ch'), dots = stage.querySelectorAll('.sdots i'); const n = imgs.length;
+    const tl = gsap.timeline({ scrollTrigger: { trigger: '.story', pin: stage, scrub: 0.9, start: 'top top', end: () => '+=' + innerHeight * (n * 0.85 + 0.2), onUpdate: s => { const i = Math.min(n-1, Math.floor(s.progress * n)); dots.forEach((d,k)=>d.classList.toggle('on', k===i)); } } });
+    imgs.forEach((im,i)=>{ tl.to(im.querySelector('img'), { scale: 1.0, duration: 1.4, ease: 'none' }, i*1.4);
+      if (i>0) { tl.to(imgs[i-1], { opacity: 0, duration: 0.45 }, i*1.4-0.2); tl.to(im, { opacity: 1, duration: 0.45 }, i*1.4-0.2); tl.to(chs[i-1], { opacity: 0, y: -16, duration: 0.3 }, i*1.4-0.3); tl.to(chs[i], { opacity: 1, y: 0, duration: 0.4 }, i*1.4-0.05); } });
+    tl.to({}, { duration: 0.5 });
+  }
+})();
+</script>
+
+<script src="../nav.js" data-slug="poselok-v-sosnovom-lesu" defer></script>

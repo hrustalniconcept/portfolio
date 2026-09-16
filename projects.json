@@ -23,7 +23,8 @@
       "year": 2026,
       "category": "houses",
       "meta": "частный дом · 277,7 м²",
-      "cover": "dom-v-sosnovom-boru/assets/p02_threequarter_s.webp",
+      "cover": "dom-v-sosnovom-boru/assets/p02_threequarter",
+      "hover": "dom-v-sosnovom-boru/assets/p05_terrace",
       "related": []
     },
     {
@@ -32,7 +33,8 @@
       "year": 2020,
       "category": "houses",
       "meta": "индивидуальный дом для коттеджного посёлка · 270,5 м²",
-      "cover": "rezidencia-xv/assets/p02_threequarter_s.webp",
+      "cover": "rezidencia-xv/assets/p02_threequarter",
+      "hover": "rezidencia-xv/assets/p05_terrace",
       "related": []
     },
     {
@@ -41,7 +43,8 @@
       "year": 2026,
       "category": "settlements",
       "meta": "концепция коттеджного посёлка · 18,3 га · 155 участков",
-      "cover": "poselok-u-ozera/assets/m_house_s.webp",
+      "cover": "poselok-u-ozera/assets/m_public",
+      "hover": "poselok-u-ozera/assets/m_bay",
       "related": []
     },
     {
@@ -50,7 +53,18 @@
       "year": 2024,
       "category": "settlements",
       "meta": "концепция коттеджного посёлка · 7,06 га · 80 участков",
-      "cover": "lesnaya-rezidenciya/assets/m_public_s.webp",
+      "cover": "lesnaya-rezidenciya/assets/m_public",
+      "hover": "lesnaya-rezidenciya/assets/m_evening",
+      "related": []
+    },
+    {
+      "slug": "poselok-v-sosnovom-lesu",
+      "title": "Посёлок в сосновом лесу",
+      "year": 2026,
+      "category": "settlements",
+      "meta": "концепция коттеджного посёлка · 15 га · 118 участков",
+      "cover": "poselok-v-sosnovom-lesu/assets/m_entrance",
+      "hover": "poselok-v-sosnovom-lesu/assets/m_park",
       "related": []
     },
     {
@@ -59,7 +73,8 @@
       "year": 2024,
       "category": "settlements",
       "meta": "концепция коттеджного посёлка · 11 га · 146 участков",
-      "cover": "poselok-na-sklone/assets/s_house_s.webp",
+      "cover": "poselok-na-sklone/assets/m_park",
+      "hover": "poselok-na-sklone/assets/m_evening",
       "related": []
     }
   ]

@@ -69,13 +69,15 @@ body.menu-open{overflow:hidden}
         `<a class="mitem" href="${root}"><span class="n">→</span><span><span class="t">Всё портфолио</span><div class="cap">${cats.map(c => esc(c.title.toLowerCase())).join(' · ')}</div></span><span class="a"></span></a>`;
     }
 
-    /* ---- корневой индекс ---- */
+    /* ---- корневой индекс: строки с кадром cover и вторым кадром hover (та же разметка, что у build_index.py) ---- */
     const idx = document.querySelector('[data-index]');
     if (idx) {
       let n = 0;
-      idx.innerHTML = cats.map(c => { const list = byCat(c.id); return `<section class="group" id="${c.id}"><h2 class="gh">${esc(c.title)}</h2><div class="list">${
-        list.length ? list.map(p => `<a class="item" href="${href(p)}"><span class="n">${String(++n).padStart(2, '0')}</span><span><span class="t">${esc(p.title)}</span><div class="m">${p.year} · ${esc(p.meta)}</div></span><span class="a">Смотреть →</span></a>`).join('')
-        : `<div class="item empty"><span class="n">—</span><span><span class="t" style="color:#8A8A8A">Первый проект раздела — скоро</span></span><span></span></div>`}</div></section>`; }).join('');
+      const plural = (k, w) => k + ' ' + (k % 10 === 1 && k % 100 !== 11 ? w[0] : k % 10 >= 2 && k % 10 <= 4 && (k % 100 < 12 || k % 100 > 14) ? w[1] : w[2]);
+      const ph = p => { const c = root + p.cover, h = root + (p.hover || p.cover); return `<span class="ph"><img src="${c}_s.webp" srcset="${c}_s.webp 800w, ${c}_m.webp 1400w" sizes="(max-width:640px) 34vw, 16vw" alt="" loading="lazy" decoding="async"><img class="b" src="${h}_s.webp" alt="" loading="lazy" decoding="async"></span>`; };
+      idx.innerHTML = cats.map(c => { const list = byCat(c.id); return `<section class="group" id="${c.id}"><h2 class="gh"><span>${esc(c.title)}</span><small>${plural(list.length, ['проект', 'проекта', 'проектов'])}</small></h2><div class="list">${
+        list.length ? list.map(p => `<a class="item rv" href="${href(p)}"><span class="n">${String(++n).padStart(2, '0')}</span>${ph(p)}<span><span class="t">${esc(p.title)}</span><div class="m">${p.year} · ${esc(p.meta)}</div></span><span class="a">Смотреть <i>→</i></span></a>`).join('')
+        : `<div class="item empty"><span class="n">—</span><span class="ph"></span><span><span class="t">Первый проект раздела — скоро</span></span><span></span></div>`}</div></section>`; }).join('');
     }
   }).catch(() => {});
 })();
