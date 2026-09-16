@@ -14,14 +14,24 @@ h1{font:400 clamp(56px,9vw,150px)/.86 'Bebas Neue',Impact,sans-serif;letter-spac
 .item .m{font-size:13px;color:#8A8A8A;margin-top:6px}
 .item .a{font:400 18px/1 'Bebas Neue',Impact,sans-serif;text-transform:uppercase;transition:transform .3s}
 .item:hover .a{transform:translateX(4px)}
+.gh{font:400 12px/1 Inter,Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#8A8A8A;margin:10vh 0 18px}
+.group:first-child .gh{margin-top:0}
+.item.empty .t{color:#8A8A8A}
 .cap{font-size:12px;color:#8A8A8A;margin-top:12vh}
+@media(max-width:560px){.item{grid-template-columns:1fr auto;gap:16px}.item .n{display:none}.item .t{font-size:26px}}
 </style>
 <div class="wrap">
 <a class="logo" href="./"><svg viewBox="0 0 69 69" aria-hidden="true"><path d="M52.1687 68.9595L34.5 55.6875L16.8313 68.9595H0.121479L34.5 43.1347L68.8785 68.9595H52.1687Z"/><path d="M43.1347 34.5L68.9595 0.121479V16.8313L55.6875 34.5L68.9595 52.1687V68.8785L43.1347 34.5Z"/><path d="M16.8313 0.0404053L34.5 13.3124L52.1687 0.0404053H68.8785L34.5 25.8652L0.121479 0.0404053H16.8313Z"/><path d="M25.8652 34.5L0.0404053 68.8785V52.1687L13.3124 34.5L0.0404053 16.8313V0.121479L25.8652 34.5Z"/></svg>Хрустальный</a>
 <h1>Портфолио</h1>
-<div class="list">
-  <a class="item" href="dom-v-sosnovom-boru/"><span class="n">01</span><span><span class="t">Дом в сосновом бору</span><div class="m">2026 · частный дом · 277,7 м²</div></span><span class="a">Смотреть →</span></a>
-  <a class="item" href="rezidencia-xv/"><span class="n">02</span><span><span class="t">Резиденция XV</span><div class="m">2020 · индивидуальный дом для коттеджного посёлка · 270,5 м²</div></span><span class="a">Смотреть →</span></a>
+<div class="groups" data-index>
+  <section class="group" id="houses"><h2 class="gh">Индивидуальные дома</h2><div class="list">
+    <a class="item" href="dom-v-sosnovom-boru/"><span class="n">01</span><span><span class="t">Дом в сосновом бору</span><div class="m">2026 · частный дом · 277,7 м²</div></span><span class="a">Смотреть →</span></a>
+    <a class="item" href="rezidencia-xv/"><span class="n">02</span><span><span class="t">Резиденция XV</span><div class="m">2020 · индивидуальный дом для коттеджного посёлка · 270,5 м²</div></span><span class="a">Смотреть →</span></a>
+  </div></section>
+  <section class="group" id="settlements"><h2 class="gh">Коттеджные посёлки</h2><div class="list">
+    <div class="item empty"><span class="n">—</span><span><span class="t">Первый проект раздела — скоро</span></span><span></span></div>
+  </div></section>
 </div>
 <p class="cap">Все изображения — концепция · визуализация. hrustalni.com</p>
 </div>
+<script src="nav.js" defer></script>

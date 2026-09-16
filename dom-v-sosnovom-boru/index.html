@@ -231,12 +231,19 @@ h1,h2,h3{margin:0;font-weight:400}
 .rv{will-change:transform,opacity}
 @media(max-width:900px),(pointer:coarse){body::after{display:none}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.hero .photo img{transform:none}}
+.more .mlist{border-top:1px solid var(--line);margin-top:24px}
+.mitem{display:grid;grid-template-columns:96px 1fr auto;gap:24px;align-items:baseline;padding:22px 0;border-bottom:1px solid var(--line);text-decoration:none;color:inherit}
+.mitem .n{font:400 12px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--taupe)}
+.mitem .t{font:400 clamp(24px,3vw,40px)/1 var(--head);text-transform:uppercase}
+.mitem .a{font:400 18px/1 var(--head);text-transform:uppercase;transition:transform .3s}
+.mitem:hover .a{transform:translateX(4px)}
+@media(max-width:560px){.mitem{grid-template-columns:1fr auto}.mitem .n{display:none}}
 </style>
 
 <header class="nav" id="nav">
   <a class="logo" href="../"><svg viewBox="0 0 69 69" aria-hidden="true"><path d="M52.1687 68.9595L34.5 55.6875L16.8313 68.9595H0.121479L34.5 43.1347L68.8785 68.9595H52.1687Z"/><path d="M43.1347 34.5L68.9595 0.121479V16.8313L55.6875 34.5L68.9595 52.1687V68.8785L43.1347 34.5Z"/><path d="M16.8313 0.0404053L34.5 13.3124L52.1687 0.0404053H68.8785L34.5 25.8652L0.121479 0.0404053H16.8313Z"/><path d="M25.8652 34.5L0.0404053 68.8785V52.1687L13.3124 34.5L0.0404053 16.8313V0.121479L25.8652 34.5Z"/></svg>Хрустальный</a>
   <nav class="links" aria-label="Разделы"><a href="../">Портфолио</a><a href="#thought">Идея</a><a href="#plan">Планировка</a><a href="#interior">Интерьер</a></nav>
-  <div class="right"><a href="#contact">Заявка</a><span class="burger" aria-hidden="true"><i></i><i></i><i></i></span></div>
+  <div class="right"><a href="#contact">Заявка</a><button class="burger" type="button" aria-label="Меню портфолио"><i></i><i></i><i></i></button></div>
 </header>
 
 <section class="hero" id="top">
@@ -400,6 +407,14 @@ h1,h2,h3{margin:0;font-weight:400}
   </form>
 </div></section>
 
+<section class="sec more" id="more"><div class="wrap">
+  <span class="word rv">Другие проекты</span>
+  <div class="mlist rv" data-more>
+    <a class="mitem" href="../rezidencia-xv/"><span class="n">следующий</span><span><span class="t">Резиденция XV</span><div class="cap">2020 · индивидуальный дом для коттеджного посёлка · 270,5 м²</div></span><span class="a">Смотреть →</span></a>
+    <a class="mitem" href="../"><span class="n">→</span><span><span class="t">Всё портфолио</span><div class="cap">дома и посёлки бюро</div></span><span class="a"></span></a>
+  </div>
+</div></section>
+
 <footer class="footer">
   <a class="logo" href="#top" style="display:flex;align-items:center;gap:10px;font:400 18px/1 var(--head);text-transform:uppercase;letter-spacing:.04em"><svg viewBox="0 0 69 69" style="width:22px;height:22px;fill:currentColor" aria-hidden="true"><path d="M52.1687 68.9595L34.5 55.6875L16.8313 68.9595H0.121479L34.5 43.1347L68.8785 68.9595H52.1687Z"/><path d="M43.1347 34.5L68.9595 0.121479V16.8313L55.6875 34.5L68.9595 52.1687V68.8785L43.1347 34.5Z"/><path d="M16.8313 0.0404053L34.5 13.3124L52.1687 0.0404053H68.8785L34.5 25.8652L0.121479 0.0404053H16.8313Z"/><path d="M25.8652 34.5L0.0404053 68.8785V52.1687L13.3124 34.5L0.0404053 16.8313V0.121479L25.8652 34.5Z"/></svg>Хрустальный</a>
   <span class="cap">Все изображения на странице — концепция · визуализация</span>
@@ -491,3 +506,5 @@ h1,h2,h3{margin:0;font-weight:400}
       onUpdate: s => { bar.style.width = (8 + s.progress*92) + '%'; gc.textContent = String(1 + Math.min(cnt-1, Math.round(s.progress*(cnt-1)))).padStart(2,'0'); } } }); }
 })();
 </script>
+
+<script src="../nav.js" data-slug="dom-v-sosnovom-boru" defer></script>

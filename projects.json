@@ -1,0 +1,27 @@
+{
+  "site": {"title": "Портфолио — Концепт-бюро «Хрустальный»", "home": "https://hrustalni.com", "request": "#contact"},
+  "categories": [
+    {"id": "houses", "title": "Индивидуальные дома", "short": "Дома"},
+    {"id": "settlements", "title": "Коттеджные посёлки", "short": "Посёлки"}
+  ],
+  "projects": [
+    {
+      "slug": "dom-v-sosnovom-boru",
+      "title": "Дом в сосновом бору",
+      "year": 2026,
+      "category": "houses",
+      "meta": "частный дом · 277,7 м²",
+      "cover": "dom-v-sosnovom-boru/assets/p02_threequarter_s.webp",
+      "related": []
+    },
+    {
+      "slug": "rezidencia-xv",
+      "title": "Резиденция XV",
+      "year": 2020,
+      "category": "houses",
+      "meta": "индивидуальный дом для коттеджного посёлка · 270,5 м²",
+      "cover": "rezidencia-xv/assets/p02_threequarter_s.webp",
+      "related": []
+    }
+  ]
+}
