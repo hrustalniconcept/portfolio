@@ -69,9 +69,11 @@ body.menu-open{overflow:hidden}
         `<a class="mitem" href="${root}"><span class="n">→</span><span><span class="t">Всё портфолио</span><div class="cap">${cats.map(c => esc(c.title.toLowerCase())).join(' · ')}</div></span><span class="a"></span></a>`;
     }
 
-    /* ---- корневой индекс: строки с кадром cover и вторым кадром hover (та же разметка, что у build_index.py) ---- */
+    /* ---- корневой индекс: строки с кадром cover и вторым кадром hover (та же разметка, что у build_index.py).
+       Перерисовывается только если статический список отстал от реестра; подключать как nav.js?v=<дата>, чтобы браузер не держал старую версию ---- */
     const idx = document.querySelector('[data-index]');
-    if (idx) {
+    const stale = idx && [...idx.querySelectorAll('a.item')].map(a => a.getAttribute('href')).join() !== projects.map(href).join();
+    if (idx && stale) {
       let n = 0;
       const plural = (k, w) => k + ' ' + (k % 10 === 1 && k % 100 !== 11 ? w[0] : k % 10 >= 2 && k % 10 <= 4 && (k % 100 < 12 || k % 100 > 14) ? w[1] : w[2]);
       const ph = p => { const c = root + p.cover, h = root + (p.hover || p.cover); return `<span class="ph"><img src="${c}_s.webp" srcset="${c}_s.webp 800w, ${c}_m.webp 1400w" sizes="(max-width:640px) 34vw, 16vw" alt="" loading="lazy" decoding="async"><img class="b" src="${h}_s.webp" alt="" loading="lazy" decoding="async"></span>`; };
