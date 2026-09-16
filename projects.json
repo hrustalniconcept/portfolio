@@ -22,6 +22,15 @@
       "meta": "индивидуальный дом для коттеджного посёлка · 270,5 м²",
       "cover": "rezidencia-xv/assets/p02_threequarter_s.webp",
       "related": []
+    },
+    {
+      "slug": "poselok-u-ozera",
+      "title": "Посёлок у озера",
+      "year": 2026,
+      "category": "settlements",
+      "meta": "концепция коттеджного посёлка · 18,3 га · 155 участков",
+      "cover": "poselok-u-ozera/assets/m_house_s.webp",
+      "related": []
     }
   ]
 }
