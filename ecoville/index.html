@@ -1,0 +1,471 @@
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EcoVille</title>
+<meta name="description" content="EcoVille — коттеджный посёлок комфорт‑класса по франшизе федеральной сети «Хрустальный». Концепт-бюро «Хрустальный»: реализованные проекты.">
+<meta property="og:title" content="EcoVille — Концепт-бюро «Хрустальный»">
+<meta property="og:description" content="EcoVille — коттеджный посёлок комфорт‑класса по франшизе федеральной сети «Хрустальный».">
+<meta property="og:image" content="assets/p01.jpg">
+<meta property="og:type" content="article">
+<link rel="preload" as="image" href="assets/p01.webp" imagesrcset="assets/p01_s.webp 800w, assets/p01_m.webp 1400w, assets/p01.webp 2400w" imagesizes="(max-width:900px) 100vw, 92vw">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#FFFFFF;--stone:#F3F4F6;--ink:#1C1C1C;--navy:#072F50;--deep:#021825;--taupe:#8A8A8A;--white:#FFFFFF;--line:#D3D3D3;--wline:rgba(255,255,255,.2);--accent:#072F50;
+  --ink72:rgba(28,28,28,.72);--w70:rgba(255,255,255,.72);
+  --sans:'Inter','Inter Tight',Arial,sans-serif;--head:'Bebas Neue','Oswald',Impact,'Arial Narrow',sans-serif;
+  --m:clamp(24px,6vw,96px);--sec:clamp(120px,16vh,200px);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 16px/1.5 var(--sans);letter-spacing:-.01em;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:70;opacity:.025;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='160' height='160' filter='url(%23n)'/></svg>");mix-blend-mode:multiply}
+img,video{max-width:100%;display:block}
+img.ld{opacity:0;transition:opacity .9s ease}
+img.ld.in{opacity:1}
+a{color:inherit;text-decoration:none}
+p{margin:0}
+h1,h2,h3{margin:0;font-weight:400}
+.h1{font:400 clamp(64px,10vw,168px)/.86 var(--head);letter-spacing:-.015em;text-transform:uppercase;text-wrap:balance}
+.h2{font:400 clamp(40px,5.5vw,88px)/.98 var(--head);letter-spacing:-.01em;text-transform:uppercase;text-wrap:balance}
+.h2 em,.h1 em{font-style:normal;background:var(--navy);color:var(--white);padding:0 .12em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.dark .h2 em{background:var(--white);color:var(--navy)}
+.word{font:400 clamp(28px,3.2vw,44px)/1 var(--head);text-transform:uppercase;letter-spacing:.01em}
+.h3{font:400 clamp(22px,1.8vw,28px)/1 var(--head);text-transform:uppercase;letter-spacing:.01em}
+.lbl{font:500 11px/1.2 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--taupe)}
+.cap{font:400 13px/1.4 var(--sans);color:var(--taupe)}
+.txt{font:400 clamp(15px,1.1vw,17px)/1.5 var(--sans);color:var(--ink72);max-width:50ch}
+.rule{width:40px;height:1px;background:currentColor;opacity:.4;margin:22px 0 18px}
+.wrap{padding-inline:var(--m)}
+.sec{padding-block:var(--sec)}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);column-gap:clamp(16px,2vw,32px);row-gap:24px}
+.dark{background:linear-gradient(180deg,var(--navy) 0%,var(--deep) 100%);color:var(--white)}
+.dark .txt{color:var(--w70)}.dark .cap,.dark .lbl{color:rgba(255,255,255,.55)}
+.stone{background:var(--stone)}
+.dark .lbl{color:rgba(255,255,255,.6)}
+.arrow{display:inline-flex;align-items:center;gap:10px;font:400 18px/1 var(--head);text-transform:uppercase;letter-spacing:.02em}
+.arrow i{font-style:normal;display:inline-block;transition:transform .3s}
+.arrow:hover i{transform:translateX(4px)}
+.pill{display:inline-flex;align-items:center;gap:8px;border:1px solid currentColor;border-radius:3px;padding:12px 18px 10px;font:400 18px/1 var(--head);text-transform:uppercase;letter-spacing:.02em;background:transparent;color:inherit;cursor:pointer;transition:background .3s,color .3s}
+.pill:hover{background:var(--navy);color:var(--white)}
+.dark .pill:hover{background:var(--white);color:var(--ink)}
+.pill[aria-pressed="true"]{background:var(--navy);color:var(--white);border-color:var(--navy)}
+.dark .pill[aria-pressed="true"]{background:var(--white);color:var(--ink);border-color:var(--white)}
+.btn{display:inline-flex;align-items:center;gap:12px;background:var(--navy);color:var(--white);padding:16px 26px 14px;border-radius:3px;font:400 20px/1 var(--head);text-transform:uppercase;letter-spacing:.02em;border:0;cursor:pointer;transition:opacity .3s}
+.btn:hover{opacity:.85}
+.dark .btn{background:var(--white);color:var(--navy)}
+:focus-visible{outline:1px solid currentColor;outline-offset:4px}
+
+/* nav */
+.nav{position:fixed;inset:0 0 auto 0;z-index:40;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:22px var(--m) 30px;font:400 13px/1 var(--sans);color:var(--ink);transition:color .4s,background .4s;pointer-events:none;background:linear-gradient(180deg,rgba(255,255,255,.96) 55%,rgba(255,255,255,0))}
+.nav>*{pointer-events:auto}
+.nav.onphoto{color:var(--white);background:linear-gradient(180deg,rgba(2,24,37,.7) 55%,rgba(2,24,37,0))}
+.nav .logo{display:flex;align-items:center;gap:10px;font:400 18px/1 var(--head);letter-spacing:.04em;text-transform:uppercase}
+.nav .logo svg{width:26px;height:26px;fill:currentColor}
+.nav .links{display:flex;gap:28px}
+.nav .links a.is{text-decoration:underline;text-underline-offset:6px}
+.nav .right{display:flex;justify-content:flex-end;gap:28px;align-items:center}
+.burger{width:22px;height:12px;display:grid;gap:4px}
+.burger i{height:1px;background:currentColor;display:block}
+@media(max-width:900px){.nav .links{display:none}.nav{grid-template-columns:1fr auto}}
+
+/* hero */
+.hero{position:relative;padding:calc(26px + 11vh) var(--m) 0;min-height:100svh;overflow:visible}
+.hero .meta{display:flex;gap:clamp(24px,8vw,140px);align-items:baseline}
+.hero .title{margin-top:clamp(30px,3.2vw,48px);max-width:11ch;position:relative;z-index:2}
+.hero .meta{max-width:calc(100% - 180px)}
+.hero .counter{position:absolute;right:var(--m);top:calc(26px + 11vh + 8px);text-align:right;z-index:2}
+.hero .counter .n{font:400 clamp(32px,3vw,44px)/1 var(--head)}
+.hero .counter .n small{font-size:14px;font-weight:400;color:var(--taupe);margin-left:6px}
+.hero .dots{display:grid;gap:6px;justify-items:end;margin-top:20px}
+.hero .dots button{width:22px;height:22px;padding:0;border:0;background:transparent;cursor:pointer;display:grid;place-items:center}
+.hero .dots button::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--line);transition:transform .3s,background .3s}
+.hero .dots button.on::before{background:var(--navy);transform:scale(1.5)}
+.hero .dots button:hover::before{background:var(--navy)}
+.hero .see{margin-top:clamp(28px,5vh,56px);position:relative;z-index:2}
+.hero .social{position:absolute;left:var(--m);bottom:14vh;display:grid;gap:14px;z-index:2}
+.hero .social a{font:400 11px/1 var(--sans);letter-spacing:.18em;color:var(--taupe);writing-mode:vertical-rl}
+.hero .photo{position:relative;margin:clamp(-40px,-6vw,-96px) calc(var(--m) * -1) 0 clamp(120px,22vw,420px);height:min(78vh,880px);overflow:hidden}
+.hero .photo .sl{position:absolute;inset:0;opacity:0;transition:opacity 1.1s ease}
+.hero .photo .sl.on{opacity:1}
+.hero .photo img{width:100%;height:100%;object-fit:cover;object-position:center 45%;transform:scale(1.08)}
+.hero .photo .sl.on img{animation:kb 7s cubic-bezier(.2,.6,.2,1) forwards}
+@keyframes kb{to{transform:scale(1)}}
+.hero .photo{cursor:pointer}
+.slnav{position:absolute;top:50%;transform:translateY(-50%);width:48px;height:48px;border:1px solid rgba(255,255,255,.6);border-radius:3px;background:rgba(2,24,37,.35);color:#fff;font:400 22px/1 var(--head);cursor:pointer;opacity:0;transition:opacity .3s,background .3s;backdrop-filter:blur(4px)}
+.slnav.prev{left:20px}.slnav.next{right:20px}
+.hero .photo:hover .slnav,.slnav:focus-visible{opacity:1}
+.slnav:hover{background:rgba(2,24,37,.7)}
+.slbar{position:absolute;left:0;right:0;bottom:0;height:2px;background:rgba(255,255,255,.25)}
+.slbar i{display:block;height:100%;width:0;background:#fff}
+.slbar i.run{animation:slbar 6s linear forwards}
+@keyframes slbar{to{width:100%}}
+@media(pointer:coarse){.slnav{opacity:1;background:rgba(2,24,37,.5)}}
+.hero .photo .cap{position:absolute;left:24px;bottom:22px;color:var(--white);opacity:.85;text-shadow:0 1px 12px rgba(0,0,0,.35)}
+@media(max-width:900px){.hero .meta{max-width:none}.hero{padding-top:calc(26px + 14vh)}.hero .counter{position:static;text-align:left;margin-top:16px}.hero .dots{justify-items:start;display:flex}.hero .social{display:none}.hero .photo{margin:24px calc(var(--m) * -1) 0;height:64vh}}
+
+/* metrics */
+.metrics{grid-column:1/-1;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:clamp(64px,9vh,112px);border-top:1px solid var(--ink);padding-top:28px}
+.metric .n{font:400 clamp(44px,5vw,80px)/1 var(--head);letter-spacing:0;font-variant-numeric:tabular-nums}
+.metric .n small{font-size:.4em;letter-spacing:0;margin-left:6px;color:var(--taupe)}
+.metric .cap{margin-top:10px}
+@media(max-width:900px){.metrics{grid-template-columns:1fr 1fr}}
+
+/* story */
+.story{position:relative;background:var(--deep);color:var(--white)}
+.stage{position:relative;height:100svh;min-height:600px;overflow:hidden}
+.simg{position:absolute;inset:0;opacity:0}
+.simg:first-child{opacity:1}
+.simg img{width:100%;height:100%;object-fit:cover;transform:scale(1.08)}
+.sgrad{position:absolute;inset:0;background:linear-gradient(180deg,rgba(2,24,37,0) 45%,rgba(2,24,37,.6) 100%)}
+.ch{position:absolute;left:var(--m);right:var(--m);bottom:clamp(40px,9vh,96px);opacity:0;transform:translateY(20px);display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px;align-items:end}
+.ch:first-of-type{opacity:1;transform:none}
+.ch .w{grid-column:1/8}
+.ch .w .word{display:block}
+.ch .w .txt{margin-top:14px;color:var(--w70)}
+.ch .c{grid-column:9/13;text-align:right;font:400 40px/1 var(--head)}
+.ch .c small{font-size:14px;font-weight:400;opacity:.6;margin-left:6px}
+.sdots{position:absolute;right:var(--m);top:50%;transform:translateY(-50%);display:grid;gap:12px}
+.sdots i{width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,.35);display:block}
+.sdots i.on{background:var(--white)}
+.sfall{display:none}
+@media(max-width:900px),(pointer:coarse){.stage,.sdots{display:none}.sfall{display:block;padding-block:var(--sec)}.sfall figure{margin:0 0 40px}.sfall img{width:100%;height:60vh;object-fit:cover}.sfall figcaption{padding:16px 0 0}.ch .w,.ch .c{grid-column:1/-1}.ch .c{text-align:left}}
+
+/* plan (stone) — генплан со слоями */
+.plan .head{grid-column:1/8}
+.plan .state{grid-column:1/5;margin-top:clamp(40px,6vh,72px);align-self:end}
+.plan .state .txt{margin-top:12px;font-size:15px}
+.plan .tog{grid-column:5/13;display:flex;gap:8px;flex-wrap:wrap;margin-top:clamp(40px,6vh,72px);align-self:end;justify-content:flex-end}
+.plan .tog .pill{padding:10px 14px 8px;font-size:16px}
+.plan .tog .sep{width:1px;height:28px;background:var(--line);margin:0 6px;align-self:center}
+.plan .doc{grid-column:1/-1;position:relative;aspect-ratio:3840/2145;background:var(--white);border:1px solid var(--line);margin-top:8px}
+.plan .doc img{width:100%;height:100%;object-fit:contain;position:absolute;inset:0;opacity:0;transition:opacity .7s ease}
+.plan .doc img.on{opacity:1}
+.plan .doc .cap{position:absolute;right:0;bottom:-24px}
+.plan .lists{grid-column:1/-1;margin-top:32px}
+.plan .lists .rooms{display:grid;grid-template-columns:repeat(3,1fr);gap:0 clamp(24px,4vw,64px)}
+.plan .lists .rooms[hidden]{display:none}
+.zones{grid-column:1/-1;margin-top:clamp(48px,7vh,80px);display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(24px,4vw,64px)}
+.zone{border-top:1px solid var(--ink);padding-top:18px}
+.zone .h3{font-size:24px}
+.zone .txt{margin-top:10px;font-size:15px}
+.rooms{margin-top:16px;display:grid;gap:4px;font:400 13px/1.5 var(--sans)}
+.rooms span{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);padding:5px 0;color:var(--ink72)}
+.rooms b{font-weight:500;color:var(--ink);font-variant-numeric:tabular-nums;white-space:nowrap}
+.total{grid-column:1/-1;display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:12px;border-top:1px solid var(--ink);padding-top:22px;margin-top:8px}
+.total .n{font:400 clamp(44px,5vw,72px)/1 var(--head);font-variant-numeric:tabular-nums}
+.total .cap{max-width:56ch}
+@media(max-width:900px){.plan .head,.plan .state,.plan .tog{grid-column:1/-1}.plan .tog{justify-content:flex-start;margin-top:16px}.plan .lists .rooms{grid-template-columns:1fr}.zones{grid-template-columns:1fr}}
+
+/* phases — очереди */
+.phases .head{grid-column:1/7}
+.phases .side{grid-column:8/13;align-self:end}
+.bars{grid-column:1/-1;margin-top:clamp(40px,6vh,72px);display:grid;grid-template-columns:repeat(5,1fr);gap:clamp(12px,2vw,32px);align-items:end;border-bottom:1px solid var(--ink);padding-bottom:0}
+.bar{display:grid;gap:14px;align-content:end}
+.bar .k{font:400 clamp(28px,3vw,44px)/1 var(--head);font-variant-numeric:tabular-nums}
+.bar .col{background:var(--navy);width:100%;transform-origin:bottom;height:calc(var(--h) * 1px)}
+.bar .cap{padding-bottom:0}
+.blegend{grid-column:1/-1;display:grid;grid-template-columns:repeat(5,1fr);gap:clamp(12px,2vw,32px);padding-top:16px}
+.blegend div{font:400 13px/1.5 var(--sans);color:var(--ink72)}
+.blegend b{display:block;font:400 22px/1 var(--head);color:var(--ink);text-transform:uppercase;margin-bottom:6px}
+@media(max-width:900px){.phases .head,.phases .side{grid-column:1/-1}.bar .col{height:calc(var(--h) * .5px)}.blegend{grid-template-columns:1fr 1fr}.blegend div:last-child{grid-column:1/-1}}
+
+/* houses — сетка типов */
+.houses .head{grid-column:1/8}
+.hgrid{grid-column:1/-1;display:grid;grid-template-columns:repeat(6,1fr);gap:clamp(24px,3vw,48px) 24px;margin-top:clamp(40px,6vh,72px)}
+.hc{grid-column:span 2}
+.hc:nth-child(4),.hc:nth-child(5){grid-column:span 3}
+.hc figure{margin:0;aspect-ratio:16/9;overflow:hidden;position:relative;background:var(--white);cursor:pointer}
+.hc img{width:100%;height:100%;object-fit:cover;transform:scale(1.05);transition:transform 1.4s cubic-bezier(.2,.6,.2,1),opacity .6s ease}
+.hc:hover img.ren{transform:scale(1)}
+.hc img.pl{position:absolute;inset:0;object-fit:contain;transform:none;opacity:0;padding:4%}
+.hc.plan img.ren{opacity:0}
+.hc.plan img.pl{opacity:1}
+.hc .capline .arrow{background:none;border:0;padding:0;cursor:pointer;color:inherit;white-space:nowrap}
+.hc .capline{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding-top:14px}
+.hc .capline .h3{font-size:24px}
+.hc .capline .cap{margin-top:4px}
+.hc .lbl{white-space:nowrap}
+@media(max-width:900px){.houses .head{grid-column:1/-1}.hgrid{grid-template-columns:1fr 1fr}.hc,.hc:nth-child(4),.hc:nth-child(5){grid-column:span 1}.hc .capline{flex-wrap:wrap}}
+@media(max-width:560px){.hgrid{grid-template-columns:1fr}}
+
+/* evening full-bleed */
+.evening{position:relative;height:min(100svh,960px);min-height:560px;overflow:hidden;background:var(--deep);color:var(--white)}
+.evening .bg{position:absolute;inset:-8% 0;will-change:transform}
+.evening img{width:100%;height:100%;object-fit:cover;object-position:center 45%}
+.evening .g{position:absolute;inset:0;background:linear-gradient(90deg,rgba(2,24,37,.6) 0%,rgba(2,24,37,0) 60%)}
+.evening .t{position:absolute;left:var(--m);right:var(--m);top:50%;transform:translateY(-50%)}
+.evening .h2{max-width:14ch}
+.evening .txt{margin-top:22px;color:var(--w70)}
+
+/* details — среда */
+.details .head{grid-column:1/7}
+.dgrid{grid-column:1/-1;display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,3vw,48px);margin-top:clamp(40px,6vh,72px)}
+.d figure{margin:0;aspect-ratio:4/5;overflow:hidden}
+.d img{width:100%;height:100%;object-fit:cover;transform:scale(1.05);transition:transform 1.4s cubic-bezier(.2,.6,.2,1)}
+.d:hover img{transform:scale(1)}
+.d .capline{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding-top:14px}
+.d .capline .h3{font-size:22px}
+.d:nth-child(3n+2){margin-top:clamp(24px,5vw,72px)}
+@media(max-width:900px){.details .head{grid-column:1/-1}.dgrid{grid-template-columns:1fr 1fr}.d:nth-child(3n+2){margin-top:0}}
+@media(max-width:560px){.dgrid{grid-template-columns:1fr}}
+
+/* film (dark) */
+.film{position:relative;min-height:100svh;overflow:hidden}
+.film .bg{position:absolute;inset:-8% 0;will-change:transform}
+.film .bg img{width:100%;height:100%;object-fit:cover;object-position:center 40%;opacity:.38}
+.film .in{position:relative;padding:calc(var(--sec)*.7) var(--m);display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px;align-items:center;min-height:100svh}
+.film .l{grid-column:1/8}
+.film .l .word{color:var(--white)}
+.film .l .txt{margin-top:18px}
+.film .l .lbl{margin-top:28px;display:block}
+.film .r{grid-column:9/12;justify-self:center;width:min(100%,340px)}
+.film video{width:100%;aspect-ratio:9/16;object-fit:cover;background:#000;border:1px solid var(--wline)}
+.film .ctrls{display:flex;gap:10px;margin-top:16px;justify-content:flex-end}
+.pairs{margin-top:28px;display:grid;gap:0;font:400 13px/1.5 var(--sans);max-width:60ch}
+.pairs span{display:grid;grid-template-columns:1fr auto;gap:16px;padding:8px 0;border-bottom:1px solid var(--wline);color:var(--w70)}
+.pairs span b{font-weight:400;color:var(--white);white-space:nowrap}
+.pairs span.blur{filter:blur(3px);opacity:.75;pointer-events:none;user-select:none}
+.pairs span.note{border:0;padding-top:12px}
+.pairs span.note i{font-style:normal;color:rgba(255,255,255,.55);font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+@media(max-width:900px){.film .l,.film .r{grid-column:1/-1}.film .r{justify-self:start}.film .bg img{opacity:.22}.pairs span{grid-template-columns:1fr;gap:2px}}
+
+/* process */
+.process .head{grid-column:1/8}
+.pline{grid-column:1/-1;list-style:none;margin:clamp(40px,6vh,72px) 0 0;padding:32px 0 0;display:grid;grid-template-columns:repeat(7,1fr);gap:16px;border-top:1px solid var(--ink);position:relative}
+.pline li{position:relative;padding-top:18px}
+.pline li::before{content:"";position:absolute;left:0;top:-37px;width:9px;height:9px;border-radius:50%;background:var(--ink)}
+.pline li.next::before{background:var(--paper);border:1px solid var(--ink);width:7px;height:7px}
+.pline b{display:block;font:400 22px/1 var(--head);text-transform:uppercase;letter-spacing:.01em}
+.pline span{display:block;margin-top:10px;font:400 13px/1.4 var(--sans);color:var(--ink72)}
+.pline span i{display:block;font:500 10px/1.2 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--taupe);margin-bottom:3px}
+@media(max-width:900px){.process .head{grid-column:1/-1}.pline{grid-template-columns:repeat(2,1fr)}.pline li::before{display:none}}
+
+/* specs (paper) */
+.specs .head{grid-column:1/8}
+.sgrid{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vh,56px) 24px;margin-top:clamp(40px,6vh,72px)}
+.sch{margin:0;background:var(--white);border:1px solid var(--line)}
+.sch.wide{grid-column:1/-1}
+.sch img{width:100%;height:auto;display:block}
+.sch figcaption{padding:14px 16px 16px;border-top:1px solid var(--line)}
+.sch .h3{font-size:22px}
+.sch .cap{margin-top:4px}
+.zhead{grid-column:1/-1;margin-top:clamp(48px,7vh,80px);border-top:1px solid var(--ink);padding-top:18px}
+.zhead .cap{margin-top:8px;max-width:70ch}
+.zgrid{grid-column:1/-1;display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(20px,3vw,40px) 24px;margin-top:24px}
+.zn{margin:0}
+.zn img{width:100%;aspect-ratio:1;object-fit:cover;background:var(--white);border:1px solid var(--line)}
+.zn figcaption{padding-top:12px}
+.zn .h3{font-size:20px}
+.zn .cap{margin-top:4px}
+.srow{grid-column:1/-1;display:grid;grid-template-columns:4fr 8fr;gap:24px clamp(24px,4vw,64px);margin-top:clamp(48px,7vh,80px);align-items:end}
+.srow .metrics{margin-top:0;border-top:0;padding-top:0}
+.sch.small .h3{font-size:18px}
+@media(max-width:900px){.zgrid{grid-template-columns:1fr 1fr}.srow{grid-template-columns:1fr}}
+@media(max-width:900px){.specs .head{grid-column:1/-1}.sgrid{grid-template-columns:1fr}}
+.row{display:grid;grid-template-columns:200px 1fr;gap:20px;padding:14px 0;border-bottom:1px solid var(--line);font:400 15px/1.5 var(--sans)}
+.row span:first-child{color:var(--taupe)}
+
+/* cta (dark) */
+.cta .l{grid-column:1/7}
+.cta form{grid-column:8/13;align-self:end;display:grid;gap:26px}
+.f{display:grid;gap:8px}
+.f label{font:400 11px/1.2 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.55)}
+.f input{background:transparent;border:0;border-bottom:1px solid rgba(255,255,255,.3);color:var(--white);font:400 16px/1.4 var(--sans);padding:10px 0;border-radius:0;outline:0}
+.f input::placeholder{color:rgba(255,255,255,.35)}
+.f input:focus{border-color:var(--white)}
+.f.err input{border-color:#D98A6B}
+.f .msg{font-size:12px;color:#D98A6B;min-height:1em}
+.consent{font-size:12px;color:rgba(255,255,255,.45);max-width:44ch}
+.success .h2{font-size:48px}
+@media(max-width:900px){.cta .l,.cta form{grid-column:1/-1}}
+
+/* footer */
+.footer{padding:40px var(--m);display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:baseline;border-top:1px solid var(--line)}
+
+/* motion helpers */
+.rv{will-change:transform,opacity}
+@media(max-width:900px),(pointer:coarse){body::after{display:none}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.hero .photo img{transform:none}}
+.more .mlist{border-top:1px solid var(--line);margin-top:24px}
+.mitem{display:grid;grid-template-columns:96px 1fr auto;gap:24px;align-items:baseline;padding:22px 0;border-bottom:1px solid var(--line);text-decoration:none;color:inherit}
+.mitem .n{font:400 12px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--taupe)}
+.mitem .t{font:400 clamp(24px,3vw,40px)/1 var(--head);text-transform:uppercase}
+.mitem .a{font:400 18px/1 var(--head);text-transform:uppercase;transition:transform .3s}
+.mitem:hover .a{transform:translateX(4px)}
+@media(max-width:560px){.mitem{grid-template-columns:1fr auto}.mitem .n{display:none}}
+
+/* realised — реализованный проект */
+.hero .meta .lbl:first-child:empty{display:none}
+.facts{grid-column:1/-1;margin-top:clamp(40px,6vh,72px)}
+.facts .row{grid-template-columns:220px 1fr;align-items:baseline}
+.facts .row span:last-child{color:var(--ink72);max-width:72ch}
+.facts .row:first-child{border-top:1px solid var(--ink)}
+@media(max-width:900px){.facts .row{grid-template-columns:1fr;gap:4px}}
+.plan .doc.portrait{aspect-ratio:4/3}
+.evening .g{background:linear-gradient(90deg,rgba(2,24,37,.78) 0%,rgba(2,24,37,.45) 45%,rgba(2,24,37,.05) 100%)}
+.evening .t .txt{text-shadow:0 1px 14px rgba(0,0,0,.35)}
+.quote{padding-block:var(--sec)}
+.quote .q{grid-column:1/11;font:400 clamp(32px,4.2vw,68px)/1.02 var(--head);text-transform:uppercase;letter-spacing:-.01em;text-wrap:balance}
+.quote .q::before{content:'«'}.quote .q::after{content:'»'}
+.quote .who{grid-column:1/8;margin-top:28px;display:grid;gap:6px}
+.quote .who b{font:400 22px/1 var(--head);text-transform:uppercase;letter-spacing:.02em}
+@media(max-width:900px){.quote .q,.quote .who{grid-column:1/-1}}
+.results .head{grid-column:1/8}
+.results .zones{margin-top:clamp(40px,6vh,72px)}
+.gallery .head{grid-column:1/7}
+.gal{grid-column:1/-1;display:grid;grid-template-columns:repeat(6,1fr);gap:clamp(20px,3vw,48px) 24px;margin-top:clamp(40px,6vh,72px)}
+.gal figure{margin:0;grid-column:span 3;overflow:hidden;position:relative;background:var(--stone)}
+.gal figure.w{grid-column:span 6}
+.gal figure img{width:100%;aspect-ratio:3/2;object-fit:cover;transform:scale(1.05);transition:transform 1.4s cubic-bezier(.2,.6,.2,1)}
+.gal figure.w img{aspect-ratio:21/10}
+.gal figure:hover img{transform:scale(1)}
+.gal figcaption{padding:12px 0 0}
+@media(max-width:900px){.gallery .head{grid-column:1/-1}.gal figure,.gal figure.w{grid-column:span 6}.gal figure.w img{aspect-ratio:3/2}}
+</style>
+
+<header class="nav" id="nav">
+  <a class="logo" href="../"><svg viewBox="0 0 69 69" aria-hidden="true"><path d="M52.1687 68.9595L34.5 55.6875L16.8313 68.9595H0.121479L34.5 43.1347L68.8785 68.9595H52.1687Z"/><path d="M43.1347 34.5L68.9595 0.121479V16.8313L55.6875 34.5L68.9595 52.1687V68.8785L43.1347 34.5Z"/><path d="M16.8313 0.0404053L34.5 13.3124L52.1687 0.0404053H68.8785L34.5 25.8652L0.121479 0.0404053H16.8313Z"/><path d="M25.8652 34.5L0.0404053 68.8785V52.1687L13.3124 34.5L0.0404053 16.8313V0.121479L25.8652 34.5Z"/></svg>Хрустальный</a>
+  <nav class="links" aria-label="Разделы"><a href="../">Портфолио</a><a href="#plan">Генплан</a><a href="#gallery">Фото</a><a href="#results">Результаты</a></nav>
+  <div class="right"><a href="#contact">Заявка</a><button class="burger" type="button" aria-label="Меню портфолио"><i></i><i></i><i></i></button></div>
+</header>
+
+<section class="hero" id="top">
+  <div class="meta"><span class="lbl" data-line>Реализовано</span><span class="lbl" data-line>коттеджный посёлок комфорт-плюс · Маркова, 5 км от Иркутска</span></div>
+  <h1 class="h1 title" data-line>EcoVille</h1>
+  <div class="counter" data-line><div class="n"><span id="slnum">01</span><small>/ 05</small></div><div class="dots" role="tablist" aria-label="Кадры"><button class=on type="button" aria-label="Кадр 1"></button><button type="button" aria-label="Кадр 2"></button><button type="button" aria-label="Кадр 3"></button><button type="button" aria-label="Кадр 4"></button><button type="button" aria-label="Кадр 5"></button></div></div>
+  <a class="arrow see" href="#plan" data-line>Смотреть проект <i>→</i></a>
+  <div class="photo" data-hero-photo data-slider>
+    <div class="sl on"><img data-lqip="p01" src="assets/p01.webp" srcset="assets/p01_s.webp 800w, assets/p01_m.webp 1400w, assets/p01.webp 2400w" sizes="(max-width:900px) 100vw, 92vw" alt="Улица EcoVille вечером: дома, газоны и жители" fetchpriority="high"></div><div class="sl"><img data-lqip="p02" data-src="assets/p02.webp" data-srcset="assets/p02_s.webp 800w, assets/p02_m.webp 1400w, assets/p02.webp 2400w" sizes="(max-width:900px) 100vw, 92vw" alt="Въездная группа с вывеской EcoVille" loading=lazy></div><div class="sl"><img data-lqip="p03" data-src="assets/p03.webp" data-srcset="assets/p03_s.webp 800w, assets/p03_m.webp 1400w, assets/p03.webp 2400w" sizes="(max-width:900px) 100vw, 92vw" alt="Большие шахматы на площади у домов" loading=lazy></div><div class="sl"><img data-lqip="p04" data-src="assets/p04.webp" data-srcset="assets/p04_s.webp 800w, assets/p04_m.webp 1400w, assets/p04.webp 2400w" sizes="(max-width:900px) 100vw, 92vw" alt="Цветущий сад и дорожка к площади" loading=lazy></div><div class="sl"><img data-lqip="p05" data-src="assets/p05.webp" data-srcset="assets/p05_s.webp 800w, assets/p05_m.webp 1400w, assets/p05.webp 2400w" sizes="(max-width:900px) 100vw, 92vw" alt="Улица с озеленением между домами" loading=lazy></div>
+    <button class="slnav prev" type="button" aria-label="Предыдущий кадр">←</button><button class="slnav next" type="button" aria-label="Следующий кадр">→</button><div class="slbar"><i></i></div>
+    <span class="cap" id="slcap">Улица EcoVille вечером: дома, газоны и жители · реализация</span>
+  </div>
+</section>
+
+<section class="sec thought" id="thought"><div class="wrap grid">
+  <div class="head" style="grid-column:1/8"><h2 class="h2 rv"><em>Городской комфорт за городом</em> при доступном пороге входа</h2><div class="rule rv"></div><p class="txt rv">EcoVille — коттеджный посёлок комфорт‑класса по франшизе федеральной сети «Хрустальный». Главный принцип — «городской комфорт за городом»: центральные инженерные сети, развитые общественные пространства и сервисная модель при доступном пороге входа.</p></div>
+  <div class="metrics" data-stagger><div class="metric"><div class="n">3<small>га</small></div><div class="cap">территория</div></div><div class="metric"><div class="n">45</div><div class="cap">малоэтажных домов</div></div><div class="metric"><div class="n">186</div><div class="cap">квартир</div></div><div class="metric"><div class="n">300<small>+</small></div><div class="cap">видов растений в саду</div></div></div>
+</div></section>
+
+<section class="sec plan stone" id="plan"><div class="wrap grid">
+  <div class="head"><span class="lbl rv">Генплан</span><h2 class="h2 rv" style="margin-top:14px">Как устроен <em>посёлок</em></h2></div>
+  <div class="tog rv"><button class="pill" type="button" data-layer="mp1" aria-pressed="true">генплан</button><button class="pill" type="button" data-layer="mp2" aria-pressed="false">аэрофото</button></div>
+  <div class="doc rv" style="aspect-ratio:2926/1588"><img data-layer-img="mp1" class="on" src="assets/mp1.webp" srcset="assets/mp1_s.webp 800w, assets/mp1_m.webp 1400w, assets/mp1.webp 2400w" sizes="92vw" alt="Генплан EcoVille" loading="lazy"><img data-layer-img="mp2" class="" data-src="assets/mp2.webp" data-srcset="assets/mp2_s.webp 800w, assets/mp2_m.webp 1400w, assets/mp2.webp 2400w" sizes="92vw" alt="Посёлок сверху" loading="lazy"><span class="cap" data-state-cap>генплан</span></div>
+  <div class="facts rv" id="facts"><div class="row"><span>Локация</span><span>р.п. Маркова, ~5 км от Иркутска; рядом микрорайон «Берёзовый»; близость к первому КП «Хрустальный» — использованы отдел продаж, шоурум и УК для ускорения запуска и стандартизации сервиса.</span></div><div class="row"><span>Общая площадь</span><span>3 га, земли поселений Ж2, собственность.</span></div><div class="row"><span>Форматы застройки</span><span>45 малоэтажных МКД, включая 10 таунхаусов; всего 186 квартир форматов дуплексов и квадрохаусов; грунты — песчаник/скальник. Композиция ориентирована на центральную площадь и парки, из которых «растут» пешеходные связи ко всем корпусам.</span></div><div class="row"><span>Особенности участка</span><span>Окружение неорганизованной ИЖС эконом‑сегмента; отсутствие асфальтированных подъездов на старте; наличие нелегальных сетей в границах — проведена инвентаризация и приведение к нормам; возможность подключения к городским сетям при грамотной экономике продукта.</span></div></div>
+</div></section>
+
+<section class="evening" id="challenge">
+  <div class="bg" data-parallax><img data-lqip="p06" src="assets/p06.webp" srcset="assets/p06_s.webp 800w, assets/p06_m.webp 1400w, assets/p06.webp 2400w" sizes="100vw" alt="Жители на улице посёлка" loading="lazy"></div>
+  <div class="g"></div>
+  <div class="t"><span class="lbl rv" style="color:rgba(255,255,255,.6)">С чем пришлось столкнуться</span><p class="txt rv" style="margin-top:18px;max-width:52ch;font-size:clamp(17px,1.4vw,21px);color:#fff">Требовался формат, который окупит городские подключения; нужно было поднять статус локации и попасть в ожидания платёжеспособной аудитории, не теряя доступности.</p></div>
+</section>
+
+<section class="quote dark"><div class="wrap grid">
+  <p class="q rv">Мы впервые сделали ставку на благоустройство: команда во главе с дендрологом создала круглогодично цветущий сад, а затем выстроила режимную эксплуатацию</p>
+  <div class="who rv"><b>Кристина Яковенко</b><span class="cap">сооснователь, продуктолог концепт-бюро «Хрустальный»</span></div>
+</div></section>
+
+<section class="sec results" id="results"><div class="wrap grid">
+  <div class="head"><span class="lbl rv">Результаты</span><h2 class="h2 rv" style="margin-top:14px">Что <em>получилось</em></h2></div>
+  <div class="zones" data-stagger><div class="zone"><div class="h3">Концепция и позиционирование</div><p class="txt">переход из «эконом» в «комфорт‑плюс» за счёт качества среды; мультиформатная малоэтажка, ориентированная на пешеходные сценарии.</p></div><div class="zone"><div class="h3">Территория и доступ</div><p class="txt">единое ограждение с КПП и тремя калитками; быстрые выходы к коммерции и остановкам; подъездная асфальтированная дорога по механике ГЧП.</p></div><div class="zone"><div class="h3">Инженерия</div><p class="txt">подключение к городским сетям, включая центральное отопление; предсказуемые затраты эксплуатации для жителей.</p></div><div class="zone"><div class="h3">Общественные пространства</div><p class="txt">центральная площадь ~200 м с роллердромом и амфитеатром; 2 парка; 3 детские площадки; спорт‑зоны с воркаутом и универсальным полем.</p></div><div class="zone"><div class="h3">Озеленение</div><p class="txt">более 300 видов растений, всесезонная декоративность, «маршруты» цветения; сад как главная идентичность проекта.</p></div><div class="zone"><div class="h3">Сервис</div><p class="txt">использование инфраструктуры «Хрустального» (отдел продаж, шоурум, УК) для быстрого старта; единые регламенты эксплуатации.</p></div><div class="zone"><div class="h3">Эффект</div><p class="txt">высокое распознавание бренда, лояльность семейной аудитории, повторные покупки и рекомендации «жить рядом».</p></div></div>
+</div></section>
+
+<section class="sec gallery stone" id="gallery"><div class="wrap grid">
+  <div class="head"><span class="lbl rv">Фотографии</span><h2 class="h2 rv" style="margin-top:14px">Как это <em>построено</em></h2></div>
+  <div class="gal" data-stagger><figure class="w"><img data-lqip="p01" data-src="assets/p01.webp" data-srcset="assets/p01_s.webp 800w, assets/p01_m.webp 1400w, assets/p01.webp 2400w" sizes="92vw" alt="Улица EcoVille вечером: дома, газоны и жители" loading=lazy><figcaption class="cap">Улица EcoVille вечером: дома, газоны и жители · реализация</figcaption></figure><figure class=""><img data-lqip="p02" data-src="assets/p02.webp" data-srcset="assets/p02_s.webp 800w, assets/p02_m.webp 1400w, assets/p02.webp 2400w" sizes="(max-width:900px) 100vw, 46vw" alt="Въездная группа с вывеской EcoVille" loading=lazy><figcaption class="cap">Въездная группа с вывеской EcoVille · реализация</figcaption></figure><figure class=""><img data-lqip="p03" data-src="assets/p03.webp" data-srcset="assets/p03_s.webp 800w, assets/p03_m.webp 1400w, assets/p03.webp 2400w" sizes="(max-width:900px) 100vw, 46vw" alt="Большие шахматы на площади у домов" loading=lazy><figcaption class="cap">Большие шахматы на площади у домов · реализация</figcaption></figure><figure class=""><img data-lqip="p04" data-src="assets/p04.webp" data-srcset="assets/p04_s.webp 800w, assets/p04_m.webp 1400w, assets/p04.webp 2400w" sizes="(max-width:900px) 100vw, 46vw" alt="Цветущий сад и дорожка к площади" loading=lazy><figcaption class="cap">Цветущий сад и дорожка к площади · реализация</figcaption></figure><figure class=""><img data-lqip="p05" data-src="assets/p05.webp" data-srcset="assets/p05_s.webp 800w, assets/p05_m.webp 1400w, assets/p05.webp 2400w" sizes="(max-width:900px) 100vw, 46vw" alt="Улица с озеленением между домами" loading=lazy><figcaption class="cap">Улица с озеленением между домами · реализация</figcaption></figure></div>
+</div></section>
+
+<section class="sec cta dark" id="contact"><div class="wrap grid">
+  <div class="l">
+    <h2 class="h2 rv">Есть участок и межевание? Покажем, <em>что на нём продавать</em></h2>
+    <div class="rule rv"></div>
+    <p class="txt rv">Пришлите кадастровую схему или просто границы участка. Мы сами девелоперы: считаем продукт так, как потом будем его продавать, а построенное обслуживает своя гарантийная служба.</p>
+  </div>
+  <form id="leadForm" novalidate class="rv">
+    <div class="f"><label for="f-name">Имя</label><input id="f-name" name="name" type="text" autocomplete="name" placeholder="Как к вам обращаться"><span class="msg" aria-live="polite"></span></div>
+    <div class="f"><label for="f-phone">Телефон</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+7"><span class="msg" aria-live="polite"></span></div>
+    <div><button class="btn" type="submit">Обсудить участок <span aria-hidden="true">→</span></button></div>
+    <p class="consent">Нажимая кнопку, вы соглашаетесь с политикой обработки персональных данных.</p>
+  </form>
+</div></section>
+
+<section class="sec more" id="more"><div class="wrap">
+  <span class="word rv">Другие проекты</span>
+  <div class="mlist rv" data-more>
+    <a class="mitem" href="../hrustalnyj/"><span class="n">реализовано</span><span><span class="t">Хрустальный</span><div class="cap">реализованный посёлок · 23 га · 110 участков, 108 таунхаусов, 45 МКД</div></span><span class="a">Смотреть →</span></a><a class="mitem" href="../aura/"><span class="n">реализовано</span><span><span class="t">Aura</span><div class="cap">реализованный посёлок · 2,44 га · таунхаусы, дуплексы, секции</div></span><span class="a">Смотреть →</span></a>
+    <a class="mitem" href="../"><span class="n">→</span><span><span class="t">Всё портфолио</span><div class="cap">реализованные проекты, дома и посёлки бюро</div></span><span class="a"></span></a>
+  </div>
+</div></section>
+
+<footer class="footer">
+  <a class="logo" href="#top" style="display:flex;align-items:center;gap:10px;font:400 18px/1 var(--head);text-transform:uppercase;letter-spacing:.04em"><svg viewBox="0 0 69 69" style="width:22px;height:22px;fill:currentColor" aria-hidden="true"><path d="M52.1687 68.9595L34.5 55.6875L16.8313 68.9595H0.121479L34.5 43.1347L68.8785 68.9595H52.1687Z"/><path d="M43.1347 34.5L68.9595 0.121479V16.8313L55.6875 34.5L68.9595 52.1687V68.8785L43.1347 34.5Z"/><path d="M16.8313 0.0404053L34.5 13.3124L52.1687 0.0404053H68.8785L34.5 25.8652L0.121479 0.0404053H16.8313Z"/><path d="M25.8652 34.5L0.0404053 68.8785V52.1687L13.3124 34.5L0.0404053 16.8313V0.121479L25.8652 34.5Z"/></svg>Хрустальный</a>
+  <span class="cap">Фотографии построенного посёлка · реализация</span>
+  <span class="cap">hrustalni.com</span>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+(function(){
+  const LQ={"p01": "data:image/webp;base64,UklGRtgAAABXRUJQVlA4IMwAAABQBgCdASooABgAPu1iqE2ppaQiKq35MB2JZQDDcq4Aj3zODC6644tNcbH6FHJ3tvsC2YPkshhL0lQqYADN0ZBcSwg9KuyNlcPDGG09ZvCDCA4YgJ+bj7fXfJAz98wQ50+TaTQ04DptsDim1HaWb3NORn6NJT37vFnL0iiSno94sCwbkDD4P3wXqAqWIu9e1EMnibvbgTSnz/a51ZoY1747nV1wgIs2iDJEmkRsLr+5zstSRE/7x25r6HNZVrr22iz0bIQFuAgCrbQwAAA=", "p02": "data:image/webp;base64,UklGRjYBAABXRUJQVlA4ICoBAADQBgCdASooABsAPu1wrlMppiQipWmZMB2JQBOgTZSrQB9UiRCsIhFyO2mCRFvfJeHUCmWaewGvmRgSD0uMhMAA/tlNo0XdO5R9Qgc+yZm5+jO4q6VZuL8Di/U7t8CMPwEr95jk32EaTp5W9pfc2cAnEHrHt57iTt+eUF7T8ygaY72TXKOK133tylmgTorAQZ/TjKahNv9KK5GrZzuKERPSInrdCy7twuug9kBoAr13nmmmMLHZcxvNBgM0YbsozLcBJJw5vjLPddxFXc1wxwoMmYU9/lUxAy3HWPc43q5vgR1hxia30OXcDrcGz/D7bAcRirPFgDIobKryluFF6/Xo9/rLasNDg2Wq/rl7quQqZiLYre77NLuWGJXeAwuDHfdDEzZK/z253QAA", "p03": "data:image/webp;base64,UklGRlwBAABXRUJQVlA4IFABAADQBwCdASooABsAPu1mrVGppSQiqrgKATAdiWIAyMtfpwK6D3kiRjlWUGpGd/E9EYyQdfUMpPoznZ7+bo4EUQtH9XSvHHV1gAD+mDqso3ZvtyGZtMePmJ/Z0v9YKYKWgjap9QKZazugR0x6rrBd8bZmDJuPOxtUz2pWhFl2BNwG4Hw4UbbrYjhESO2GYzQxZ9bNQLMdmBLsIl95D8p2ABwXqHcUpJTQEOIlVOPx2H9l6QAcIN3U7hly93a65kB3afvrpR42vbfrrGLRrv2JOvGeozoEmnlQVH4sc35jY6abtqejjlmZITrPWwZENmTYxO3I0Yfubwa8c6UtpENBWk8PH8ucnKgDlbNzMMqlb33JGoerTdKryPyEsyEFue5I9JCEgB+T+7XSXqDvTXzADHYvQWFdNq4VHSt5Ze3jVAcC3LtXxvvxIrtjRZr3S5gAAAA=", "p04": "data:image/webp;base64,UklGRkgBAABXRUJQVlA4IDwBAABQBwCdASooABwAPu1mr1EppSQiqrgKATAdiUAYciQLiJ2zj2wemkFVpy2yqHMUsN+gi+CSIs5poDkCBKJjRYRvoqkAAP51SgwFKoi6rZJoAlsrVTH7zUTGYqipUPCGBqIIE5qFZS5jLM+axyA5RXU6KDaSURB1aua4rnviwkitTAbeiHFzFoySxrYrQXS/4bL5n7s8xZwmTp2PlVQfnH4MMadZ+38Xr/gqpjXID3Eb2nYJ3yI4rj6Lyz0CrOB7YJiqdC3i5p5RYKsNCvA5d4sw0GOx3eICGhxjncOzHqWTapF2afZPLEY8kIydaHbGvOyPYIVpV9SPpIN3xFOczForW7FXTRHDZvauePaZykCMLoN7wud2KpWD/zB/HmuJvEhroe4GCIddFSWueDOs0PDlvsIz5+OhqlZiaAAA", "p05": "data:image/webp;base64,UklGRhQBAABXRUJQVlA4IAgBAADwBgCdASooABsAPu1mqk2ppaQiMAgBMB2JZACxH4uv/ng1jT7fa+jSyoiLlnsA56bDGentCp8MEufMlLBw6S6QAP6QAgB9b0QsoSCAcYM7fazj28uFqSudxfmHO9CfEc91YYDpcq1ehcR6hJpNv+E9NlPUv+9ojyCwYEexPMYJ5zku3+NwuLcyzRRfssET4KPWNaponXLKoriJmfZyEJPWd9V4rDgTsF5QtJ2vKbguJE4Fk/fzmT1AY25ekqdQdffsuDJZ4WP0WjUrJi81Dm3NLNWgB1m+7OIi5m+HO2m534LBOtr1VwQ/voRfFq4FxAdUkzV4fRGk7QHDVn/p648/QLvxYB30AAA=", "p06": "data:image/webp;base64,UklGRhYBAABXRUJQVlA4IAoBAACwBgCdASooABsAPt1apU2opSOiMA1REBuJZQDM4f/gPGHhyZ4dEoG3YdM6816tz3yo6vsyD20oSFsPvxvXgAD8jYgvG9uTsEzhWp72sjlHd5YKjeT14KSi91DzaZFs2u0kljr3y4KG/Y9BzSpZcT37I7l6bEoNs1kxb1U8AnOgZs20NKadlgp4H+QJqhLu8FQQu6zZh84IEHIg9hZ8gGq44CLVuyRskZjh+LIVscBqspRuUOloXKdg433GxY2IePpd9lqES56YAeBc5vnywsS/dEzh/uftYFTdxgKDf+eNQ/9EoU0H6nnvVP4LVaF9g5d4mPI1Uwf3QJ4awg0FZ9L+GnbJwFg+zQAAAA==", "mp1": "data:image/webp;base64,UklGRi4BAABXRUJQVlA4ICIBAADwBgCdASooABYAPu1iqlCppSOiqrgMATAdiUAXJLcEoie7xAJo92OR8dpXrTRNdkunmE56/2LMrw7RGd0piVuIAPPkN7X1YC87n+7xULv0IuC8aMjQm+hgMjgQG9KOkzUIL5pMa/1wymMT4C0TAqcAzEY1zvJDIey3BbSGb5qY8KxF1yS8zlhHYN5ZZHSvZ8Muib8/OJf4J3RKxTVXr8WfFx1paYJok3lAqn57gyPNqchWqUoeKZ5/wr+boPUXAINJdJUvagzTZy7kVqYloUjtcRogRzoH0ExlQmUzGrkF0hA7jsgNTPQphtoNzwfX8FFwp4ROzVJL1wU0qjFAOMrhMQawRuzwDA5pgCecFpGEzjhUcCAM+qz9FbkkD4TkmAAAAA==", "mp2": "data:image/webp;base64,UklGRiwBAABXRUJQVlA4ICABAADwBgCdASooABYAPuFkpk2opiOiMBqtURAcCUAV479Vmol3yrSRQKG+JEFMcAZJuWOm8obKHBL7npUklgOPcYwAAOyhXeXsE2/X8+zwqvwrOChxLuIWsXg0wr2XzBgqqEdSo/v3QfDOeQlgOgDZc6M/N7VPC0/N1BixbwVUNgWNcTyKZycISp+Um0bHsxd7/SJHYRsiY9SE6lnRAU8Rd/wgeafAY5lkIX49ctgGiuNAChHaapn+ny570k8CDIgcTWtQVjS/8b4Ss5zq7E7KBJ6irS4Zd2PJNi8ZoQdw/S922kJQ6TQw5mGIMm9I+qA7GT1l+AL+3kioVG9u2P8amBmwUpQkCHIlEiWcr7kmOGhXUBRAsQWcdpCSYInlp1hAAAA="};
+  document.querySelectorAll('img[data-lqip]').forEach(im=>{ const par=im.parentElement; par.style.backgroundImage=`url(${LQ[im.dataset.lqip]})`; par.style.backgroundSize='cover'; par.style.backgroundPosition='center'; im.classList.add('ld'); const done=()=>im.classList.add('in'); if(im.complete && im.naturalWidth) done(); else im.addEventListener('load',done,{once:true}); });
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const hasGsap = typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined';
+  const hydrateAll = root => root.querySelectorAll('img[data-src]').forEach(im=>{ im.src=im.dataset.src; if(im.dataset.srcset) im.srcset=im.dataset.srcset; im.removeAttribute('data-src'); im.removeAttribute('data-srcset'); });
+  /* ленивые кадры галереи и полосы — по приближению */
+  if ('IntersectionObserver' in window) { const io = new IntersectionObserver(es=>es.forEach(en=>{ if(en.isIntersecting){ hydrateAll(en.target); io.unobserve(en.target); } }),{rootMargin:'600px 0px'}); document.querySelectorAll('.gal figure,.evening,.plan .doc').forEach(el=>io.observe(el)); } else hydrateAll(document);
+
+  /* слои генплана */
+  const layers = [...document.querySelectorAll('[data-layer-img]')], stateCap = document.querySelector('[data-state-cap]');
+  const capOf = {"mp1": "генплан", "mp2": "аэрофото"};
+  document.querySelectorAll('[data-layer]').forEach(b=>b.addEventListener('click',()=>{ const k=b.dataset.layer;
+    layers.forEach(im=>{ if (im.dataset.src){ im.src=im.dataset.src; im.srcset=im.dataset.srcset; im.removeAttribute('data-src'); } im.classList.toggle('on', im.dataset.layerImg===k); });
+    document.querySelectorAll('[data-layer]').forEach(x=>x.setAttribute('aria-pressed', x===b)); if (stateCap) stateCap.textContent = capOf[k]||''; if (hasGsap) ScrollTrigger.refresh(); }));
+
+  /* hero slider */
+  const sld = document.querySelector('[data-slider]');
+  if (sld) {
+    const slides = [...sld.querySelectorAll('.sl')], dots = [...document.querySelectorAll('.hero .dots button')], num = document.getElementById('slnum'), cap = document.getElementById('slcap'), bar = sld.querySelector('.slbar i');
+    const caps = ["Улица EcoVille вечером: дома, газоны и жители", "Въездная группа с вывеской EcoVille", "Большие шахматы на площади у домов", "Цветущий сад и дорожка к площади", "Улица с озеленением между домами"], capword = "реализация";
+    let i = 0, timer = null, paused = false;
+    const show = k => { i = (k + slides.length) % slides.length; slides.forEach((x,j)=>x.classList.toggle('on', j===i)); dots.forEach((d,j)=>d.classList.toggle('on', j===i)); num.textContent = String(i+1).padStart(2,'0'); cap.textContent = caps[i] + ' · ' + capword; bar.classList.remove('run'); void bar.offsetWidth; bar.classList.add('run'); };
+    const start = () => { clearInterval(timer); timer = setInterval(()=>{ if(!paused) show(i+1); }, 6000); };
+    dots.forEach((d,j)=>d.addEventListener('click',()=>{ show(j); start(); }));
+    sld.querySelector('.next').addEventListener('click',e=>{ e.stopPropagation(); show(i+1); start(); });
+    sld.querySelector('.prev').addEventListener('click',e=>{ e.stopPropagation(); show(i-1); start(); });
+    sld.addEventListener('click',()=>{ show(i+1); start(); });
+    sld.addEventListener('mouseenter',()=>paused=true); sld.addEventListener('mouseleave',()=>paused=false);
+    let tx=null; sld.addEventListener('touchstart',e=>tx=e.touches[0].clientX,{passive:true}); sld.addEventListener('touchend',e=>{ if(tx===null) return; const dx=e.changedTouches[0].clientX-tx; if(Math.abs(dx)>40){ show(dx<0?i+1:i-1); start(); } tx=null; });
+    addEventListener('keydown',e=>{ if(e.key==='ArrowRight'){show(i+1);start();} if(e.key==='ArrowLeft'){show(i-1);start();} });
+    setTimeout(()=>hydrateAll(sld), 1200);
+    if (!reduced) { bar.classList.add('run'); start(); }
+  }
+
+  const form = document.getElementById('leadForm');
+  form.addEventListener('submit', e=>{ e.preventDefault(); let ok = true;
+    const set = (inp,msg)=>{ const f = inp.closest('.f'); f.classList.toggle('err', !!msg); f.querySelector('.msg').textContent = msg||''; if(msg) ok=false; };
+    set(form.name, form.name.value.trim().length<2 ? 'Напишите имя' : ''); set(form.phone, form.phone.value.replace(/\D/g,'').length<10 ? 'Нужен номер из 10–11 цифр' : '');
+    if(!ok) return; window.dataLayer = window.dataLayer || []; dataLayer.push({event:'form_submit', form_id:'final'});
+    /* TODO: GETCOURSE_FORM_ACTION — fetch(url,{method:'POST',body:new FormData(form)}) */
+    form.innerHTML = '<div class="success"><h2 class="h2">Спасибо. <em>Перезвоним</em> в течение рабочего дня</h2><div class="rule"></div><p class="txt">А пока пришлите кадастровую схему участка на почту бюро — так разговор начнётся с конкретики.</p></div>'; });
+
+  /* nav colour on photo / dark */
+  const nav = document.getElementById('nav');
+  const darks = [...document.querySelectorAll('.dark,.evening')];
+  const upd = ()=>{ const on = darks.some(b=>{ const r=b.getBoundingClientRect(); return r.top<=40 && r.bottom>40; }); nav.classList.toggle('onphoto', on); };
+  addEventListener('scroll', upd, {passive:true}); upd();
+
+  if (reduced || !hasGsap) return;
+  gsap.registerPlugin(ScrollTrigger);
+  ScrollTrigger.config({ ignoreMobileResize: true });
+  addEventListener('load', ()=>ScrollTrigger.refresh());
+  document.querySelectorAll('img').forEach(im=>im.addEventListener('load', ()=>ScrollTrigger.refresh(), {once:true}));
+  document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{ const t=document.querySelector(a.getAttribute('href')); if(t){ e.preventDefault(); window.scrollTo({top: t.getBoundingClientRect().top + scrollY - 10, behavior:'smooth'}); } }));
+  gsap.from('.hero [data-line]', { y: 30, opacity: 0, duration: 1.2, stagger: 0.1, ease: 'power3.out', delay: 0.2 });
+  gsap.from('[data-hero-photo]', { clipPath: 'inset(0 0 100% 0)', duration: 1.6, ease: 'power3.inOut', delay: 0.5, clearProps: 'clipPath' });
+  gsap.to('[data-hero-photo] .sl', { yPercent: 8, ease: 'none', scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: 0.6 } });
+  gsap.utils.toArray('.rv').forEach(el => gsap.from(el, { y: 22, opacity: 0, duration: 1.1, ease: 'power2.out', scrollTrigger: { trigger: el, start: 'top 90%', once: true } }));
+  gsap.utils.toArray('[data-stagger]').forEach(g => gsap.from(g.children, { y: 22, opacity: 0, duration: 1.0, stagger: 0.14, ease: 'power2.out', scrollTrigger: { trigger: g, start: 'top 85%', once: true } }));
+  gsap.utils.toArray('[data-parallax]').forEach(el => gsap.fromTo(el, { yPercent: -6 }, { yPercent: 6, ease: 'none', scrollTrigger: { trigger: el.parentElement, scrub: 0.6, start: 'top bottom', end: 'bottom top' } }));
+})();
+</script>
+<script src="../nav.js?v=20260916b" data-slug="ecoville" defer></script>

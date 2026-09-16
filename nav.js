@@ -43,7 +43,7 @@ body.menu-open{overflow:hidden}
     const menu = document.createElement('div'); menu.className = 'pmenu'; menu.setAttribute('role', 'dialog'); menu.setAttribute('aria-label', 'Меню портфолио');
     menu.innerHTML = `<div class="top"><a class="logo" href="${root}">${LOGO}Хрустальный</a><button class="close" type="button" aria-label="Закрыть меню">закрыть <i></i></button></div>
       <div class="cols">${cats.map(c => { const list = byCat(c.id); return `<div><span class="lbl">${esc(c.title)}</span><div class="pl">${
-        list.length ? list.map(p => `<a href="${href(p)}"${p.slug === slug ? ' class="cur" aria-current="page"' : ''}>${esc(p.title)}<small>${p.year}</small></a>`).join('') : `<a class="all" href="${root}#${c.id}">скоро</a>`
+        list.length ? list.map(p => `<a href="${href(p)}"${p.slug === slug ? ' class="cur" aria-current="page"' : ''}>${esc(p.title)}${p.year ? `<small>${p.year}</small>` : ''}</a>`).join('') : `<a class="all" href="${root}#${c.id}">скоро</a>`
       }${list.length ? `<a class="all" href="${root}#${c.id}">все ${esc(c.short.toLowerCase())} →</a>` : ''}</div></div>`; }).join('')}</div>
       <div class="bottom"><a href="${root}">Всё портфолио</a><a href="${data.site.request}">Заявка</a><a href="${data.site.home}">hrustalni.com</a></div>`;
     document.body.appendChild(menu);
@@ -64,7 +64,7 @@ body.menu-open{overflow:hidden}
       const push = (p, n) => { if (p && !seen.has(p.slug)) { seen.add(p.slug); rows.push({p, n}); } };
       rel.forEach(p => push(p, cats.find(c => c.id === p.category).short));
       push(next, 'следующий'); push(prev, 'предыдущий');
-      const item = (p, n) => `<a class="mitem" href="${href(p)}"><span class="n">${esc(n)}</span><span><span class="t">${esc(p.title)}</span><div class="cap">${p.year} · ${esc(p.meta)}</div></span><span class="a">Смотреть →</span></a>`;
+      const item = (p, n) => `<a class="mitem" href="${href(p)}"><span class="n">${esc(n)}</span><span><span class="t">${esc(p.title)}</span><div class="cap">${p.year ? p.year + ' · ' : ''}${esc(p.meta)}</div></span><span class="a">Смотреть →</span></a>`;
       more.innerHTML = rows.map(r => item(r.p, r.n)).join('') +
         `<a class="mitem" href="${root}"><span class="n">→</span><span><span class="t">Всё портфолио</span><div class="cap">${cats.map(c => esc(c.title.toLowerCase())).join(' · ')}</div></span><span class="a"></span></a>`;
     }
@@ -78,7 +78,7 @@ body.menu-open{overflow:hidden}
       const plural = (k, w) => k + ' ' + (k % 10 === 1 && k % 100 !== 11 ? w[0] : k % 10 >= 2 && k % 10 <= 4 && (k % 100 < 12 || k % 100 > 14) ? w[1] : w[2]);
       const ph = p => { const c = root + p.cover, h = root + (p.hover || p.cover); return `<span class="ph"><img src="${c}_s.webp" srcset="${c}_s.webp 800w, ${c}_m.webp 1400w" sizes="(max-width:640px) 34vw, 16vw" alt="" loading="lazy" decoding="async"><img class="b" src="${h}_s.webp" alt="" loading="lazy" decoding="async"></span>`; };
       idx.innerHTML = cats.map(c => { const list = byCat(c.id); return `<section class="group" id="${c.id}"><h2 class="gh"><span>${esc(c.title)}</span><small>${plural(list.length, ['проект', 'проекта', 'проектов'])}</small></h2><div class="list">${
-        list.length ? list.map(p => `<a class="item rv" href="${href(p)}"><span class="n">${String(++n).padStart(2, '0')}</span>${ph(p)}<span><span class="t">${esc(p.title)}</span><div class="m">${p.year} · ${esc(p.meta)}</div></span><span class="a">Смотреть <i>→</i></span></a>`).join('')
+        list.length ? list.map(p => `<a class="item rv" href="${href(p)}"><span class="n">${String(++n).padStart(2, '0')}</span>${ph(p)}<span><span class="t">${esc(p.title)}</span><div class="m">${p.year ? p.year + ' · ' : ''}${esc(p.meta)}</div></span><span class="a">Смотреть <i>→</i></span></a>`).join('')
         : `<div class="item empty"><span class="n">—</span><span class="ph"></span><span><span class="t">Первый проект раздела — скоро</span></span><span></span></div>`}</div></section>`; }).join('');
     }
   }).catch(() => {});

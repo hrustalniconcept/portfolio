@@ -6,6 +6,11 @@
   },
   "categories": [
     {
+      "id": "built",
+      "title": "Реализованные проекты",
+      "short": "Реализовано"
+    },
+    {
       "id": "houses",
       "title": "Индивидуальные дома",
       "short": "Дома"
@@ -17,6 +22,95 @@
     }
   ],
   "projects": [
+    {
+      "slug": "hrustalnyj",
+      "title": "Хрустальный",
+      "year": "2010–2014",
+      "category": "built",
+      "meta": "реализованный посёлок · 23 га · 110 участков, 108 таунхаусов, 45 МКД",
+      "cover": "hrustalnyj/assets/p01",
+      "hover": "hrustalnyj/assets/p02",
+      "related": [
+        "ecoville",
+        "hrustalnyj-park"
+      ]
+    },
+    {
+      "slug": "aura",
+      "title": "Aura",
+      "year": "",
+      "category": "built",
+      "meta": "реализованный посёлок · 2,44 га · таунхаусы, дуплексы, секции",
+      "cover": "aura/assets/p01",
+      "hover": "aura/assets/p02",
+      "related": []
+    },
+    {
+      "slug": "rezidencia-xv-poselok",
+      "title": "Резиденция XV",
+      "year": "",
+      "category": "built",
+      "meta": "реализованный посёлок · 8 га · 48 индивидуальных и 38 типовых домов",
+      "cover": "rezidencia-xv-poselok/assets/p01",
+      "hover": "rezidencia-xv-poselok/assets/p03",
+      "related": [
+        "rezidencia-xv"
+      ]
+    },
+    {
+      "slug": "villet",
+      "title": "Villet",
+      "year": "",
+      "category": "built",
+      "meta": "реализованный посёлок · 2 га · индивидуальные дома и блок-секции",
+      "cover": "villet/assets/p01",
+      "hover": "villet/assets/p03",
+      "related": []
+    },
+    {
+      "slug": "vila",
+      "title": "Vila",
+      "year": "",
+      "category": "built",
+      "meta": "реализованный квартал · новая линейка таунхаусов",
+      "cover": "vila/assets/p01",
+      "hover": "vila/assets/p02",
+      "related": []
+    },
+    {
+      "slug": "ecoville",
+      "title": "EcoVille",
+      "year": "",
+      "category": "built",
+      "meta": "реализованный посёлок · 3 га · 45 малоэтажных домов, 186 квартир",
+      "cover": "ecoville/assets/p01",
+      "hover": "ecoville/assets/p04",
+      "related": [
+        "hrustalnyj"
+      ]
+    },
+    {
+      "slug": "hrustalnyj-park",
+      "title": "Хрустальный парк",
+      "year": "",
+      "category": "built",
+      "meta": "реализуемый посёлок · 100 га · ИЖД, таунхаусы, малоэтажные МКД",
+      "cover": "hrustalnyj-park/assets/p01",
+      "hover": "hrustalnyj-park/assets/p02",
+      "related": [
+        "hrustalnyj"
+      ]
+    },
+    {
+      "slug": "evropejskij",
+      "title": "Европейский",
+      "year": "",
+      "category": "built",
+      "meta": "посёлок · 55 га · блок-секции и таунхаусы",
+      "cover": "evropejskij/assets/p01",
+      "hover": "evropejskij/assets/p01",
+      "related": []
+    },
     {
       "slug": "dom-v-sosnovom-boru",
       "title": "Дом в сосновом бору",
@@ -35,7 +129,9 @@
       "meta": "индивидуальный дом для коттеджного посёлка · 270,5 м²",
       "cover": "rezidencia-xv/assets/p02_threequarter",
       "hover": "rezidencia-xv/assets/p05_terrace",
-      "related": []
+      "related": [
+        "rezidencia-xv-poselok"
+      ]
     },
     {
       "slug": "poselok-u-ozera",

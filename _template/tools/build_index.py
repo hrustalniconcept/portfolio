@@ -10,7 +10,7 @@ for c in d["categories"]:
         c, h = p["cover"], p.get("hover") or p["cover"]
         ph = (f'<span class="ph"><img src="{c}_s.webp" srcset="{c}_s.webp 800w, {c}_m.webp 1400w" sizes="(max-width:640px) 34vw, 16vw" alt="" loading="lazy" decoding="async">'
               f'<img class="b" src="{h}_s.webp" alt="" loading="lazy" decoding="async"></span>')
-        return f'    <a class="item rv" href="{p["slug"]}/"><span class="n">{n:02d}</span>{ph}<span><span class="t">{e(p["title"])}</span><div class="m">{p["year"]} · {e(p["meta"])}</div></span><span class="a">Смотреть <i>→</i></span></a>\n'
+        return f'    <a class="item rv" href="{p["slug"]}/"><span class="n">{n:02d}</span>{ph}<span><span class="t">{e(p["title"])}</span><div class="m">{str(p["year"]) + " · " if p["year"] else ""}{e(p["meta"])}</div></span><span class="a">Смотреть <i>→</i></span></a>\n'
     rows = ""
     for p in items: n += 1; rows += row(p)
     rows = rows or '    <div class="item empty"><span class="n">—</span><span class="ph"></span><span><span class="t">Первый проект раздела — скоро</span></span><span></span></div>\n'
