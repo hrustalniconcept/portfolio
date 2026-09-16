@@ -11,7 +11,6 @@
 | Vila | Реализованные проекты | `vila/` | https://hrustalniconcept.github.io/portfolio/vila/ |
 | EcoVille | Реализованные проекты | `ecoville/` | https://hrustalniconcept.github.io/portfolio/ecoville/ |
 | Хрустальный парк | Реализованные проекты | `hrustalnyj-park/` | https://hrustalniconcept.github.io/portfolio/hrustalnyj-park/ |
-| Европейский | Реализованные проекты | `evropejskij/` | https://hrustalniconcept.github.io/portfolio/evropejskij/ |
 | Дом в сосновом бору | Индивидуальные дома | `dom-v-sosnovom-boru/` | https://hrustalniconcept.github.io/portfolio/dom-v-sosnovom-boru/ |
 | Резиденция XV | Индивидуальные дома | `rezidencia-xv/` | https://hrustalniconcept.github.io/portfolio/rezidencia-xv/ |
 | Посёлок у озера | Коттеджные посёлки | `poselok-u-ozera/` | https://hrustalniconcept.github.io/portfolio/poselok-u-ozera/ |
