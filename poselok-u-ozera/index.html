@@ -71,7 +71,8 @@ h1,h2,h3{margin:0;font-weight:400}
 /* hero */
 .hero{position:relative;padding:calc(26px + 11vh) var(--m) 0;min-height:100svh;overflow:visible}
 .hero .meta{display:flex;gap:clamp(24px,8vw,140px);align-items:baseline}
-.hero .title{margin-top:18px;max-width:11ch;position:relative;z-index:2}
+.hero .title{margin-top:clamp(30px,3.2vw,48px);max-width:11ch;position:relative;z-index:2}
+.hero .meta{max-width:calc(100% - 180px)}
 .hero .counter{position:absolute;right:var(--m);top:calc(26px + 11vh + 8px);text-align:right;z-index:2}
 .hero .counter .n{font:400 clamp(32px,3vw,44px)/1 var(--head)}
 .hero .counter .n small{font-size:14px;font-weight:400;color:var(--taupe);margin-left:6px}
@@ -100,7 +101,7 @@ h1,h2,h3{margin:0;font-weight:400}
 @keyframes slbar{to{width:100%}}
 @media(pointer:coarse){.slnav{opacity:1;background:rgba(2,24,37,.5)}}
 .hero .photo .cap{position:absolute;left:24px;bottom:22px;color:var(--white);opacity:.85;text-shadow:0 1px 12px rgba(0,0,0,.35)}
-@media(max-width:900px){.hero{padding-top:calc(26px + 14vh)}.hero .counter{position:static;text-align:left;margin-top:16px}.hero .dots{justify-items:start;display:flex}.hero .social{display:none}.hero .photo{margin:24px calc(var(--m) * -1) 0;height:64vh}}
+@media(max-width:900px){.hero .meta{max-width:none}.hero{padding-top:calc(26px + 14vh)}.hero .counter{position:static;text-align:left;margin-top:16px}.hero .dots{justify-items:start;display:flex}.hero .social{display:none}.hero .photo{margin:24px calc(var(--m) * -1) 0;height:64vh}}
 
 /* metrics */
 .metrics{grid-column:1/-1;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:clamp(64px,9vh,112px);border-top:1px solid var(--ink);padding-top:28px}
@@ -281,7 +282,7 @@ h1,h2,h3{margin:0;font-weight:400}
 </header>
 
 <section class="hero" id="top">
-  <div class="meta"><span class="lbl" data-line>2026</span><span class="lbl" data-line>Коттеджный посёлок · 18,3 га у озера · 15 минут от областного центра</span></div>
+  <div class="meta"><span class="lbl" data-line>2026</span><span class="lbl" data-line>Коттеджный посёлок · 18,3 га у озера · 15 минут от города</span></div>
   <h1 class="h1 title" data-line>Посёлок у озера</h1>
   <div class="counter" data-line><div class="n"><span id="slnum">01</span><small>/ 05</small></div><div class="dots" role="tablist" aria-label="Кадры"><button class="on" type="button" aria-label="Кадр 1"></button><button type="button" aria-label="Кадр 2"></button><button type="button" aria-label="Кадр 3"></button><button type="button" aria-label="Кадр 4"></button><button type="button" aria-label="Кадр 5"></button></div></div>
   <a class="arrow see" href="#plan" data-line>Смотреть проект <i>→</i></a>
@@ -303,11 +304,11 @@ h1,h2,h3{margin:0;font-weight:400}
   <div class="head">
     <h2 class="h2 rv">Межевание было. <em>Продукта не было</em></h2>
     <div class="rule rv"></div>
-    <p class="txt rv">К нам пришли с территорией у озера: 18,3 гектара, готовая нарезка на 155 участков и один вопрос — стоит ли здесь строить. Мы ответили, что продавать, кому, в каком порядке и что построить до первого дома.</p>
+    <p class="txt rv">К нам пришли с территорией у озера: 18,3 гектара, готовая нарезка на 155 участков и один вопрос — стоит ли здесь строить. Менять межевание кардинально не имело смысла: территория связана договором о комплексном развитии, а новый проект планировки и генплан — это годы согласований. Поэтому продукт собран внутри существующей нарезки: что продавать, кому, в каком порядке и что построить до первого дома.</p>
   </div>
   <div class="state rv">
     <span class="word" data-state-word>Было</span>
-    <p class="txt" data-state-txt>Готовая нарезка на 155 участков и дорога до трассы. Ни продукта, ни среды, ни очередности.</p>
+    <p class="txt" data-state-txt>Готовая нарезка на 155 участков, закреплённая договором о комплексном развитии территории. Ни продукта, ни среды, ни очередности.</p>
   </div>
   <div class="tog rv" role="group" aria-label="Было и стало">
     <button class="pill" type="button" data-layer="before" aria-pressed="true">Было</button>
@@ -334,7 +335,7 @@ h1,h2,h3{margin:0;font-weight:400}
     <span class="cap" data-state-cap>исходное межевание</span>
   </div>
   <div class="lists rv">
-    <div class="rooms" data-list="before"><span>Территория<b>18,3 га, озеро и лес</b></span><span>Межевание<b>155 участков</b></span><span>Инженерия<b>подключение под вопросом</b></span><span>Продукт<b>нет</b></span><span>Среда<b>нет</b></span><span>Очередность<b>нет</b></span></div>
+    <div class="rooms" data-list="before"><span>Территория<b>18,3 га, озеро и лес</b></span><span>Межевание<b>155 участков, менять нерационально</b></span><span>Документы<b>договор КРТ, утверждённая планировка</b></span><span>Продукт<b>нет</b></span><span>Среда<b>нет</b></span><span>Очередность<b>нет</b></span></div>
     <div class="rooms" data-list="after" hidden><span>Продукт<b>5 типов домов · 13 планировок</b></span><span>Среда<b>четыре места и дорога между ними</b></span><span>Очередность<b>5 очередей, сервис и спорт-ядро в первой</b></span><span>Каждый участок<b>оцифрован по пяти параметрам</b></span><span>Аудитория<b>5 сегментов · 7 связок дом + участок</b></span><span>Продажи<b>цена — в финале разговора</b></span></div>
   </div>
   <div class="metrics" data-stagger>
@@ -538,7 +539,7 @@ h1,h2,h3{margin:0;font-weight:400}
     document.querySelectorAll('[data-layer]').forEach(x=>x.setAttribute('aria-pressed', x===b));
     document.querySelectorAll('[data-list]').forEach(l=>{ l.hidden = (l.dataset.list==='before') !== before; });
     stateWord.textContent = before ? 'Было' : 'Стало'; stateCap.textContent = capOf[k] || '';
-    stateTxt.textContent = before ? 'Готовая нарезка на 155 участков и дорога до трассы. Ни продукта, ни среды, ни очередности.' : 'Продукт, среда и очередность на том же межевании. Слои показывают, из чего собран расчёт.';
+    stateTxt.textContent = before ? 'Готовая нарезка на 155 участков, закреплённая договором о комплексном развитии территории. Ни продукта, ни среды, ни очередности.' : 'Продукт, среда и очередность на том же межевании — без нового проекта планировки. Слои показывают, из чего собран расчёт.';
     if (hasGsap) ScrollTrigger.refresh(); }));
 
   const v = document.getElementById('filmVideo'), playBtn = document.getElementById('playBtn'), soundBtn = document.getElementById('soundBtn');
