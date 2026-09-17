@@ -263,6 +263,10 @@ h1,h2,h3{margin:0;font-weight:400}
 .mitem:hover .a{transform:translateX(4px)}
 @media(max-width:560px){.mitem{grid-template-columns:1fr auto}.mitem .n{display:none}}
 
+/* — заголовок с Ё: запас над буквами — */
+.hero .title{margin-top:clamp(30px,3.4vw,54px)}
+/* — первая подпись сцены видна до начала прокрутки — */
+.stage .ch.first{opacity:1;transform:none}
 /* — светлая закреплённая сцена (схемы на белом) — */
 .story.light{background:var(--paper);color:var(--ink)}
 .story.light .simg img{object-fit:contain;background:var(--paper)}
@@ -281,7 +285,7 @@ h1,h2,h3{margin:0;font-weight:400}
 .palette img{width:100%;height:auto;mix-blend-mode:multiply}
 .palette figcaption{padding-top:14px}
 .plan .tog .pill{padding:11px 14px 9px;font-size:16px}
-@media(max-width:900px){.hrow{grid-template-columns:1fr 1fr}}
+@media(max-width:900px){.hrow{grid-template-columns:1fr 1fr}.f1 .xlbl,.f2 .xlbl{text-align:left;margin:8px 0 0}}
 @media(max-width:560px){.hrow{grid-template-columns:1fr}}
 </style>
 <header class="nav" id="nav">
@@ -330,7 +334,7 @@ h1,h2,h3{margin:0;font-weight:400}
     <div class="simg"><img data-lqip="m_bird" src="assets/m_bird.webp" srcset="assets/m_bird_s.webp 800w, assets/m_bird_m.webp 1400w, assets/m_bird.webp 2400w" sizes="(max-width:900px) 100vw, 92vw" alt="Объёмная модель дома на участке с высоты: кровли, терраса, беседка" loading="lazy"></div>
     <div class="simg"><img data-lqip="m_street" src="assets/m_street.webp" srcset="assets/m_street_s.webp 800w, assets/m_street_m.webp 1400w, assets/m_street.webp 2400w" sizes="(max-width:900px) 100vw, 92vw" alt="Объёмная модель дома с улицы: гараж, вход под навесом" loading="lazy"></div>
     <div class="sgrad"></div>
-    <div class="ch"><div class="w"><span class="word">Участок</span><p class="txt">Земельный участок нестандартной формы. Дом развернули вдоль улицы так, чтобы максимально не пересекаться с соседями: нет вида из окна в окна. Солнечная часть участка осталась свободной под террасу, беседку и сад.</p></div><div class="c">01<small>/ 03</small></div></div>
+    <div class="ch first"><div class="w"><span class="word">Участок</span><p class="txt">Земельный участок нестандартной формы. Дом развернули вдоль улицы так, чтобы максимально не пересекаться с соседями: нет вида из окна в окна. Солнечная часть участка осталась свободной под террасу, беседку и сад.</p></div><div class="c">01<small>/ 03</small></div></div>
     <div class="ch"><div class="w"><span class="word">Объём</span><p class="txt">Два этажа над общей зоной, одноэтажные крылья гаража и бассейна. Дом подстроен под рельеф: гараж понижен на 650 мм, над ним эксплуатируемая кровля.</p></div><div class="c">02<small>/ 03</small></div></div>
     <div class="ch"><div class="w"><span class="word">С улицы</span><p class="txt">К улице дом обращён гаражом и входом под широким навесом. Все витражи гостиной, кухни и бассейна смотрят в сад.</p></div><div class="c">03<small>/ 03</small></div></div>
     <div class="sdots" aria-hidden="true"><i class="on"></i><i></i><i></i></div>
@@ -497,6 +501,10 @@ h1,h2,h3{margin:0;font-weight:400}
   const fmt = (v,d)=> v.toFixed(d).replace('.',',');
 
   document.querySelectorAll('[data-plan]').forEach(b=>b.addEventListener('click',()=>{ document.querySelectorAll('[data-planimg]').forEach(im=>{ im.hidden = im.id !== b.dataset.plan; }); document.querySelectorAll('[data-plan]').forEach(x=>x.setAttribute('aria-pressed', x===b)); if (hasGsap) ScrollTrigger.refresh(); }));
+
+  /* планы под переключателем грузятся заранее, когда секция близко */
+  const pdoc = document.querySelector('.plan .doc');
+  if (pdoc && 'IntersectionObserver' in window) { new IntersectionObserver((es,o)=>{ if (es.some(e=>e.isIntersecting)) { o.disconnect(); pdoc.querySelectorAll('img[hidden]').forEach(im=>{ const p = new Image(); p.sizes = im.sizes; p.srcset = im.srcset; p.src = im.src; }); } }, { rootMargin: '800px' }).observe(pdoc); }
 
   const v = document.getElementById('filmVideo'), playBtn = document.getElementById('playBtn'), soundBtn = document.getElementById('soundBtn');
   if (v && playBtn && soundBtn) {
