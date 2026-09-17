@@ -70,6 +70,16 @@
       ]
     },
     {
+      "slug": "dom-treh-pokoleniy",
+      "title": "Дом трёх поколений",
+      "year": 2019,
+      "category": "houses",
+      "meta": "индивидуальный дом · 401,3 м²",
+      "cover": "dom-treh-pokoleniy/assets/p01_threequarter",
+      "hover": "dom-treh-pokoleniy/assets/p02_entrance",
+      "related": []
+    },
+    {
       "slug": "poselok-u-ozera",
       "title": "Посёлок у озера",
       "year": 2026,

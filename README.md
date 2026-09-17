@@ -6,6 +6,7 @@
 |---|---|---|---|
 | Дом в сосновом бору | Индивидуальные дома | `dom-v-sosnovom-boru/` | https://hrustalniconcept.github.io/portfolio/dom-v-sosnovom-boru/ |
 | Резиденция XV | Индивидуальные дома | `rezidencia-xv/` | https://hrustalniconcept.github.io/portfolio/rezidencia-xv/ |
+| Дом трёх поколений | Индивидуальные дома | `dom-treh-pokoleniy/` | https://hrustalniconcept.github.io/portfolio/dom-treh-pokoleniy/ |
 | Посёлок у озера | Коттеджные посёлки | `poselok-u-ozera/` | https://hrustalniconcept.github.io/portfolio/poselok-u-ozera/ |
 | Лесная резиденция | Коттеджные посёлки | `lesnaya-rezidenciya/` | https://hrustalniconcept.github.io/portfolio/lesnaya-rezidenciya/ |
 | Посёлок в сосновом лесу | Коттеджные посёлки | `poselok-v-sosnovom-lesu/` | https://hrustalniconcept.github.io/portfolio/poselok-v-sosnovom-lesu/ |
