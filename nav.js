@@ -42,7 +42,7 @@ body.menu-open{overflow:hidden}
 
   const loadServices = site => fetch((site.root || '/') + 'services.json', {cache: 'no-cache'}).then(r => r.ok ? r.json() : null).catch(() => null);
   fetch(root + 'projects.json', {cache: 'no-cache'}).then(r => r.json()).then(data => loadServices(data.site).then(reg => {
-    if (reg && reg.services) { data.site.services = reg.services.filter(x => !x.side).map(x => ({title: x.title, url: x.url, price: x.price})).concat([{title: 'Все услуги', url: reg.site.services}]); data.site.registry_loaded = true; }
+    if (reg && reg.services) { data.site.nav = reg.site.nav; data.site.services = reg.services.filter(x => !x.side).map(x => ({title: x.title, url: x.url, price: x.price})).concat([{title: 'Все услуги', url: reg.site.services}]); data.site.registry_loaded = true; }
     return data;
   })).then(data => {
     const cats = data.categories, projects = data.projects;
@@ -50,7 +50,8 @@ body.menu-open{overflow:hidden}
     /* ---- единая шапка: логотип ведёт на главную сайта, первая ссылка — Услуги ---- */
     document.querySelectorAll('.nav .logo, .footer .logo').forEach(a => { a.setAttribute('href', siteRoot); });
     document.querySelectorAll('.nav .links').forEach(nav => {
-      if (!nav.querySelector('a[href="' + svcUrl + '"]')) { const a = document.createElement('a'); a.href = svcUrl; a.textContent = 'Услуги'; nav.prepend(a); }
+      const extra = (data.site.nav || [{title: 'Услуги', url: svcUrl}]).filter(x => x.url !== root && x.url !== '/portfolio/');
+      extra.reverse().forEach(x => { if (!nav.querySelector('a[href="' + x.url + '"]')) { const a = document.createElement('a'); a.href = x.url; a.textContent = x.title; nav.prepend(a); } });
       if (!slug && !nav.querySelector('a[href="' + root + '"]')) { const a = document.createElement('a'); a.href = root || './'; a.textContent = 'Портфолио'; nav.insertBefore(a, nav.children[1] || null); }
       nav.querySelectorAll('a[href^="https://hrustalni.com"]').forEach(a => a.remove());
     });
@@ -63,7 +64,7 @@ body.menu-open{overflow:hidden}
       <div class="cols"><div><span class="lbl">Услуги бюро</span><div class="pl">${(data.site.services||[]).filter(x => x.title !== 'Все услуги').map(x => `<a href="${x.url}">${esc(x.title)}${x.price ? `<small>${esc(x.price)}</small>` : ''}</a>`).join('')}<a class="all" href="${svcUrl}">все услуги →</a></div></div>${cats.map(c => { const list = byCat(c.id); return `<div><span class="lbl">${esc(c.title)}</span><div class="pl">${
         list.length ? list.map(p => `<a href="${href(p)}"${p.slug === slug ? ' class="cur" aria-current="page"' : ''}>${esc(p.title)}${p.year ? `<small>${p.year}</small>` : ''}</a>`).join('') : `<a class="all" href="${root}#${c.id}">скоро</a>`
       }${list.length ? `<a class="all" href="${root}#${c.id}">все ${esc(c.short.toLowerCase())} →</a>` : ''}</div></div>`; }).join('')}</div>
-      <div class="bottom"><a href="${siteRoot}">Главная</a><a href="${root}">Всё портфолио</a><a href="${data.site.request}">Заявка</a><a href="${data.site.home}">hrustalni.com</a></div>`;
+      <div class="bottom"><a href="${siteRoot}">Главная</a><a href="${root}">Всё портфолио</a><a href="${siteRoot}o-byuro/">О бюро</a><a href="${siteRoot}kontakty/">Контакты</a><a href="${data.site.request}">Заявка</a></div>`;
     document.body.appendChild(menu);
     const open = () => { menu.classList.add('open'); document.body.classList.add('menu-open'); };
     const close = () => { menu.classList.remove('open'); document.body.classList.remove('menu-open'); };
