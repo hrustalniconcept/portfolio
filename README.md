@@ -11,6 +11,7 @@
 | Лесная резиденция | Коттеджные посёлки | `lesnaya-rezidenciya/` | https://hrustalniconcept.github.io/portfolio/lesnaya-rezidenciya/ |
 | Посёлок в сосновом лесу | Коттеджные посёлки | `poselok-v-sosnovom-lesu/` | https://hrustalniconcept.github.io/portfolio/poselok-v-sosnovom-lesu/ |
 | Посёлок на склоне | Коттеджные посёлки | `poselok-na-sklone/` | https://hrustalniconcept.github.io/portfolio/poselok-na-sklone/ |
+| Посёлок с видом на горы | Коттеджные посёлки | `poselok-s-vidom-na-gory/` | https://hrustalniconcept.github.io/portfolio/poselok-s-vidom-na-gory/ |
 | Хрустальный | Реализованные проекты | `hrustalnyj/` | https://hrustalniconcept.github.io/portfolio/hrustalnyj/ |
 | Aura | Реализованные проекты | `aura/` | https://hrustalniconcept.github.io/portfolio/aura/ |
 | Резиденция XV | Реализованные проекты | `rezidencia-xv-poselok/` | https://hrustalniconcept.github.io/portfolio/rezidencia-xv-poselok/ |

@@ -1,0 +1,598 @@
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Посёлок с видом на горы</title>
+<meta name="description" content="Концепция закрытого коттеджного посёлка таунхаусов на 1,5 га в Кызыле: вид на горные вершины и Енисей, два типа домов 135 и 67 м², центральный бульвар, своя земля у каждого дома. Концепт-бюро «Хрустальный».">
+<meta property="og:title" content="Посёлок с видом на горы — Концепт-бюро «Хрустальный»">
+<meta property="og:description" content="Закрытый посёлок высокого класса комфортности на сравнительно небольшой территории: 1,5 га у Енисея, таунхаусы двух типов, бульвар и тихая жилая зона.">
+<meta property="og:image" content="assets/og.jpg">
+<meta property="og:type" content="article">
+<link rel="preload" as="image" href="assets/m_sunset.webp" imagesrcset="assets/m_sunset_s.webp 640w, assets/m_sunset_m.webp 1100w, assets/m_sunset.webp 1600w" imagesizes="(max-width:900px) 100vw, 92vw">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#FFFFFF;--stone:#F3F4F6;--ink:#1C1C1C;--navy:#072F50;--deep:#021825;--taupe:#8A8A8A;--white:#FFFFFF;--line:#D3D3D3;--wline:rgba(255,255,255,.2);--accent:#072F50;
+  --ink72:rgba(28,28,28,.72);--w70:rgba(255,255,255,.72);
+  --sans:'Inter','Inter Tight',Arial,sans-serif;--head:'Bebas Neue','Oswald',Impact,'Arial Narrow',sans-serif;
+  --m:clamp(24px,6vw,96px);--sec:clamp(120px,16vh,200px);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 16px/1.5 var(--sans);letter-spacing:-.01em;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:70;opacity:.025;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='160' height='160' filter='url(%23n)'/></svg>");mix-blend-mode:multiply}
+img,video{max-width:100%;display:block}
+img.ld{opacity:0;transition:opacity .9s ease}
+img.ld.in{opacity:1}
+a{color:inherit;text-decoration:none}
+p{margin:0}
+h1,h2,h3{margin:0;font-weight:400}
+.h1{font:400 clamp(64px,10vw,168px)/.86 var(--head);letter-spacing:-.015em;text-transform:uppercase;text-wrap:balance}
+.h2{font:400 clamp(40px,5.5vw,88px)/.98 var(--head);letter-spacing:-.01em;text-transform:uppercase;text-wrap:balance}
+.h2 em,.h1 em{font-style:normal;background:var(--navy);color:var(--white);padding:0 .12em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.dark .h2 em{background:var(--white);color:var(--navy)}
+.word{font:400 clamp(28px,3.2vw,44px)/1 var(--head);text-transform:uppercase;letter-spacing:.01em}
+.h3{font:400 clamp(22px,1.8vw,28px)/1 var(--head);text-transform:uppercase;letter-spacing:.01em}
+.lbl{font:500 11px/1.2 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--taupe)}
+.cap{font:400 13px/1.4 var(--sans);color:var(--taupe)}
+.txt{font:400 clamp(15px,1.1vw,17px)/1.5 var(--sans);color:var(--ink72);max-width:50ch}
+.rule{width:40px;height:1px;background:currentColor;opacity:.4;margin:22px 0 18px}
+.wrap{padding-inline:var(--m)}
+.sec{padding-block:var(--sec)}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);column-gap:clamp(16px,2vw,32px);row-gap:24px}
+.dark{background:linear-gradient(180deg,var(--navy) 0%,var(--deep) 100%);color:var(--white)}
+.dark .txt{color:var(--w70)}.dark .cap,.dark .lbl{color:rgba(255,255,255,.55)}
+.stone{background:var(--stone)}
+.dark .lbl{color:rgba(255,255,255,.6)}
+.arrow{display:inline-flex;align-items:center;gap:10px;font:400 18px/1 var(--head);text-transform:uppercase;letter-spacing:.02em}
+.arrow i{font-style:normal;display:inline-block;transition:transform .3s}
+.arrow:hover i{transform:translateX(4px)}
+.pill{display:inline-flex;align-items:center;gap:8px;border:1px solid currentColor;border-radius:3px;padding:12px 18px 10px;font:400 18px/1 var(--head);text-transform:uppercase;letter-spacing:.02em;background:transparent;color:inherit;cursor:pointer;transition:background .3s,color .3s}
+.pill:hover{background:var(--navy);color:var(--white)}
+.dark .pill:hover{background:var(--white);color:var(--ink)}
+.pill[aria-pressed="true"]{background:var(--navy);color:var(--white);border-color:var(--navy)}
+.dark .pill[aria-pressed="true"]{background:var(--white);color:var(--ink);border-color:var(--white)}
+.btn{display:inline-flex;align-items:center;gap:12px;background:var(--navy);color:var(--white);padding:16px 26px 14px;border-radius:3px;font:400 20px/1 var(--head);text-transform:uppercase;letter-spacing:.02em;border:0;cursor:pointer;transition:opacity .3s}
+.btn:hover{opacity:.85}
+.dark .btn{background:var(--white);color:var(--navy)}
+:focus-visible{outline:1px solid currentColor;outline-offset:4px}
+
+/* nav */
+.nav{position:fixed;inset:0 0 auto 0;z-index:40;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:22px var(--m) 30px;font:400 13px/1 var(--sans);color:var(--ink);transition:color .4s,background .4s;pointer-events:none;background:linear-gradient(180deg,rgba(255,255,255,.96) 55%,rgba(255,255,255,0))}
+.nav>*{pointer-events:auto}
+.nav.onphoto{color:var(--white);background:linear-gradient(180deg,rgba(2,24,37,.7) 55%,rgba(2,24,37,0))}
+.nav .logo{display:flex;align-items:center;gap:10px;font:400 18px/1 var(--head);letter-spacing:.04em;text-transform:uppercase}
+.nav .logo svg{width:26px;height:26px;fill:currentColor}
+.nav .links{display:flex;gap:28px}
+.nav .links a.is{text-decoration:underline;text-underline-offset:6px}
+.nav .right{display:flex;justify-content:flex-end;gap:28px;align-items:center}
+.burger{width:22px;height:12px;display:grid;gap:4px}
+.burger i{height:1px;background:currentColor;display:block}
+@media(max-width:900px){.nav .links{display:none}.nav{grid-template-columns:1fr auto}}
+
+/* hero */
+.hero{position:relative;padding:calc(26px + 11vh) var(--m) 0;min-height:100svh;overflow:visible}
+.hero .meta{display:flex;gap:clamp(24px,8vw,140px);align-items:baseline}
+.hero .title{margin-top:clamp(30px,3.2vw,48px);max-width:11ch;position:relative;z-index:2}
+.hero .meta{max-width:calc(100% - 180px)}
+.hero .counter{position:absolute;right:var(--m);top:calc(26px + 11vh + 8px);text-align:right;z-index:2}
+.hero .counter .n{font:400 clamp(32px,3vw,44px)/1 var(--head)}
+.hero .counter .n small{font-size:14px;font-weight:400;color:var(--taupe);margin-left:6px}
+.hero .dots{display:grid;gap:6px;justify-items:end;margin-top:20px}
+.hero .dots button{width:22px;height:22px;padding:0;border:0;background:transparent;cursor:pointer;display:grid;place-items:center}
+.hero .dots button::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--line);transition:transform .3s,background .3s}
+.hero .dots button.on::before{background:var(--navy);transform:scale(1.5)}
+.hero .dots button:hover::before{background:var(--navy)}
+.hero .see{margin-top:clamp(28px,5vh,56px);position:relative;z-index:2}
+.hero .social{position:absolute;left:var(--m);bottom:14vh;display:grid;gap:14px;z-index:2}
+.hero .social a{font:400 11px/1 var(--sans);letter-spacing:.18em;color:var(--taupe);writing-mode:vertical-rl}
+.hero .photo{position:relative;margin:clamp(-40px,-6vw,-96px) calc(var(--m) * -1) 0 clamp(120px,22vw,420px);height:min(78vh,880px);overflow:hidden}
+.hero .photo .sl{position:absolute;inset:0;opacity:0;transition:opacity 1.1s ease}
+.hero .photo .sl.on{opacity:1}
+.hero .photo img{width:100%;height:100%;object-fit:cover;object-position:center 45%;transform:scale(1.08)}
+.hero .photo .sl.on img{animation:kb 7s cubic-bezier(.2,.6,.2,1) forwards}
+@keyframes kb{to{transform:scale(1)}}
+.hero .photo{cursor:pointer}
+.slnav{position:absolute;top:50%;transform:translateY(-50%);width:48px;height:48px;border:1px solid rgba(255,255,255,.6);border-radius:3px;background:rgba(2,24,37,.35);color:#fff;font:400 22px/1 var(--head);cursor:pointer;opacity:0;transition:opacity .3s,background .3s;backdrop-filter:blur(4px)}
+.slnav.prev{left:20px}.slnav.next{right:20px}
+.hero .photo:hover .slnav,.slnav:focus-visible{opacity:1}
+.slnav:hover{background:rgba(2,24,37,.7)}
+.slbar{position:absolute;left:0;right:0;bottom:0;height:2px;background:rgba(255,255,255,.25)}
+.slbar i{display:block;height:100%;width:0;background:#fff}
+.slbar i.run{animation:slbar 6s linear forwards}
+@keyframes slbar{to{width:100%}}
+@media(pointer:coarse){.slnav{opacity:1;background:rgba(2,24,37,.5)}}
+.hero .photo .cap{position:absolute;left:24px;bottom:22px;color:var(--white);opacity:.85;text-shadow:0 1px 12px rgba(0,0,0,.35)}
+@media(max-width:900px){.hero .meta{max-width:none}.hero{padding-top:calc(26px + 14vh)}.hero .counter{position:static;text-align:left;margin-top:16px}.hero .dots{justify-items:start;display:flex}.hero .social{display:none}.hero .photo{margin:24px calc(var(--m) * -1) 0;height:64vh}}
+
+/* metrics */
+.metrics{grid-column:1/-1;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:clamp(64px,9vh,112px);border-top:1px solid var(--ink);padding-top:28px}
+.metric .n{font:400 clamp(44px,5vw,80px)/1 var(--head);letter-spacing:0;font-variant-numeric:tabular-nums}
+.metric .n small{font-size:.4em;letter-spacing:0;margin-left:6px;color:var(--taupe)}
+.metric .cap{margin-top:10px}
+@media(max-width:900px){.metrics{grid-template-columns:1fr 1fr}}
+
+/* story */
+.story{position:relative;background:var(--deep);color:var(--white)}
+.stage{position:relative;height:100svh;min-height:600px;overflow:hidden}
+.simg{position:absolute;inset:0;opacity:0}
+.simg:first-child{opacity:1}
+.simg img{width:100%;height:100%;object-fit:cover;transform:scale(1.08)}
+.sgrad{position:absolute;inset:0;background:linear-gradient(180deg,rgba(2,24,37,0) 45%,rgba(2,24,37,.6) 100%)}
+.ch{position:absolute;left:var(--m);right:var(--m);bottom:clamp(40px,9vh,96px);opacity:0;transform:translateY(20px);display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px;align-items:end}
+.ch:first-of-type{opacity:1;transform:none}
+.ch .w{grid-column:1/8}
+.ch .w .word{display:block}
+.ch .w .txt{margin-top:14px;color:var(--w70)}
+.ch .c{grid-column:9/13;text-align:right;font:400 40px/1 var(--head)}
+.ch .c small{font-size:14px;font-weight:400;opacity:.6;margin-left:6px}
+.sdots{position:absolute;right:var(--m);top:50%;transform:translateY(-50%);display:grid;gap:12px}
+.sdots i{width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,.35);display:block}
+.sdots i.on{background:var(--white)}
+.sfall{display:none}
+@media(max-width:900px),(pointer:coarse){.stage,.sdots{display:none}.sfall{display:block;padding-block:var(--sec)}.sfall figure{margin:0 0 40px}.sfall img{width:100%;height:60vh;object-fit:cover}.sfall figcaption{padding:16px 0 0}.ch .w,.ch .c{grid-column:1/-1}.ch .c{text-align:left}}
+
+/* plan (stone) — генплан со слоями */
+.plan .head{grid-column:1/8}
+.plan .state{grid-column:1/5;margin-top:clamp(40px,6vh,72px);align-self:end}
+.plan .state .txt{margin-top:12px;font-size:15px}
+.plan .tog{grid-column:5/13;display:flex;gap:8px;flex-wrap:wrap;margin-top:clamp(40px,6vh,72px);align-self:end;justify-content:flex-end}
+.plan .tog .pill{padding:10px 14px 8px;font-size:16px}
+.plan .tog .sep{width:1px;height:28px;background:var(--line);margin:0 6px;align-self:center}
+.plan .doc{grid-column:1/-1;position:relative;aspect-ratio:3840/2145;background:var(--white);border:1px solid var(--line);margin-top:8px}
+.plan .doc img{width:100%;height:100%;object-fit:contain;position:absolute;inset:0;opacity:0;transition:opacity .7s ease}
+.plan .doc img.on{opacity:1}
+.plan .doc .cap{position:absolute;right:0;bottom:-24px}
+.plan .lists{grid-column:1/-1;margin-top:32px}
+.plan .lists .rooms{display:grid;grid-template-columns:repeat(3,1fr);gap:0 clamp(24px,4vw,64px)}
+.plan .lists .rooms[hidden]{display:none}
+.zones{grid-column:1/-1;margin-top:clamp(48px,7vh,80px);display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(24px,4vw,64px)}
+.zone{border-top:1px solid var(--ink);padding-top:18px}
+.zone .h3{font-size:24px}
+.zone .txt{margin-top:10px;font-size:15px}
+.rooms{margin-top:16px;display:grid;gap:4px;font:400 13px/1.5 var(--sans)}
+.rooms span{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);padding:5px 0;color:var(--ink72)}
+.rooms b{font-weight:500;color:var(--ink);font-variant-numeric:tabular-nums;white-space:nowrap}
+.total{grid-column:1/-1;display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:12px;border-top:1px solid var(--ink);padding-top:22px;margin-top:8px}
+.total .n{font:400 clamp(44px,5vw,72px)/1 var(--head);font-variant-numeric:tabular-nums}
+.total .cap{max-width:56ch}
+@media(max-width:900px){.plan .head,.plan .state,.plan .tog{grid-column:1/-1}.plan .tog{justify-content:flex-start;margin-top:16px}.plan .lists .rooms{grid-template-columns:1fr}.zones{grid-template-columns:1fr}}
+
+/* phases — очереди */
+.phases .head{grid-column:1/7}
+.phases .side{grid-column:8/13;align-self:end}
+.bars{grid-column:1/-1;margin-top:clamp(40px,6vh,72px);display:grid;grid-template-columns:repeat(5,1fr);gap:clamp(12px,2vw,32px);align-items:end;border-bottom:1px solid var(--ink);padding-bottom:0}
+.bar{display:grid;gap:14px;align-content:end}
+.bar .k{font:400 clamp(28px,3vw,44px)/1 var(--head);font-variant-numeric:tabular-nums}
+.bar .col{background:var(--navy);width:100%;transform-origin:bottom;height:calc(var(--h) * 1px)}
+.bar .cap{padding-bottom:0}
+.blegend{grid-column:1/-1;display:grid;grid-template-columns:repeat(5,1fr);gap:clamp(12px,2vw,32px);padding-top:16px}
+.blegend div{font:400 13px/1.5 var(--sans);color:var(--ink72)}
+.blegend b{display:block;font:400 22px/1 var(--head);color:var(--ink);text-transform:uppercase;margin-bottom:6px}
+@media(max-width:900px){.phases .head,.phases .side{grid-column:1/-1}.bar .col{height:calc(var(--h) * .5px)}.blegend{grid-template-columns:1fr 1fr}.blegend div:last-child{grid-column:1/-1}}
+
+/* houses — сетка типов */
+.houses .head{grid-column:1/8}
+.hgrid{grid-column:1/-1;display:grid;grid-template-columns:repeat(6,1fr);gap:clamp(24px,3vw,48px) 24px;margin-top:clamp(40px,6vh,72px)}
+.hc{grid-column:span 2}
+.hc:nth-child(4),.hc:nth-child(5){grid-column:span 3}
+.hc figure{margin:0;aspect-ratio:16/9;overflow:hidden;position:relative;background:var(--white);cursor:pointer}
+.hc img{width:100%;height:100%;object-fit:cover;transform:scale(1.05);transition:transform 1.4s cubic-bezier(.2,.6,.2,1),opacity .6s ease}
+.hc:hover img.ren{transform:scale(1)}
+.hc img.pl{position:absolute;inset:0;object-fit:contain;transform:none;opacity:0;padding:4%}
+.hc.plan img.ren{opacity:0}
+.hc.plan img.pl{opacity:1}
+.hc .capline .arrow{background:none;border:0;padding:0;cursor:pointer;color:inherit;white-space:nowrap}
+.hc .capline{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding-top:14px}
+.hc .capline .h3{font-size:24px}
+.hc .capline .cap{margin-top:4px}
+.hc .lbl{white-space:nowrap}
+@media(max-width:900px){.houses .head{grid-column:1/-1}.hgrid{grid-template-columns:1fr 1fr}.hc,.hc:nth-child(4),.hc:nth-child(5){grid-column:span 1}.hc .capline{flex-wrap:wrap}}
+@media(max-width:560px){.hgrid{grid-template-columns:1fr}}
+
+/* evening full-bleed */
+.evening{position:relative;height:min(100svh,960px);min-height:560px;overflow:hidden;background:var(--deep);color:var(--white)}
+.evening .bg{position:absolute;inset:-8% 0;will-change:transform}
+.evening img{width:100%;height:100%;object-fit:cover;object-position:center 45%}
+.evening .g{position:absolute;inset:0;background:linear-gradient(90deg,rgba(2,24,37,.6) 0%,rgba(2,24,37,0) 60%)}
+.evening .t{position:absolute;left:var(--m);right:var(--m);top:50%;transform:translateY(-50%)}
+.evening .h2{max-width:14ch}
+.evening .txt{margin-top:22px;color:var(--w70)}
+
+/* details — среда */
+.details .head{grid-column:1/7}
+.dgrid{grid-column:1/-1;display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,3vw,48px);margin-top:clamp(40px,6vh,72px)}
+.d figure{margin:0;aspect-ratio:4/5;overflow:hidden}
+.d img{width:100%;height:100%;object-fit:cover;transform:scale(1.05);transition:transform 1.4s cubic-bezier(.2,.6,.2,1)}
+.d:hover img{transform:scale(1)}
+.d .capline{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding-top:14px}
+.d .capline .h3{font-size:22px}
+.d:nth-child(3n+2){margin-top:clamp(24px,5vw,72px)}
+@media(max-width:900px){.details .head{grid-column:1/-1}.dgrid{grid-template-columns:1fr 1fr}.d:nth-child(3n+2){margin-top:0}}
+@media(max-width:560px){.dgrid{grid-template-columns:1fr}}
+
+/* film (dark) */
+.film{position:relative;min-height:100svh;overflow:hidden}
+.film .bg{position:absolute;inset:-8% 0;will-change:transform}
+.film .bg img{width:100%;height:100%;object-fit:cover;object-position:center 40%;opacity:.38}
+.film .in{position:relative;padding:calc(var(--sec)*.7) var(--m);display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px;align-items:center;min-height:100svh}
+.film .l{grid-column:1/8}
+.film .l .word{color:var(--white)}
+.film .l .txt{margin-top:18px}
+.film .l .lbl{margin-top:28px;display:block}
+.film .r{grid-column:9/12;justify-self:center;width:min(100%,340px)}
+.film video{width:100%;aspect-ratio:9/16;object-fit:cover;background:#000;border:1px solid var(--wline)}
+.film .ctrls{display:flex;gap:10px;margin-top:16px;justify-content:flex-end}
+.pairs{margin-top:28px;display:grid;gap:0;font:400 13px/1.5 var(--sans);max-width:60ch}
+.pairs span{display:grid;grid-template-columns:1fr auto;gap:16px;padding:8px 0;border-bottom:1px solid var(--wline);color:var(--w70)}
+.pairs span b{font-weight:400;color:var(--white);white-space:nowrap}
+.pairs span.blur{filter:blur(3px);opacity:.75;pointer-events:none;user-select:none}
+.pairs span.note{border:0;padding-top:12px}
+.pairs span.note i{font-style:normal;color:rgba(255,255,255,.55);font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+@media(max-width:900px){.film .l,.film .r{grid-column:1/-1}.film .r{justify-self:start}.film .bg img{opacity:.22}.pairs span{grid-template-columns:1fr;gap:2px}}
+
+/* process */
+.process .head{grid-column:1/8}
+.pline{grid-column:1/-1;list-style:none;margin:clamp(40px,6vh,72px) 0 0;padding:32px 0 0;display:grid;grid-template-columns:repeat(7,1fr);gap:16px;border-top:1px solid var(--ink);position:relative}
+.pline li{position:relative;padding-top:18px}
+.pline li::before{content:"";position:absolute;left:0;top:-37px;width:9px;height:9px;border-radius:50%;background:var(--ink)}
+.pline li.next::before{background:var(--paper);border:1px solid var(--ink);width:7px;height:7px}
+.pline b{display:block;font:400 22px/1 var(--head);text-transform:uppercase;letter-spacing:.01em}
+.pline span{display:block;margin-top:10px;font:400 13px/1.4 var(--sans);color:var(--ink72)}
+.pline span i{display:block;font:500 10px/1.2 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--taupe);margin-bottom:3px}
+@media(max-width:900px){.process .head{grid-column:1/-1}.pline{grid-template-columns:repeat(2,1fr)}.pline li::before{display:none}}
+
+/* specs (paper) */
+.specs .head{grid-column:1/8}
+.sgrid{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vh,56px) 24px;margin-top:clamp(40px,6vh,72px)}
+.sch{margin:0;background:var(--white);border:1px solid var(--line)}
+.sch.wide{grid-column:1/-1}
+.sch img{width:100%;height:auto;display:block}
+.sch figcaption{padding:14px 16px 16px;border-top:1px solid var(--line)}
+.sch .h3{font-size:22px}
+.sch .cap{margin-top:4px}
+.zhead{grid-column:1/-1;margin-top:clamp(48px,7vh,80px);border-top:1px solid var(--ink);padding-top:18px}
+.zhead .cap{margin-top:8px;max-width:70ch}
+.zgrid{grid-column:1/-1;display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(20px,3vw,40px) 24px;margin-top:24px}
+.zn{margin:0}
+.zn img{width:100%;aspect-ratio:1;object-fit:cover;background:var(--white);border:1px solid var(--line)}
+.zn figcaption{padding-top:12px}
+.zn .h3{font-size:20px}
+.zn .cap{margin-top:4px}
+.srow{grid-column:1/-1;display:grid;grid-template-columns:4fr 8fr;gap:24px clamp(24px,4vw,64px);margin-top:clamp(48px,7vh,80px);align-items:end}
+.srow .metrics{margin-top:0;border-top:0;padding-top:0}
+.sch.small .h3{font-size:18px}
+@media(max-width:900px){.zgrid{grid-template-columns:1fr 1fr}.srow{grid-template-columns:1fr}}
+@media(max-width:900px){.specs .head{grid-column:1/-1}.sgrid{grid-template-columns:1fr}}
+.row{display:grid;grid-template-columns:200px 1fr;gap:20px;padding:14px 0;border-bottom:1px solid var(--line);font:400 15px/1.5 var(--sans)}
+.row span:first-child{color:var(--taupe)}
+
+/* cta (dark) */
+.cta .l{grid-column:1/7}
+.cta form{grid-column:8/13;align-self:end;display:grid;gap:26px}
+.f{display:grid;gap:8px}
+.f label{font:400 11px/1.2 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.55)}
+.f input{background:transparent;border:0;border-bottom:1px solid rgba(255,255,255,.3);color:var(--white);font:400 16px/1.4 var(--sans);padding:10px 0;border-radius:0;outline:0}
+.f input::placeholder{color:rgba(255,255,255,.35)}
+.f input:focus{border-color:var(--white)}
+.f.err input{border-color:#D98A6B}
+.f .msg{font-size:12px;color:#D98A6B;min-height:1em}
+.consent{font-size:12px;color:rgba(255,255,255,.45);max-width:44ch}
+.success .h2{font-size:48px}
+@media(max-width:900px){.cta .l,.cta form{grid-column:1/-1}}
+
+/* footer */
+.footer{padding:40px var(--m);display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:baseline;border-top:1px solid var(--line)}
+
+/* motion helpers */
+.rv{will-change:transform,opacity}
+@media(max-width:900px),(pointer:coarse){body::after{display:none}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.hero .photo img{transform:none}}
+.more .mlist{border-top:1px solid var(--line);margin-top:24px}
+.mitem{display:grid;grid-template-columns:96px 1fr auto;gap:24px;align-items:baseline;padding:22px 0;border-bottom:1px solid var(--line);text-decoration:none;color:inherit}
+.mitem .n{font:400 12px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--taupe)}
+.mitem .t{font:400 clamp(24px,3vw,40px)/1 var(--head);text-transform:uppercase}
+.mitem .a{font:400 18px/1 var(--head);text-transform:uppercase;transition:transform .3s}
+.mitem:hover .a{transform:translateX(4px)}
+@media(max-width:560px){.mitem{grid-template-columns:1fr auto}.mitem .n{display:none}}
+.houses.interior .hc,.houses.interior .hc:nth-child(4),.houses.interior .hc:nth-child(5){grid-column:span 3}
+@media(max-width:900px){.houses.interior .hc,.houses.interior .hc:nth-child(4),.houses.interior .hc:nth-child(5){grid-column:span 1}}
+.bars.three{grid-template-columns:repeat(3,1fr)}
+.pairs span small{display:block;grid-column:1/-1;margin-top:6px;font:400 13px/1.45 var(--sans);color:var(--w70)}
+.pairs span b{white-space:normal;text-align:right}
+.plan .head .cap{margin-top:14px;max-width:50ch;display:block}
+.plan .lists .rooms b,.zones .rooms b{white-space:normal;text-align:right}
+.bars .k small{display:block;font:400 12px/1.3 var(--sans);color:var(--taupe);text-transform:none;letter-spacing:0;margin-top:6px}
+/* посёлок с видом на горы: участок, принципы, схемы в рост */
+.site .head{grid-column:1/8}
+.site .side{grid-column:9/13;align-self:end}
+.site .side .rooms{margin-top:0}
+.sfig{margin:0;position:relative;overflow:hidden;background:var(--white);border:1px solid var(--line)}
+.sfig img{width:100%;height:100%;object-fit:cover}
+.sfig figcaption,.nstrip figcaption{padding-top:12px}
+.site .pair{grid-column:1/-1;display:grid;grid-template-columns:7fr 5fr;gap:24px;margin-top:clamp(40px,6vh,72px);align-items:start}
+.site .pair .sfig.map{aspect-ratio:1845/1010}
+.site .pair .sfig.aer{aspect-ratio:1070/1330}
+.site .pair figure{margin:0}
+.nstrip{grid-column:1/-1;display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:clamp(32px,5vh,56px)}
+.nstrip figure{margin:0;aspect-ratio:4/3;overflow:hidden}
+.nstrip img{width:100%;height:100%;object-fit:cover}
+.nstrip .cap{grid-column:1/-1}
+.concept .head{grid-column:1/7}
+.concept .side{grid-column:8/13;align-self:end;display:grid;gap:16px}
+.axon{grid-column:1/-1;margin:clamp(40px,6vh,72px) 0 0;background:var(--white)}
+.axon img{width:100%;height:auto}
+.axon figcaption{padding-top:12px}
+.princ{grid-column:1/-1;display:grid;grid-template-columns:repeat(5,1fr);gap:clamp(16px,2vw,32px);margin-top:clamp(40px,6vh,72px)}
+.princ .zone .txt{font-size:14px}
+.sgrid.tall .sch img{max-height:min(86vh,980px);width:auto;max-width:100%;margin:0 auto;padding:16px}
+.sch ul{margin:12px 0 0;padding:0;list-style:none;display:grid;gap:8px}
+.sch li{font:400 14px/1.5 var(--sans);color:var(--ink72);padding-left:22px;position:relative}
+.sch li::before{content:'';position:absolute;left:0;top:.72em;width:12px;height:1px;background:currentColor}
+.wide{grid-column:1/-1;margin:clamp(40px,6vh,72px) 0 0;aspect-ratio:16/9;overflow:hidden}
+.wide img{width:100%;height:100%;object-fit:cover}
+.types .lines{grid-column:1/-1;margin:clamp(40px,6vh,72px) 0 0;background:var(--white)}
+.types .lines img{width:100%;height:auto}
+.types .hgrid .hc{grid-column:span 3}
+.types .feat{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.types .feat span{border:1px solid var(--line);border-radius:3px;padding:6px 10px 5px;font:400 13px/1 var(--sans);color:var(--ink72)}
+.types .hc .txt{margin-top:12px;font-size:15px}
+.hc.plan figure{background:var(--white)}
+.interior .hgrid .hc{grid-column:span 2}
+.dgrid .d .cap{max-width:40ch}
+.sgrid.tall .sch,.axon,.types .lines{background-image:none!important}
+@media(max-width:900px){.site .head,.site .side,.concept .head,.concept .side{grid-column:1/-1}.site .pair{grid-template-columns:1fr}.nstrip{grid-template-columns:1fr 1fr}.princ{grid-template-columns:1fr 1fr}.types .hgrid .hc,.interior .hgrid .hc{grid-column:span 1}}
+@media(max-width:560px){.row{grid-template-columns:1fr;gap:4px}.princ{grid-template-columns:1fr}.types .hgrid,.interior .hgrid{grid-template-columns:1fr}}
+</style>
+
+<header class="nav" id="nav">
+  <a class="logo" href="../"><svg viewBox="0 0 69 69" aria-hidden="true"><path d="M52.1687 68.9595L34.5 55.6875L16.8313 68.9595H0.121479L34.5 43.1347L68.8785 68.9595H52.1687Z"/><path d="M43.1347 34.5L68.9595 0.121479V16.8313L55.6875 34.5L68.9595 52.1687V68.8785L43.1347 34.5Z"/><path d="M16.8313 0.0404053L34.5 13.3124L52.1687 0.0404053H68.8785L34.5 25.8652L0.121479 0.0404053H16.8313Z"/><path d="M25.8652 34.5L0.0404053 68.8785V52.1687L13.3124 34.5L0.0404053 16.8313V0.121479L25.8652 34.5Z"/></svg>Хрустальный</a>
+  <nav class="links" aria-label="Разделы"><a href="../">Портфолио</a><a href="#site">Участок</a><a href="#scheme">Генплан</a><a href="#types">Дома</a><a href="#details">Среда</a></nav>
+  <div class="right"><a href="#contact">Заявка</a><button class="burger" type="button" aria-label="Меню портфолио"><i></i><i></i><i></i></button></div>
+</header>
+
+
+<section class="hero" id="top">
+  <div class="meta"><span class="lbl" data-line>Коттеджный посёлок</span><span class="lbl" data-line>Таунхаусы · 1,5 га · 20 минут до центра Кызыла</span></div>
+  <h1 class="h1 title" data-line>Посёлок с видом на горы</h1>
+  <div class="counter" data-line><div class="n"><span id="slnum">01</span><small>/ 05</small></div><div class="dots" role="tablist" aria-label="Кадры"><button class="on" type="button" aria-label="Кадр 1"></button><button type="button" aria-label="Кадр 2"></button><button type="button" aria-label="Кадр 3"></button><button type="button" aria-label="Кадр 4"></button><button type="button" aria-label="Кадр 5"></button></div></div>
+  <a class="arrow see" href="#site" data-line>Смотреть проект <i>→</i></a>
+  <div class="social" aria-hidden="true"><a href="#">instagram</a><a href="#">telegram</a></div>
+  <div class="photo" data-hero-photo data-slider>
+    <div class="sl on"><img data-lqip="m_sunset" src="assets/m_sunset.webp" srcset="assets/m_sunset_s.webp 640w, assets/m_sunset_m.webp 1100w, assets/m_sunset.webp 1600w" sizes="(max-width:900px) 100vw, 92vw" alt="Таунхаусы на закате, прогулочная дорожка с подсветкой и горы на горизонте" fetchpriority="high"></div>
+    <div class="sl"><img data-lqip="m_type2" data-src="assets/m_type2.webp" data-srcset="assets/m_type2_s.webp 640w, assets/m_type2_m.webp 1100w, assets/m_type2.webp 1600w" sizes="(max-width:900px) 100vw, 92vw" alt="Таунхаус второго типа с балконами и панорамными окнами, вдали горы" loading="lazy"></div>
+    <div class="sl"><img data-lqip="m_boulevard" data-src="assets/m_boulevard.webp" data-srcset="assets/m_boulevard_s.webp 640w, assets/m_boulevard_m.webp 1100w, assets/m_boulevard.webp 1600w" sizes="(max-width:900px) 100vw, 92vw" alt="Центральный бульвар вдоль таунхаусов: дорожка, цветники и ели" loading="lazy"></div>
+    <div class="sl"><img data-lqip="m_public" data-src="assets/m_public.webp" data-srcset="assets/m_public_s.webp 640w, assets/m_public_m.webp 1100w, assets/m_public.webp 1600w" sizes="(max-width:900px) 100vw, 92vw" alt="Общественное пространство: песочница, дорожки и фонари между рядами домов" loading="lazy"></div>
+    <div class="sl"><img data-lqip="m_evening" data-src="assets/m_evening.webp" data-srcset="assets/m_evening_s.webp 640w, assets/m_evening_m.webp 1100w, assets/m_evening.webp 1600w" sizes="(max-width:900px) 100vw, 92vw" alt="Таунхаус первого типа вечером: два гаража и подсветка фасада" loading="lazy"></div>
+    <span class="cap" id="slcap">Таунхаусы на закате · концепция · визуализация</span>
+    <button class="slnav prev" type="button" aria-label="Предыдущий кадр">←</button>
+    <button class="slnav next" type="button" aria-label="Следующий кадр">→</button>
+    <div class="slbar" aria-hidden="true"><i></i></div>
+  </div>
+</section>
+
+<section class="sec site stone" id="site"><div class="wrap grid">
+  <div class="head">
+    <span class="word rv">Участок</span>
+    <h2 class="h2 rv" style="margin-top:14px">Город в 20 минутах, <em>горы перед окнами</em></h2>
+    <div class="rule rv"></div>
+    <p class="txt rv">Основное преимущество участка — Енисей. Рядом лесопарковая зона и вид на горные вершины, в том числе на вершину Догээ. Всё это в доступной автомобильной близости от Кызыла и в то же время вдали от центра города. Главная точка притяжения посёлка — близость к природе.</p>
+  </div>
+  <div class="side rv">
+    <div class="rooms"><span>Центр Кызыла<b>20 минут</b></span><span>Школа и детский сад<b>20 минут</b></span><span>Аэропорт<b>23 минуты</b></span><span>Автовокзал<b>25 минут</b></span><span>Рельеф<b>ровный</b></span><span>Подъезд<b>широкий, дорога частично в асфальте</b></span></div>
+  </div>
+  <div class="pair" data-stagger>
+    <figure><div class="sfig map"><img data-lqip="site_map" src="assets/site_map.webp" srcset="assets/site_map_s.webp 640w, assets/site_map_m.webp 1100w, assets/site_map.webp 1600w" sizes="(max-width:900px) 100vw, 46vw" alt="Расположение участка: Кызыл, территория проектирования 1,5 га у реки Большой Енисей" loading="lazy"></div><figcaption><div class="h3" style="font-size:22px">Расположение</div><div class="cap">в структуре города: Кызыл, 128 тысяч жителей, участок у Большого Енисея</div></figcaption></figure>
+    <figure><div class="sfig aer"><img data-lqip="site_aerial" src="assets/site_aerial.webp" srcset="assets/site_aerial_s.webp 640w, assets/site_aerial_m.webp 1100w, assets/site_aerial.webp 1600w" sizes="(max-width:900px) 100vw, 46vw" alt="Окружение участка с высоты: Енисей, пойма реки, ДНП Догээ и горные вершины" loading="lazy"></div><figcaption><div class="h3" style="font-size:22px">Окружение</div><div class="cap">пойма реки рядом — потенциальная рекреационная зона</div></figcaption></figure>
+  </div>
+  <div class="nstrip" data-stagger>
+    <figure><img data-lqip="n_steppe" src="assets/n_steppe.webp" srcset="assets/n_steppe_s.webp 640w, assets/n_steppe_m.webp 1100w, assets/n_steppe.webp 1600w" sizes="(max-width:560px) 100vw, (max-width:900px) 50vw, 30vw" alt="Степь у подножия гор" loading="lazy"></figure>
+    <figure><img data-lqip="n_river" src="assets/n_river.webp" srcset="assets/n_river_s.webp 640w, assets/n_river_m.webp 1100w, assets/n_river.webp 1600w" sizes="(max-width:560px) 100vw, (max-width:900px) 50vw, 30vw" alt="Енисей среди лесистых склонов" loading="lazy"></figure>
+    <figure><img data-lqip="n_peaks" src="assets/n_peaks.webp" srcset="assets/n_peaks_s.webp 640w, assets/n_peaks_m.webp 1100w, assets/n_peaks.webp 1600w" sizes="(max-width:560px) 100vw, (max-width:900px) 50vw, 30vw" alt="Заснеженные вершины над долиной" loading="lazy"></figure>
+    <figure><img data-lqip="n_ice" src="assets/n_ice.webp" srcset="assets/n_ice_s.webp 640w, assets/n_ice_m.webp 1100w, assets/n_ice.webp 1600w" sizes="(max-width:560px) 100vw, (max-width:900px) 50vw, 30vw" alt="Берег Енисея весной" loading="lazy"></figure>
+    <p class="cap">Природа вокруг участка: Енисей, горы, лесопарковая зона · фото</p>
+  </div>
+  <div class="metrics" data-stagger>
+    <div class="metric"><div class="n"><span data-count="1.5" data-dec="1">1,5</span><small>га</small></div><div class="cap">территория посёлка</div></div>
+    <div class="metric"><div class="n"><span data-count="2">2</span><small>типа</small></div><div class="cap">таунхаусов: 135 и 67 м²</div></div>
+    <div class="metric"><div class="n"><span data-count="2">2</span></div><div class="cap">парковочных места у каждого дома</div></div>
+    <div class="metric"><div class="n"><span data-count="20">20</span><small>мин</small></div><div class="cap">до центра Кызыла</div></div>
+  </div>
+</div></section>
+
+<section class="sec concept" id="concept"><div class="wrap grid">
+  <div class="head">
+    <span class="word rv">Концепция</span>
+    <h2 class="h2 rv" style="margin-top:14px">Свой таунхаус, а жизнь — <em>в посёлке</em></h2>
+    <div class="rule rv"></div>
+    <p class="txt rv">Закрытый коттеджный посёлок высокого класса комфортности на сравнительно небольшой территории. Организована комфортная среда для жизни, работы и отдыха.</p>
+  </div>
+  <div class="side rv">
+    <p class="txt">Сценарии продуманы так, чтобы люди жили в своём таунхаусе, но при этом активно проводили время на территории посёлка и рядом с ним. Для этого у каждого таунхауса свой небольшой земельный участок: на нём можно разбить зону отдыха, барбекю или клумбы.</p>
+    <p class="txt">Жилая зона расположена вдали от активной рекреации — это создаёт спокойную атмосферу для отдыха и тишину в ночное время.</p>
+  </div>
+  <figure class="axon rv"><img data-lqip="axon" src="assets/axon.webp" srcset="assets/axon_s.webp 640w, assets/axon_m.webp 1100w, assets/axon.webp 1600w" sizes="(max-width:900px) 100vw, 92vw" alt="Аксонометрия посёлка: два ряда таунхаусов вдоль центрального бульвара, парковки и общественное пространство у въезда" loading="lazy"><figcaption class="cap">Посёлок целиком · концепция</figcaption></figure>
+  <div class="princ" data-stagger>
+    <div class="zone"><div class="h3">Безопасность</div><p class="txt">Закрытая территория посёлка</p></div>
+    <div class="zone"><div class="h3">Инфраструктура</div><p class="txt">Транспортная доступность до социально значимых объектов</p></div>
+    <div class="zone"><div class="h3">Зона отдыха</div><p class="txt">Детская площадка, выделенная велодорожка, зона спорта и досуга</p></div>
+    <div class="zone"><div class="h3">Эстетика</div><p class="txt">Эстетичные фасады и отделочные материалы</p></div>
+    <div class="zone"><div class="h3">Инженерные сети</div><p class="txt">У каждого дома автономная система водоснабжения и канализации</p></div>
+  </div>
+</div></section>
+
+<section class="sec specs stone" id="scheme"><div class="wrap grid">
+  <div class="head">
+    <span class="word rv">Генплан</span>
+    <h2 class="h2 rv" style="margin-top:14px">Один бульвар <em>на весь посёлок</em></h2>
+    <div class="rule rv"></div>
+    <p class="txt rv">Посёлок объединяет центральный бульвар с выделенной пешеходной дорожкой. Общественное пространство и техника — у въезда, жилые ряды — вглубь участка.</p>
+  </div>
+  <div class="sgrid tall" data-stagger>
+    <figure class="sch"><img data-lqip="traffic" src="assets/traffic.webp" srcset="assets/traffic_s.webp 640w, assets/traffic_m.webp 1100w, assets/traffic.webp 1600w" sizes="(max-width:900px) 100vw, 46vw" alt="Транспортно-пешеходная схема: въезды, транспортные и пешеходные потоки, парковочные места" loading="lazy"><figcaption><div class="h3">Транспортно-пешеходная схема</div><ul><li>Центральный въезд и дополнительный выезд снижают трафик внутри посёлка.</li><li>Есть выделенный выход в сторону реки.</li><li>У каждого дома 2 парковочных места.</li></ul></figcaption></figure>
+    <figure class="sch"><img data-lqip="zoning" src="assets/zoning.webp" srcset="assets/zoning_s.webp 640w, assets/zoning_m.webp 1100w, assets/zoning.webp 1600w" sizes="(max-width:900px) 100vw, 46vw" alt="Функциональное зонирование: жилые зоны домов первого и второго типа, транспортная и инженерная инфраструктура, общественное пространство" loading="lazy"><figcaption><div class="h3">Функциональное зонирование</div><ul><li>В общественном пространстве — детская площадка и зоны отдыха.</li><li>Техническая зона и ТЭП скрыты за озеленением.</li><li>Площадка для мусора вынесена за границу посёлка, к ней есть пешеходный доступ.</li><li>Выделены дополнительные парковочные места и места для техники, обслуживающей посёлок.</li></ul></figcaption></figure>
+  </div>
+  <figure class="wide rv"><img data-lqip="street" src="assets/street.webp" srcset="assets/street_s.webp 640w, assets/street_m.webp 1100w, assets/street.webp 1600w" sizes="(max-width:900px) 100vw, 92vw" alt="Улица посёлка: асфальтовый проезд, пешеходная дорожка и островок с елями между таунхаусами" loading="lazy"></figure>
+</div></section>
+
+<section class="evening" id="env">
+  <div class="bg" data-parallax><img data-lqip="v_lawn" src="assets/v_lawn.webp" srcset="assets/v_lawn_s.webp 640w, assets/v_lawn_m.webp 1100w, assets/v_lawn.webp 1600w" sizes="(max-width:900px) 100vw, 92vw" alt="Газон общественной зоны вечером: фонари вдоль дорожек и таунхаусы с подсветкой" loading="lazy"></div>
+  <div class="g"></div>
+  <div class="t"><h2 class="h2 rv">Свет <em>для прогулок</em></h2><p class="txt rv">На парковой территории продумано разнообразное освещение, чтобы создать особую атмосферу для прогулок: светильники на фасадах домов, по территории — трёхметровые и метровые светильники. Мягкий рассеянный свет подсветки фасадов подчёркивает архитектуру и добавляет уюта.</p></div>
+</section>
+
+<section class="sec houses types" id="types"><div class="wrap grid">
+  <div class="head">
+    <span class="word rv">Типы домов</span>
+    <h2 class="h2 rv" style="margin-top:14px">Две линии — <em>два вида из окна</em></h2>
+    <div class="rule rv"></div>
+    <p class="txt rv">На территории выделены две линии домов. Дома первой линии смотрят в сторону Енисея и имеют вид на горы, второй — в сторону существующей застройки. Посёлок развёрнут так, что дома смотрят на юго-восток и юго-запад. Материалы — сэндвич-панели, кирпич и штукатурка. Планировка — по клику на кадр.</p>
+  </div>
+  <figure class="lines rv"><img data-lqip="lines" src="assets/lines.webp" srcset="assets/lines_s.webp 640w, assets/lines_m.webp 1100w, assets/lines.webp 1600w" sizes="(max-width:900px) 100vw, 92vw" alt="Аксонометрия двух линий таунхаусов: тип 1 и тип 2 вдоль бульвара" loading="lazy"><figcaption class="cap">Две линии таунхаусов · концепция</figcaption></figure>
+  <div class="hgrid" data-stagger>
+    <div class="hc"><figure><img class="ren" data-lqip="h_t1" src="assets/h_t1.webp" srcset="assets/h_t1_s.webp 640w, assets/h_t1_m.webp 1100w, assets/h_t1.webp 1600w" sizes="(max-width:900px) 100vw, 46vw" alt="Таунхаус первого типа вечером: гаражи на две машины, балконы и подсветка фасада" loading="lazy"><img class="pl" data-src="assets/plan_t1.webp" data-srcset="assets/plan_t1_s.webp 640w, assets/plan_t1_m.webp 1100w, assets/plan_t1.webp 1600w" sizes="(max-width:900px) 100vw, 46vw" alt="План первого этажа таунхауса первого типа: гараж, кухня-гостиная 33 м², свой участок"></figure><div class="capline"><div><div class="h3">Тип 1 · 135 м²</div><div class="cap">гараж на 2 машины · балкон · панорамные окна</div></div><button class="arrow" type="button" data-plan-toggle>Планировка <i>↗</i></button></div><p class="txt">Кухня-гостиная площадью 33 м². Второй этаж позволяет разместить до четырёх спален или объединить пространство в одну большую спальню.</p></div>
+    <div class="hc"><figure><img class="ren" data-lqip="h_t2" src="assets/h_t2.webp" srcset="assets/h_t2_s.webp 640w, assets/h_t2_m.webp 1100w, assets/h_t2.webp 1600w" sizes="(max-width:900px) 100vw, 46vw" alt="Ряд таунхаусов второго типа: балконы, панорамные окна и остеклённые входные группы" loading="lazy"><img class="pl" data-src="assets/plan_t2.webp" data-srcset="assets/plan_t2_s.webp 640w, assets/plan_t2_m.webp 1100w, assets/plan_t2.webp 1600w" sizes="(max-width:900px) 100vw, 46vw" alt="План второго этажа таунхауса второго типа: мастер-спальня, детская, спальня и санузлы"></figure><div class="capline"><div><div class="h3">Тип 2 · 67 м²</div><div class="cap">без гаража · балкон · панорамные окна · остеклённая входная группа</div></div><button class="arrow" type="button" data-plan-toggle>Планировка <i>↗</i></button></div><p class="txt">На первом этаже — просторная кухня-гостиная и спальня, на втором можно разместить до четырёх спален или кабинет. Планировка даёт много сценариев для семей разного состава.</p></div>
+  </div>
+</div></section>
+
+<section class="sec houses interior" id="interior"><div class="wrap grid">
+  <div class="head">
+    <span class="word rv">Интерьер</span>
+    <h2 class="h2 rv" style="margin-top:14px">White box <em>или отделка</em></h2>
+    <div class="rule rv"></div>
+    <p class="txt rv">Два примера комплектации: white box с панорамными окнами и финишная отделка.</p>
+  </div>
+  <div class="hgrid" data-stagger>
+    <div class="hc"><figure><img data-lqip="g_whitebox" src="assets/g_whitebox.webp" srcset="assets/g_whitebox_s.webp 640w, assets/g_whitebox_m.webp 1100w, assets/g_whitebox.webp 1600w" sizes="(max-width:560px) 100vw, (max-width:900px) 50vw, 30vw" alt="Комната в комплектации white box с панорамными окнами" loading="lazy"></figure><div class="capline"><div><div class="h3">White box</div><div class="cap">панорамные окна, свет на всю глубину комнаты</div></div></div></div>
+    <div class="hc"><figure><img data-lqip="g_living" src="assets/g_living.webp" srcset="assets/g_living_s.webp 640w, assets/g_living_m.webp 1100w, assets/g_living.webp 1600w" sizes="(max-width:560px) 100vw, (max-width:900px) 50vw, 30vw" alt="Кухня-гостиная с финишной отделкой: кухня вдоль стены, диван и стол" loading="lazy"></figure><div class="capline"><div><div class="h3">Кухня-гостиная</div><div class="cap">пример финишной отделки</div></div></div></div>
+    <div class="hc"><figure><img data-lqip="g_dining" src="assets/g_dining.webp" srcset="assets/g_dining_s.webp 640w, assets/g_dining_m.webp 1100w, assets/g_dining.webp 1600w" sizes="(max-width:560px) 100vw, (max-width:900px) 50vw, 30vw" alt="Обеденная зона с финишной отделкой у окна" loading="lazy"></figure><div class="capline"><div><div class="h3">Обеденная зона</div><div class="cap">пример финишной отделки</div></div></div></div>
+  </div>
+</div></section>
+
+<section class="sec details" id="details"><div class="wrap grid">
+  <div class="head">
+    <span class="word rv">Благоустройство</span>
+    <h2 class="h2 rv" style="margin-top:14px">Загород <em>внутри посёлка</em></h2>
+    <div class="rule rv"></div>
+    <p class="txt rv">Озеленение продолжает тематику посёлка и создаёт атмосферу неповторимого загорода. Центральная прогулочная ось сделана в асфальте, чтобы дети безопасно катались на велосипедах, роликах и самокатах. Прогулочная зона — в тротуарной плитке: так больше тактильных ощущений.</p>
+  </div>
+  <div class="dgrid" data-stagger>
+    <div class="d"><figure><img data-lqip="e_gate" src="assets/e_gate.webp" srcset="assets/e_gate_s.webp 640w, assets/e_gate_m.webp 1100w, assets/e_gate.webp 1600w" sizes="(max-width:560px) 100vw, (max-width:900px) 50vw, 30vw" alt="Въездная группа: ворота и калитка с орнаментом, кирпичные пилоны" loading="lazy"></figure><div class="capline"><div><div class="h3">Въездная группа</div><div class="cap">декоративная стела с логотипом проекта и почтовые ящики</div></div></div></div>
+    <div class="d"><figure><img data-lqip="e_sand" src="assets/e_sand.webp" srcset="assets/e_sand_s.webp 640w, assets/e_sand_m.webp 1100w, assets/e_sand.webp 1600w" sizes="(max-width:560px) 100vw, (max-width:900px) 50vw, 30vw" alt="Песочница-скамья в центре прогулочной зоны, рядом стела с орнаментом" loading="lazy"></figure><div class="capline"><div><div class="h3">Песочница</div><div class="cap">центр прогулочной зоны: ограждение-лавочка держит песок внутри, вокруг чисто</div></div></div></div>
+    <div class="d"><figure><img data-lqip="e_axis" src="assets/e_axis.webp" srcset="assets/e_axis_s.webp 640w, assets/e_axis_m.webp 1100w, assets/e_axis.webp 1600w" sizes="(max-width:560px) 100vw, (max-width:900px) 50vw, 30vw" alt="Газон и дорожки общественной зоны днём" loading="lazy"></figure><div class="capline"><div><div class="h3">Прогулочная зона</div><div class="cap">газоны, плитка и асфальтовая ось для велосипедов и самокатов</div></div></div></div>
+    <div class="d"><figure><img data-lqip="e_yard" src="assets/e_yard.webp" srcset="assets/e_yard_s.webp 640w, assets/e_yard_m.webp 1100w, assets/e_yard.webp 1600w" sizes="(max-width:560px) 100vw, (max-width:900px) 50vw, 30vw" alt="Двор таунхауса: качели, грядки и обеденный стол" loading="lazy"></figure><div class="capline"><div><div class="h3">Свой двор</div><div class="cap">у каждого таунхауса — участок для зоны отдыха, барбекю или клумб</div></div></div></div>
+    <div class="d"><figure><img data-lqip="e_light" src="assets/e_light.webp" srcset="assets/e_light_s.webp 640w, assets/e_light_m.webp 1100w, assets/e_light.webp 1600w" sizes="(max-width:560px) 100vw, (max-width:900px) 50vw, 30vw" alt="Фасад таунхауса вечером с подсветкой" loading="lazy"></figure><div class="capline"><div><div class="h3">Подсветка фасадов</div><div class="cap">мягкий рассеянный свет подчёркивает архитектуру</div></div></div></div>
+    <div class="d"><figure><img data-lqip="e_green" src="assets/e_green.webp" srcset="assets/e_green_s.webp 640w, assets/e_green_m.webp 1100w, assets/e_green.webp 1600w" sizes="(max-width:560px) 100vw, (max-width:900px) 50vw, 30vw" alt="Цветники и малые формы с орнаментом в общественной зоне" loading="lazy"></figure><div class="capline"><div><div class="h3">Озеленение</div><div class="cap">цветники вдоль дорожек, техническая зона скрыта за зеленью</div></div></div></div>
+  </div>
+</div></section>
+
+<section class="sec specs" id="specs"><div class="wrap grid">
+  <div class="head"><span class="word rv">Характеристики</span><h2 class="h2 rv" style="margin-top:14px">Что заложено <em>в концепцию</em></h2><div class="rule rv"></div></div>
+  <div class="rv" style="grid-column:1/-1;margin-top:clamp(32px,5vh,56px);border-top:1px solid var(--ink)">
+    <div class="row"><span>Расположение</span><span>г. Кызыл, Республика Тыва, у реки Большой Енисей</span></div>
+    <div class="row"><span>Площадь территории</span><span>1,5 га</span></div>
+    <div class="row"><span>Формат</span><span>Закрытый коттеджный посёлок таунхаусов высокого класса комфортности</span></div>
+    <div class="row"><span>Дома</span><span>Тип 1 — 135 м², с гаражом на 2 машины · Тип 2 — 67 м², без гаража</span></div>
+    <div class="row"><span>Материалы</span><span>Сэндвич-панели, кирпич, штукатурка</span></div>
+    <div class="row"><span>Парковка</span><span>2 места у каждого дома, дополнительные места для гостей и техники</span></div>
+    <div class="row"><span>Инженерия</span><span>Автономное водоснабжение и канализация у каждого дома</span></div>
+    <div class="row"><span>Работа бюро</span><span>Разработка концепции · визуализация</span></div>
+  </div>
+</div></section>
+
+<section class="sec cta dark" id="contact"><div class="wrap grid">
+  <div class="l">
+    <h2 class="h2 rv">Небольшой участок? Покажем, <em>что на нём построить</em></h2>
+    <div class="rule rv"></div>
+    <p class="txt rv">Пришлите границы участка или схему межевания. Мы сами девелоперы: считаем продукт так, как потом будем его продавать, а построенное обслуживает своя гарантийная служба.</p>
+  </div>
+  <form id="leadForm" novalidate class="rv">
+    <div class="f"><label for="f-name">Имя</label><input id="f-name" name="name" type="text" autocomplete="name" placeholder="Как к вам обращаться"><span class="msg" aria-live="polite"></span></div>
+    <div class="f"><label for="f-phone">Телефон</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+7"><span class="msg" aria-live="polite"></span></div>
+    <div><button class="btn" type="submit">Обсудить участок <span aria-hidden="true">→</span></button></div>
+    <p class="consent">Нажимая кнопку, вы соглашаетесь с политикой обработки персональных данных.</p>
+  </form>
+</div></section>
+
+<section class="sec more" id="more"><div class="wrap">
+  <span class="word rv">Другие проекты</span>
+  <div class="mlist rv" data-more>
+    <a class="mitem" href="../poselok-na-sklone/"><span class="n">посёлки</span><span><span class="t">Посёлок на склоне</span><div class="cap">2024 · концепция коттеджного посёлка · 11 га · 146 участков</div></span><span class="a">Смотреть →</span></a>
+    <a class="mitem" href="../"><span class="n">→</span><span><span class="t">Всё портфолио</span><div class="cap">дома и посёлки бюро</div></span><span class="a"></span></a>
+  </div>
+</div></section>
+
+<footer class="footer">
+  <a class="logo" href="#top" style="display:flex;align-items:center;gap:10px;font:400 18px/1 var(--head);text-transform:uppercase;letter-spacing:.04em"><svg viewBox="0 0 69 69" style="width:22px;height:22px;fill:currentColor" aria-hidden="true"><path d="M52.1687 68.9595L34.5 55.6875L16.8313 68.9595H0.121479L34.5 43.1347L68.8785 68.9595H52.1687Z"/><path d="M43.1347 34.5L68.9595 0.121479V16.8313L55.6875 34.5L68.9595 52.1687V68.8785L43.1347 34.5Z"/><path d="M16.8313 0.0404053L34.5 13.3124L52.1687 0.0404053H68.8785L34.5 25.8652L0.121479 0.0404053H16.8313Z"/><path d="M25.8652 34.5L0.0404053 68.8785V52.1687L13.3124 34.5L0.0404053 16.8313V0.121479L25.8652 34.5Z"/></svg>Хрустальный</a>
+  <span class="cap">Визуализации — концепция. Фотографии природы показывают окружение участка</span>
+  <a class="cap" href="https://hrustalni.com">hrustalni.com</a>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+(function(){
+  const LQ={"axon": "data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAADQBQCdASooABkAPu1opU2ppqMiMBqqqTAdiWkABwfvpsk/yQESFMQxPsBaFwCNRIPOtAz2reYAAP7zcAXK8rVu6blNHclTALxrmsH5Lfk5JCGWPedTo/Ih56HK2MaSdCAfvQsk+54oGsxVV+Fs5YZq70B7rBNO9uwNI3QNXMIb/4A8bX4JQ8DuHoLNoMMC5ftpoPahApRKTZDy2pt8AAAA", "e_axis": "data:image/webp;base64,UklGRggBAABXRUJQVlA4IPwAAACQBgCdASooABcAPu1eqE4ppKOiMBqqqTAdiUAXuoFBENKDKPRvM9OUiib+e7Pcb9IVaRjx4YRE6HDfSmzgAP1TliSKpuv8RUEpbz6gvnHefQ9kqnsaaoy0K1Fv1cwkzWIGJ/1KorJeIT+2hcf0tHGZNHlDF3PC0vqmkPswBT1OoIwoIVc8870Hfr2O97nFogqU44p7WXCY6/d3yN9SPsXEKj4/EdzEvi+vc7A17X+k1C6ZsLM0vWcGXn27dTDNv+tWFo6xdeagXL5my5snfvJoTM0KZWReylENnJZ7+plblVIUzof+Xo8hX2h2DXEx/Pni+JiySlEgeFHKAAA=", "e_gate": "data:image/webp;base64,UklGRioBAABXRUJQVlA4IB4BAAAQBwCdASooABsAPu1urlCppqQiqrgKATAdiUAXYIEADIN7ybbPAyde6jAV0m3Kx1baNlTO4o+qilaCMBo9omILQAD+1QkjzWlQ+9SokW8AL1sTC3txNgYVUj0Hmx8i5Q/ulOAlEQaw5+YI328mInM8fhqOlSNu4cNCWeaw0JIdeMxb3qYFD/hO0B/1Gxn7lzfze55TRJMT57jFljSwf5DH33NS8yKSLyy3QQpCsnNt7JMq//CO2X4Cf9TVdFvAj4mxNoHLXTWRqxTPotXyb/Z+gNDS8h5w8ybGKxe015SydXSWBxxIkIw8TDOabmJVhwvWX1FDNI29ugNLLGunpUs3ZVsMxXapDHxs9kkUKrblEPqrYddYKBX/ndPGn4AA", "e_green": "data:image/webp;base64,UklGRiYBAABXRUJQVlA4IBoBAAAQBwCdASooABsAPu1wr1KppiQipWmZMB2JQBVPpFf+suFOtiEquetGQsLNlcuLXpOPbIY21aWxDxgPuXpLOH8hDAD9/1d+YSn0jXfIFd/+JsDzXRGmSE95dUtciRkyj+URsgQraRd0itb4MgLu7Y0pMNMcEMXwLgYxq8wT/l7mgpNm8kieKdMIYGW6QNGU0UkWCjKX0Q5bTeZ9AXFFJb3IpNK0uyOeT6c7DZC3TOWU5UTk6IJZbLOYLbTzxNumcqKOhz352pnePGcB3stixoWymrb9hBo9mXVNkTPHU5NUzl6NbNlL+1MijLeEnjU2hBsixxIhQSI/thm8zHeDaMecv4oz800ecK9S0Zyi3n+mOa9v1V4qjq/zMAA=", "e_light": "data:image/webp;base64,UklGRmIBAABXRUJQVlA4IFYBAACQBwCdASooABcAPu1srVCppiQiqqgBMB2JQBaG5fvACqmjX85fBm/cdITdXhXJVGardWcxle5t4T7EX/2BpPVBOzW0xUAA3hcQiJBnIdKciABEHenb/Ldwq+u0KfatHcNqSnE0zxEYmtmI8cA5x/Mg8YgmfdrK4dqHAcZjx0kQAKZPfrT3DDcTRo2bIoEFbsHjh5OFRqUOdT4Nbm8TMnOeezF7q8fVfvIkFxWhxVonFN9dgfLQHuqU5O0Qx3sIa6qXKS9p77ziaBT1zV1eoEfMtEftYT+UYAnxHnj54y6vjP+UaN+vtvfVeIPIVB42v/ojBt6Jeo1U/i/hfyFMMvgUbN960V2gcTCoPsteTCd2KblbcYpncZK+K3jyzdxB5ePDFsBUMDKh47pz8t3r5VUIzREHQWOw/hItZv65vdFxp9FDzWtAGd30T9ejutXZJ0oqcFfowAA=", "e_sand": "data:image/webp;base64,UklGRnIBAABXRUJQVlA4IGYBAACwBwCdASooABsAPu1qqE8ppiOiKqwBMB2JQBlGaZ0jmanfeJ1w5tr8UoOAIfYa+3ia9+Qm5w2YJxrScAX/pW9T3Ntk1LFgAPZFBkZF0YHOS02yKmE5c/1Ra0nz1HAPGaGEiktbUjAN6oekIYutHCvg1tSdsykce1WLM9LD/HKYKaST8lseE6wBdpDdnRltWYjiBnClF+IyDANk4Y76VWASoVz6rhjR6eMXo9g9MbHU1I6d0LMZ/4QXKjINUu7ca0Qa4F9QlZcXyIuIRh49wjkPLL2pd3r4GoobutU+/yEo9KQDeWhdXQOu4YFwKZQIWb47lRuzO9av9EtbTI3hWCmdDQEpZDZYDuT64HMF/wZE6GWx5K0xCEChPaCmvbAvXT2JrJwyA3KXhDBORas9j4yYRQCWDC5mjChPL816DmwWiNbE2VHCIk7EtV+9AGr4moixszxk/ld5lyEHQRV18KS0YJmoAAAA", "e_yard": "data:image/webp;base64,UklGRkoBAABXRUJQVlA4ID4BAAAQCACdASooABsAPu1qp02ppqOiMBqqqTAdiUAY3wFnt4TUFYxArgWV9ij3NV+AheoR+kalHfOf+nyOXu/2hb20Cfjz8ZD0EAQAAP61/wkEaGbkjmDkkhETri5C62I6d0bMa/Qx/WU7Jq5wWEMyNC9AaRWEWU5unwTbyMs2o+MZiXsKo4CMBOYS3vx7pb3l52EqJmv67vfIfB3WjHsJZ7F7ylUwiBCePH6KjwX75lylxDdTFIUFZhsT7ZCcMcy3qGqc/kj/5LkkT+qRJGl0jluXMDbNv+grvFohKqvaWdOqWTynznX+gJMz2gPTiXu1Juam1iyZvJ9ukrwmubn4VhZJNWp+evCV7/iCsIGY1flSvVlYpYrNWqqsmu9NX2U0UsOWH10jlE7HFlfD9vpQAZAF5a9HHciQJnW7hlI8AAA=", "g_dining": "data:image/webp;base64,UklGRkIBAABXRUJQVlA4IDYBAACQCACdASooACgAPu1cpk2ppKMiLjv8yTAdiWUAv+w16Fmod+YcIgXrfXN+eyX7oBs++wugCKGH1puUmMoFoE9eQyaJL+SvIk2Maee4gADLDqOxJ554yVn9croeUNg9qAz4zLdp8zAmelEg1ioC+G27TqX20cJIl2iGrGajFUYBNfGfQpOVuXZqcl1yNHrfZmu8rWxIBk7yyphVxdWxk+pdAS+t7TTTMZ9ajjFutZ5I74+wgDLQbDA7/wvf10eFnMP3pysWkviwvfyFKYk92Xs+InG6UqsbF/aQaw4a0jD08RoP21dO9J2+bJwxqpi2LTaM7K2kbGdOXY/3bZVhEWHBfeTxXgYGV9Qk8bahscD3hzvFKsKdYC1u+1spkYeknvV40KT1lhe72BGjJYHLf7RQJfcF8uAA", "g_living": "data:image/webp;base64,UklGRiQBAABXRUJQVlA4IBgBAABQBgCdASooABkAPu1mqVAppSOiqqoBMB2JQBZZgs2T0Bs5b9zTcLKz56vQJJfcpPtEXUXQMuqQBaYIAAD+w5uP1c6AURlNgemB86uUSgCiiiF86Jyilh9dwaOJF4yU8fJb7QzAbIvqL/n/pEuLt4wEfy8pT4PL8tTaC2+9YiRuJNQi2l0dR4aiCrEJ7aH33ubrdDym6Le+e9u4H8jfZ/Y/+yPfQPVWQd2UU8Iv2a3MFZnpUx4MxiuaaYHVkXI+kmdqw87hGXTa9B+2ERXMa6+btbfctYrmch6/29eb7joNHSFSuAy++nTWT9E7710K4fUIcrqloEP1Vb6vH8zJQwSwKRJ+14pKbC96J7DzAkYDvdvK2pCQtAAA", "g_whitebox": "data:image/webp;base64,UklGRrgAAABXRUJQVlA4IKwAAADwBQCdASooABcAPu1sqVEppaOiqrgKATAdiWcAxzAGh0lN0+rKn4VOXeGISkYaiZT8uV/uJBt+AADgMTy8WIdEK/c9uPRHDl6VSo1Xb8bdL6oLsSAPK71/QrpUaBSUi4RSCHGV5rrydVAOKbWRX+B5cp0PY3Z8qXb0gY0WwYGyCRSOrEX+vQWz/OvmSduxxbzXXMc3nE7SokWvR+hFXRez6P6VYoldu/5eAAAA", "h_t1": "data:image/webp;base64,UklGRgwBAABXRUJQVlA4IAABAAAwBgCdASooABsAPt1cpk2opSOiNVgMARAbiUAXyQLNrgZB3U+UN5z1r2uUvo0YsxUDqGeq36YlCfQAAP3epUDv0prUqfz6D9Pdoy8WZQp16qPiMhOVlE4gZXS/TVONoYFH9os5LDQxAmbVlPUyvvaUzzHj1q/h4Bmv4qaeU8D3n/QhE9D1oauVBQYgfVR1wO6uy4NmWKU7xTgpTKqS69fmFB+2Go2iPvybzp19YzLoPTW8khZ4T7lgz+OinYhKLF/yAPnyPbpuS82Mj67MV+v9KxqXepk8OVd5/3efr8kgRZMNW0or7X6R4JhmOgjs0FazS1ISM2nAbHaL3wMDYoAA", "h_t2": "data:image/webp;base64,UklGRkQBAABXRUJQVlA4IDgBAADwBwCdASooABcAPu1orlAppaQipWzJMB2JYgCxH1ZHgpCEPsfPKihpbyQeIU/0is8UFh//No2gEOdelV3GjrhaVRHJ0yVrfKgA2Z7IKHYV9uGGMduzO+ccinkVoYpwUv3A8G/8qvEcmW/etn7gdQANC2TRU4TmNQt/eQc2rNJcVz3rDqSNkF/RHaWLCBtcQHCEyFry/vXO2WBqn8jI5C+LHl7wXqePJ4oYw8KRbAd2S8fXQVNwShrRgjaz8nYanG8ji3DxUWuI08yHHsBoHvhQIdZMzRQ4nOH/Np2eRBr/2fHf+o3HlEf+OQ3QEyMI82u1kLwZmCjf0/CdDp63Dqd7NmnFkDe4XsVZca49tHhU1aPohOBZB0VsifW37gi0R9jcSQLllQUUttousrGmFL6GcrowB1nPgAA=", "lines": "data:image/webp;base64,UklGRsoAAABXRUJQVlA4IL4AAABwBQCdASooABYAPu1qqlAppaOipW5hMB2JaQAD4wQ0fMOMYq3N7a599afLcnvnrI4+HtIAAP75aJY1mhbuOmnUJz3g+A5aQ1cQUHcVF5xNIb5KgvsjuuR/qdnu+rmt90YDDSga/ZMs1tP3rVyztLflSs+hLUe9U/i6QR8ifieoYlBJ6bv6HyQh74NgQe5bUHUdoAEgOpCGbCTbikVAUo6EgqbUDMsgPp7pPWJBqtNRbCZ8OyFGof2XI1AAAAAA", "m_boulevard": "data:image/webp;base64,UklGRhgBAABXRUJQVlA4IAwBAABwBwCdASooABsAPu1wrlIppqQiqrgIATAdiWYArDLiP5QYdfGCfYwtrFIm3Z+/mZuGnEOrVj5IMLdt0kGaP05pTiZ7YADeLRhx9ixWs8b7I2V1xxCa8FabbeL/aeYkDB+5vj36BD0O6PG7NdZu1Hn8mWHurNAPcsV5ZMxzhqNi16JyG0haOPqa80FX/QTRVoQqcUMWqVoxJOkz1QKbub8HyXmJUhJiKc+tipNOL78KaXU4gczAxpf90OSVorj/VqcVwujZc0ZxJEMoJVKWRJ50vfHDUbhGgkVBPrGp1SQl80yDhWyeTM04hgz+hAOJt2uW+irUaFJqXDQMJgcTEssaQJhveYgIsUXaAAAA", "m_evening": "data:image/webp;base64,UklGRu4AAABXRUJQVlA4IOIAAACQBgCdASooABcAPu1mqk6ppaOiKqwBMB2JYwDMHBZs5DevKQyfsKY12Gb+zoY3bEr4dddUsvPAqAAQ77DYAP7nNRz45Xw3enpu/1RtIPrEVmlrhnoROvJ2zIUrI1GoAW5Wbo/memubKbSQ2JqWUc3W2WQhbIP8TzpvC6gYwNHg3AzgFa52sOI9DztmxGFfxmWerqemG34NCewTfZYKtasdOYCEXxJdOVqwfCoGMfWlSFyKi9Bzmb7GSXhmHjXwiwv06iGSgbq5sEkW7vmcDgwfO4h8E55kO8AL6PB7v9o7qAAA", "m_public": "data:image/webp;base64,UklGRk4BAABXRUJQVlA4IEIBAADwBwCdASooABcAPu1srlIppaQiqrgIATAdiUAYzm5U5Za18ERXuTf9d/W4cisTgWKfRDROuhHZirOeSvwbemNtdXllEphV0gAA/rI9wxKDyYj5THg+iCW1+jVFT45DYnRXmqT07DFq8U8UPTEIxUvOemMGokQ/gaPXExSxhGKrepawefZeZDp4I3RJaja42j7u7YSgjTP/FdgmwfYiXxz6Yopx0xIbDgthllB2kf7iDsuzYcR+wsM+GqvtrRfZ4WgzHXhM//T0FJUZIYVJ3Diupr/BIu+XGETiXIDXgx1Fjt89IfVadVCGfTulyg7P9V7E8BWuK2gH9KGVL3FHozZwIPpZoGwmYPuaUp3qShfgux8falPG54h0gynClGT6V9REqCQQfxJmwQynSBBEwH0U+ER2OwQA9VSHmzkHcfT8VAAA", "m_sunset": "data:image/webp;base64,UklGRjQBAABXRUJQVlA4ICgBAABwBwCdASooABsAPu1cpk6ppKMiMBqqqTAdiUAW33Ag6sK7Jw2l5KluZ2AFEcre+AiiQS5TSHpMXP943OWm+LRjzChmAADKgWihKjFLnraOz1Xpj5OI3HxzZJ0wiM4qPemvfUrOt6iUei6a9RVRyrl/KkptQxxN/U1AUQYxUK8p3whFAKzBY/pfD16M+uZzbUkwIqVtqVyn74JfSFVGs75AKuBTVjIYKO4402efCW2PK32PIPiFF8zQ811u2sU1BrMW7VTKiMMnT0scYn2qYAr6Vuo1jO21jAJntnQoJoM20NWkL37EPZtF7ydyzuMknF4jnGfQkc+XlATj/8TW4Q/JJDsqeZuNITwEMsO8c5t7jHqSn1lsRjd/FEIbNjvFOjRjQDTlj0MAAA==", "m_type2": "data:image/webp;base64,UklGRigBAABXRUJQVlA4IBwBAACQBgCdASooABcAPulcpk2pJKOiMBqtUSAdCUAVgLbYDsrs4+2ow3H75VbBDEk1h6aUCrN0cOPsLuKwAYfAAP614qAZqm5sLqX4e8hDtRtxDxZ0uMGIgWR/Jv0KDCwQ4VTqHkvhktgqANB2XQ6opxu/H8lsQqyAFOVWKeH8po+GcekRBitZOuu6543Ng6b6Sd6SVyhmGtJj6BmfCpaT3E+csZg5ve32DKXn/vNmmfQ8PXB3y0AUehSnqB4c6TvA3+XkmaqwHbEjhxKpaLC9/e0JXs+ItznLfgK+e+2F1riiuS7kbpWcHpO+XjVVWfSGMThCPdCCRDJdmQm92fC3WRD3+fx0GynRS/eZo6GmoiE1QulfllAQQs5BB7sAAA==", "n_ice": "data:image/webp;base64,UklGRgIBAABXRUJQVlA4IPYAAADwBgCdASooABkAPu1mrU+ppSQiKrgMATAdiWMArDMYASTzgS1FkAkIdIZj76VVTmm1PyD8sctAGOO7LpmVipoAAP5+VPRjhXMPI8Kr5ckqppmEOk0nGTbvhDL4DisUWXj6iHuvjUKnpood2+3+sMdkZFpAa8oygfEnaWXfxCS6Jdf/AnZ0cK2yi8UWM+GF28GSWhqmdIkURJAnz60aFe4IKyCcMKqwZlA64rBy13QiwqJNW2HkWNpXGeBaXFMy1AVqv1W4y+poUNtX/m1nYXamXVKWZgBHtb9SPOwOmGU3eRoBKgVO9p+psumKowijcU+whyqAAAA=", "n_peaks": "data:image/webp;base64,UklGRvoAAABXRUJQVlA4IO4AAABQBgCdASooAB0APulkpE2pJiMiMBqtUSAdCUAV4YcIdU4ciK5TMsiF099Pu470zUdD7CGQSyAeQGADAAD54yqANf/A+P/0ROqoKwLGYIRJPBR8HAD94iUz8ButIg8de0YAxZK+3dxgVDfBp1IZbg6G3GiDZQqTcWQAWinCdZgGcXqMyNCIkXedM7DbL0dpxtsoBAs/AoN6av6H9fP0TNVDPO2C+LL7VFhJBcqk156Zc2D41e+to2Tw5cGEQmTtjm064soCT+9XZjT8BABRytVFT56yHBOdR5Ko89P2ae+bd5KwnmzSFu1f+Hq3AAAA", "n_river": "data:image/webp;base64,UklGRiIBAABXRUJQVlA4IBYBAADQBgCdASooABcAPu1krFAppSQiqrgMATAdiWYAp0O2gd9i3+7YSb2CjgusV/pG8qYGfLSDGzF4zjH3P//55AAA/sYF33LfcE0Xf05vbneu5oIestst58KWN3Ctp5i23LfC2HJ7tWGKxeLXs59IL9C00TSeneogBeIPfvh1i5JliyyjgXf87RNRDcmtta9TpVvEZVnYkBx1th7zj1IOGuG+yqk0kJ1fzAJ+/oI4rdizeb3JiU4s4aBJEV3AGLjfSmdcSmuGk4LlTyADNGwnR+Fj94Lv0wIIeLwNrHFYNJUhDP+kKrXdrj/zKw2W5N2zNZrqlW7qHPlfgA8PO3Pv8RhMoDmcuhtxIyRBiwcmgDruH1HSQgAAAA==", "n_steppe": "data:image/webp;base64,UklGRtAAAABXRUJQVlA4IMQAAAAwBgCdASooABsAPu1kqk8ppSOiMBVaqTAdiWQAgvIL7rYf8Z2TKBnV8z0VKVly953+o3JksjMbzlsAAP67e1cI0rG+5xgD9JpIf1mVa/9DHKkYIPqnuAkvRTqRDlwWJbFfgXQNA0qGyMVeiCpmncskVv6uniEAq1OCzCEKRw4p/zzoba2WZWGgf0XbdE1h6rr57r1p/tnPTAYhgJBm4JF7P+AptSbTiThl6FGl2/8FhVACt1dBachNR1h25rGWWjosAAAA", "plan_t1": "data:image/webp;base64,UklGRgwBAABXRUJQVlA4IAABAAAQBwCdASodACgAPu1uslKppiSipWmZMB2JaQAOkXxIMPPfZz9AfjEXxcZ3BYkexFg59Yx8Z/zjL53XEUzLLGEAAAD++zF7rfUPhe+vspHIlLzh5bE5WvsDTL7+FNmNGvBJ8WOKH8iZu8Q95r1lRd9GbEVyhctsXcVfbfZn/MjFu5Ogzz+C9Ne5YRjTaIIQEtVPe77WwZ/WhJfoB3LVJRd3LTLK62KFMvSdqdr4yjTPwdm0VaTrInkG8a+33OTjeOWB5HolQj5n8KJ89RA6exXP35zTA3eleFPA2Au5TYxupoMfzsYtyEvd3/iq4qXROKDO6yIlhUzLyQlsdzhWQAAA", "plan_t2": "data:image/webp;base64,UklGRioBAABXRUJQVlA4IB4BAACwBgCdASooAB0APu1uqVAppqOiqrgMATAdiWkA0uwJygbLb9WInjFpJB58Q/tZJC8HEpjRu8k5boZ8inuAAAD+83tkPAUn1RucSjNOILxSMWW1VJ7+Olud6aR7JpyplYvmK+oYmhkVUCUPpWTHczTHSgL590DeK0r/NBk1klexhbJMdEJB+OdL06hd9GyaAvsciNS6D8Um9/MbjlqGefNMp3fU21uEq/HZ4u210AjabnCXv1tgkmj214uNasBArKipYcTAFclnFd9n/RgVM5D1b1YgNAt7mmCa6fGhUXSB7pjcHHTNWWzQ4djOCPJS3sjI9EcXdmtD0CEwEj63u1ztuLs02RVvr7H9dll/SiH5ECRl0GDh3DQEGJOvAAAA", "site_aerial": "data:image/webp;base64,UklGRhoBAABXRUJQVlA4IA4BAABwBwCdASogACgAPu1urVCppqQiqrgKATAdiWMAwg0bmo+RIfYaeC2fjnkXT6HeLguyzD0QncPRX1Auv3LYxKiRSddisAD++NgLzX3e22yY1338a4PhErDNtl1G625YuyA2Mm5WipPlidm8FmJvD6+tqDucvEKmQhGgmKKPGpVIuI4khgmsZdbDonOqn1J3qkcryGIMZgU14W/t5Wil692rkbEL9naA+RcjVL4GAoGvanlcWHub2H6Y8/xSPZzDEPzP5kXJ3/H4WELH8OD1pYlmI4coN2qp9WQDGnlzkd+P2vFBbNkemPYA27GfkOLaYvNNRDAq1tOpjkbcCdGisbUizFV1/1dsNp+6W1AhAAA=", "site_map": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAACQBACdASooABYAPt1Upk2opKOiNVv8ARAbiWdoTQA1Fi9V98usM8HhfxXWsuAA/vDSDtVDbAz3Cb8CyEF6PknES8Nnz4VX3zodWip+r0lXoD7k8zO/1Q6oUb/swAc3lJF5akw57ANyEofNCpigDPZJCuwPgAAA", "street": "data:image/webp;base64,UklGRhoBAABXRUJQVlA4IA4BAAAwBwCdASooABcAPu1us1KppiSipWmZMB2JQBahKeOARzuNVhDPEPhGY8/CiLHTUh9g79mi4ltxpQgNdDk32epnyVAA/rQbauN+AeCWTJ+NbjkK/lhWTZC9Jl338AtpaklRqxXlV0z62NkKquW08JNjUq+YQESbP8COrbmqpDISDNQrGlyCQHfqM0DT72zuQaswNdrwRArc7PpO96VOEAMX6B8rkEyg9IPr+5/bLWcAqVgMBgxpvKTa9JmLaEyf4urY4qyl2op9JgWLoQc83euVu2wDMMszZ5advuEAYBatKoG8bX5IIPpKczE41fbaWF2jkWDoACFVx6pbt9V53xCWeB/boCiEtfxIl94wAAA=", "traffic": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAAAwBQCdASoeACgAPu1orFAppaQisBVYATAdiWkAAB9Hgrd4bbFqjJsmuKE5VvAVoGrmAAD+8C07ZzqlKr3auY1FtuUzwyp5kjUb39VnY3yXss52tOfF5RtKMSSt//rSs/ZxgoHns3DCuU3B/UaP4ez40QcpQvLDw46LK8+AOsMkfj7sIjIW2rwoAAA=", "v_lawn": "data:image/webp;base64,UklGRhoBAABXRUJQVlA4IA4BAABwBwCdASooABsAPu1op02ppqOiMBqqqTAdiWYAs7O+x4RjcOL6Ch5veEH+r+hc2CSNPmF5RF0NljXcFZlQ6nN9yZsFoAD+zzwGK63BXiE6PuJMbt2Q6T7q/kRRWGXk2MxIDrXh9ebyZSyb0uGBwZz0Dg8GNacHYwFNpjvfY4BFkmrAIHbAfT92TM6+ImtdHCa6xh1ZaxTotEwsgXdOS/8d6hhQgjqvvG8wYAirw66Gv4hS7MTSTqqJU24ti1IituBwTVv5QNvDZdigCfKVVwEH3HseDXkpgZcxhklX58XeK9qPjlP4I8KwC6ktHpbETC8V1/IyEAqtmmF0M+y6nM0V7Dvf/BxUmU8vptBYAAA=", "zoning": "data:image/webp;base64,UklGRsYAAABXRUJQVlA4ILoAAACwBQCdASodACgAPuVgqk2pJaQiMAqpIByJZQDNwHVtQ5uTbWgXtHdX484xslzeDQfLwZtoAAAA/v4wZOzsNwdm9RqvkGaQ4rn01hcmhxRlt7J2nk4rXc/3VAQBTw8xnNpmQNBEFb6jNdhPvgFSLMaWG9LWWs6PIdz7NkmzzQUYOL340bX7i5tmdsYmH3glSrU0/IZ/H1T+UMZ45ZgCoKpJWwpqaHjxD6eekN/fAz0nOKzIGb6R0eAAAAA="};
+  document.querySelectorAll('img[data-lqip]').forEach(im=>{ const par=im.parentElement; par.style.backgroundImage=`url(${LQ[im.dataset.lqip]})`; par.style.backgroundSize='cover'; par.style.backgroundPosition='center'; im.classList.add('ld'); const done=()=>im.classList.add('in'); if(im.complete && im.naturalWidth) done(); else im.addEventListener('load',done,{once:true}); });
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const hasGsap = typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined';
+  const fmt = (v,d)=> v.toFixed(d).replace('.',',');
+
+  /* планировки типов */
+  document.querySelectorAll('.hc').forEach(c=>{ const btn=c.querySelector('[data-plan-toggle]'), pl=c.querySelector('img.pl'); if(!btn||!pl) return;
+    const tog=()=>{ if (pl.dataset.src){ pl.src=pl.dataset.src; pl.srcset=pl.dataset.srcset; pl.removeAttribute('data-src'); } const on=c.classList.toggle('plan'); btn.innerHTML = on ? 'Фасад <i>↗</i>' : 'Планировка <i>↗</i>'; };
+    btn.addEventListener('click',e=>{ e.stopPropagation(); tog(); }); c.querySelector('figure').addEventListener('click',tog); });
+
+  /* hero slider */
+  const sld = document.querySelector('[data-slider]');
+  if (sld) {
+    const slides = [...sld.querySelectorAll('.sl')], dots = [...document.querySelectorAll('.hero .dots button')], num = document.getElementById('slnum'), cap = document.getElementById('slcap'), bar = sld.querySelector('.slbar i');
+    const caps = ["Таунхаусы на закате", "Таунхаус второго типа", "Центральный бульвар", "Общественное пространство", "Вечер у таунхауса первого типа"];
+    let i = 0, timer = null, paused = false;
+    const show = k => { i = (k + slides.length) % slides.length; slides.forEach((x,j)=>x.classList.toggle('on', j===i)); dots.forEach((d,j)=>d.classList.toggle('on', j===i)); num.textContent = String(i+1).padStart(2,'0'); cap.textContent = caps[i] + ' · концепция · визуализация'; bar.classList.remove('run'); void bar.offsetWidth; bar.classList.add('run'); };
+    const start = () => { clearInterval(timer); timer = setInterval(()=>{ if(!paused) show(i+1); }, 6000); };
+    dots.forEach((d,j)=>d.addEventListener('click',()=>{ show(j); start(); }));
+    sld.querySelector('.next').addEventListener('click',e=>{ e.stopPropagation(); show(i+1); start(); });
+    sld.querySelector('.prev').addEventListener('click',e=>{ e.stopPropagation(); show(i-1); start(); });
+    sld.addEventListener('click',()=>{ show(i+1); start(); });
+    sld.addEventListener('mouseenter',()=>paused=true); sld.addEventListener('mouseleave',()=>paused=false);
+    let tx=null; sld.addEventListener('touchstart',e=>tx=e.touches[0].clientX,{passive:true}); sld.addEventListener('touchend',e=>{ if(tx===null) return; const dx=e.changedTouches[0].clientX-tx; if(Math.abs(dx)>40){ show(dx<0?i+1:i-1); start(); } tx=null; });
+    addEventListener('keydown',e=>{ if(e.key==='ArrowRight'){show(i+1);start();} if(e.key==='ArrowLeft'){show(i-1);start();} });
+    const hydrate = () => sld.querySelectorAll('img[data-src]').forEach(im=>{ im.addEventListener('load',()=>im.classList.add('in'),{once:true}); im.src=im.dataset.src; im.srcset=im.dataset.srcset; im.removeAttribute('data-src'); });
+    const first = sld.querySelector('.sl.on img'); const go = () => setTimeout(hydrate, 300); if (first.complete && first.naturalWidth) go(); else first.addEventListener('load', go, {once:true}); setTimeout(hydrate, 5000);
+    if (!reduced) { bar.classList.add('run'); start(); }
+  }
+
+  const form = document.getElementById('leadForm');
+  form.addEventListener('submit', e=>{ e.preventDefault(); let ok = true;
+    const set = (inp,msg)=>{ const f = inp.closest('.f'); f.classList.toggle('err', !!msg); f.querySelector('.msg').textContent = msg||''; if(msg) ok=false; };
+    set(form.name, form.name.value.trim().length<2 ? 'Напишите имя' : ''); set(form.phone, form.phone.value.replace(/\D/g,'').length<10 ? 'Нужен номер из 10–11 цифр' : '');
+    if(!ok) return; window.dataLayer = window.dataLayer || []; dataLayer.push({event:'form_submit', form_id:'final'});
+    /* TODO: GETCOURSE_FORM_ACTION — fetch(url,{method:'POST',body:new FormData(form)}) */
+    form.innerHTML = '<div class="success"><h2 class="h2">Спасибо. <em>Перезвоним</em> в течение рабочего дня</h2><div class="rule"></div><p class="txt">А пока пришлите схему межевания на почту бюро — так разговор начнётся с конкретики.</p></div>'; });
+
+  /* nav colour on photo / dark */
+  const nav = document.getElementById('nav');
+  const darks = [...document.querySelectorAll('.dark,.evening')];
+  const upd = ()=>{ const on = darks.some(b=>{ const r=b.getBoundingClientRect(); return r.top<=40 && r.bottom>40; }); nav.classList.toggle('onphoto', on); };
+  addEventListener('scroll', upd, {passive:true}); upd();
+
+  if (reduced || !hasGsap) return;
+  gsap.registerPlugin(ScrollTrigger);
+  ScrollTrigger.config({ ignoreMobileResize: true });
+  addEventListener('load', ()=>ScrollTrigger.refresh());
+  document.querySelectorAll('img').forEach(im=>im.addEventListener('load', ()=>ScrollTrigger.refresh(), {once:true}));
+  document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{ const t=document.querySelector(a.getAttribute('href')); if(t){ e.preventDefault(); window.scrollTo({top: t.getBoundingClientRect().top + scrollY - 10, behavior:'smooth'}); } }));
+
+  gsap.from('.hero [data-line]', { y: 30, opacity: 0, duration: 1.2, stagger: 0.1, ease: 'power3.out', delay: 0.2 });
+  gsap.from('[data-hero-photo]', { clipPath: 'inset(0 0 100% 0)', duration: 1.6, ease: 'power3.inOut', delay: 0.5, clearProps: 'clipPath' });
+  gsap.to('[data-hero-photo] .sl', { yPercent: 8, ease: 'none', scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: 0.6 } });
+
+  gsap.utils.toArray('.rv').forEach(el => gsap.from(el, { y: 22, opacity: 0, duration: 1.1, ease: 'power2.out', scrollTrigger: { trigger: el, start: 'top 90%', once: true } }));
+  gsap.utils.toArray('[data-stagger]').forEach(g => gsap.from(g.children, { y: 22, opacity: 0, duration: 1.0, stagger: 0.14, ease: 'power2.out', scrollTrigger: { trigger: g, start: 'top 85%', once: true } }));
+    gsap.utils.toArray('[data-parallax]').forEach(el => gsap.fromTo(el, { yPercent: -6 }, { yPercent: 6, ease: 'none', scrollTrigger: { trigger: el.parentElement, scrub: 0.6, start: 'top bottom', end: 'bottom top' } }));
+  gsap.utils.toArray('[data-count]').forEach(el => { const end = parseFloat(el.dataset.count), dec = +el.dataset.dec||0, o={v:0}; gsap.to(o, { v:end, duration:1.8, ease:'power1.out', onUpdate:()=>{ el.textContent = fmt(o.v,dec); }, scrollTrigger:{ trigger:el, start:'top 85%', once:true } }); });
+
+})();
+</script>
+
+<script src="../nav.js?v=20260917b" data-slug="poselok-s-vidom-na-gory" defer></script>
+
